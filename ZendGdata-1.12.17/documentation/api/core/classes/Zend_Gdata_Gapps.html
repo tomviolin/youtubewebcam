@@ -1,0 +1,3527 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » \Zend_Gdata_Gapps</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___call" title="__call() :: Provides a magic factory method to instantiate new objects with
+shorter syntax than would otherwise be required by the Zend Framework
+naming conventions. For more information, see Zend_Gdata_App::__call()."><span class="description">Provides a magic factory method to instantiate new objects with
+shorter syntax than would otherwise be required by the Zend Framework
+naming conventions. For more information, see Zend_Gdata_App::__call().</span><pre>__call()</pre></a></li>
+<li class="method public inherited"><a href="#method___call" title="__call() :: Provides a magic factory method to instantiate new objects with
+shorter syntax than would otherwise be required by the Zend Framework
+naming conventions.  For instance, to construct a new
+Zend_Gdata_Calendar_Extension_Color, a developer simply needs to do
+$gCal-&gt;newColor().  For this magic constructor, packages are searched
+in the same order as which they appear in the $_registeredPackages
+array"><span class="description">Provides a magic factory method to instantiate new objects with
+shorter syntax than would otherwise be required by the Zend Framework
+naming conventions.  For instance, to construct a new
+Zend_Gdata_Calendar_Extension_Color, a developer simply needs to do
+$gCal-&gt;newColor().  For this magic constructor, packages are searched
+in the same order as which they appear in the $_registeredPackages
+array</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct() :: Create Gdata_Gapps object"><span class="description">Create Gdata_Gapps object</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Create Gdata object"><span class="description">Create Gdata object</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addMemberToGroup" title="addMemberToGroup() :: Add an email address to a group as a member"><span class="description">Add an email address to a group as a member</span><pre>addMemberToGroup()</pre></a></li>
+<li class="method public "><a href="#method_addOwnerToGroup" title="addOwnerToGroup() :: Add an email as an owner of a group"><span class="description">Add an email as an owner of a group</span><pre>addOwnerToGroup()</pre></a></li>
+<li class="method public "><a href="#method_addRecipientToEmailList" title="addRecipientToEmailList() :: Add a specified recipient to an existing emailList."><span class="description">Add a specified recipient to an existing emailList.</span><pre>addRecipientToEmailList()</pre></a></li>
+<li class="method public "><a href="#method_createEmailList" title="createEmailList() :: Create a new email list."><span class="description">Create a new email list.</span><pre>createEmailList()</pre></a></li>
+<li class="method public "><a href="#method_createGroup" title="createGroup() :: Create a new group."><span class="description">Create a new group.</span><pre>createGroup()</pre></a></li>
+<li class="method public "><a href="#method_createNickname" title="createNickname() :: Create a nickname for a given user."><span class="description">Create a nickname for a given user.</span><pre>createNickname()</pre></a></li>
+<li class="method public "><a href="#method_createUser" title="createUser() :: Create a new user entry and send it to the Google Apps servers."><span class="description">Create a new user entry and send it to the Google Apps servers.</span><pre>createUser()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete() :: DELETE entry with client object
+This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException."><span class="description">DELETE entry with client object
+This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</span><pre>delete()</pre></a></li>
+<li class="method public inherited"><a href="#method_delete" title="delete() :: DELETE entry with client object"><span class="description">DELETE entry with client object</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_deleteEmailList" title="deleteEmailList() :: Delete a specified email list."><span class="description">Delete a specified email list.</span><pre>deleteEmailList()</pre></a></li>
+<li class="method public "><a href="#method_deleteGroup" title="deleteGroup() :: Delete a group"><span class="description">Delete a group</span><pre>deleteGroup()</pre></a></li>
+<li class="method public "><a href="#method_deleteNickname" title="deleteNickname() :: Delete a specified nickname."><span class="description">Delete a specified nickname.</span><pre>deleteNickname()</pre></a></li>
+<li class="method public "><a href="#method_deleteUser" title="deleteUser() :: Delete a user by username."><span class="description">Delete a user by username.</span><pre>deleteUser()</pre></a></li>
+<li class="method public inherited"><a href="#method_enableRequestDebugLogging" title="enableRequestDebugLogging() :: This method enables logging of requests by changing the
+Zend_Http_Client_Adapter used for performing the requests."><span class="description">This method enables logging of requests by changing the
+Zend_Http_Client_Adapter used for performing the requests.</span><pre>enableRequestDebugLogging()</pre></a></li>
+<li class="method public inherited"><a href="#method_generateIfMatchHeaderData" title="generateIfMatchHeaderData() :: Returns the data for an If-Match header based on the current Etag
+property. If Etags are not supported by the server or cannot be
+extracted from the data, then null will be returned."><span class="description">Returns the data for an If-Match header based on the current Etag
+property. If Etags are not supported by the server or cannot be
+extracted from the data, then null will be returned.</span><pre>generateIfMatchHeaderData()</pre></a></li>
+<li class="method public "><a href="#method_get" title="get() :: GET a URI using client object."><span class="description">GET a URI using client object.</span><pre>get()</pre></a></li>
+<li class="method public inherited"><a href="#method_get" title="get() :: GET a URI using client object."><span class="description">GET a URI using client object.</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getBaseUrl" title="getBaseUrl() :: Returns the base URL used to access the Google Apps service, based
+on the current domain. The current domain can be temporarily
+overridden by providing a fully qualified domain as $domain."><span class="description">Returns the base URL used to access the Google Apps service, based
+on the current domain. The current domain can be temporarily
+overridden by providing a fully qualified domain as $domain.</span><pre>getBaseUrl()</pre></a></li>
+<li class="method public "><a href="#method_getDomain" title="getDomain() :: Get domain for this service instance. This should be a fully qualified
+domain, such as 'foo.example.com'. If no domain is set, null will be
+returned."><span class="description">Get domain for this service instance. This should be a fully qualified
+domain, such as 'foo.example.com'. If no domain is set, null will be
+returned.</span><pre>getDomain()</pre></a></li>
+<li class="method public "><a href="#method_getEmailListEntry" title="getEmailListEntry() :: Retreive a single EmailListEntry object."><span class="description">Retreive a single EmailListEntry object.</span><pre>getEmailListEntry()</pre></a></li>
+<li class="method public "><a href="#method_getEmailListFeed" title="getEmailListFeed() :: Retreive EmailListFeed object containing multiple EmailListEntry
+objects."><span class="description">Retreive EmailListFeed object containing multiple EmailListEntry
+objects.</span><pre>getEmailListFeed()</pre></a></li>
+<li class="method public "><a href="#method_getEmailListRecipientEntry" title="getEmailListRecipientEntry() :: Retreive a single EmailListRecipientEntry object."><span class="description">Retreive a single EmailListRecipientEntry object.</span><pre>getEmailListRecipientEntry()</pre></a></li>
+<li class="method public "><a href="#method_getEmailListRecipientFeed" title="getEmailListRecipientFeed() :: Retreive EmailListRecipientFeed object containing multiple
+EmailListRecipientEntry objects."><span class="description">Retreive EmailListRecipientFeed object containing multiple
+EmailListRecipientEntry objects.</span><pre>getEmailListRecipientFeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getEntry" title="getEntry() :: Retrieve entry as string or object"><span class="description">Retrieve entry as string or object</span><pre>getEntry()</pre></a></li>
+<li class="method public inherited"><a href="#method_getFeed" title="getFeed() :: Retrieve feed as string or object"><span class="description">Retrieve feed as string or object</span><pre>getFeed()</pre></a></li>
+<li class="method public "><a href="#method_getGroupEntry" title="getGroupEntry() :: Retreive a single GroupEntry object."><span class="description">Retreive a single GroupEntry object.</span><pre>getGroupEntry()</pre></a></li>
+<li class="method public "><a href="#method_getGroupFeed" title="getGroupFeed() :: Retreive GroupFeed object containing multiple GroupEntry
+objects."><span class="description">Retreive GroupFeed object containing multiple GroupEntry
+objects.</span><pre>getGroupFeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getGzipEnabled" title="getGzipEnabled() :: Get the HTTP override state"><span class="description">Get the HTTP override state</span><pre>getGzipEnabled()</pre></a></li>
+<li class="method public inherited"><a href="#method_getHttpClient" title="getHttpClient() :: Get the Zend_Http_Client object used for communication"><span class="description">Get the Zend_Http_Client object used for communication</span><pre>getHttpClient()</pre></a></li>
+<li class="method public inherited"><a href="#method_getHttpMethodOverride" title="getHttpMethodOverride() :: Get the HTTP override state"><span class="description">Get the HTTP override state</span><pre>getHttpMethodOverride()</pre></a></li>
+<li class="method public inherited"><a href="#method_getMajorProtocolVersion" title="getMajorProtocolVersion() :: Get the major protocol version that is in use."><span class="description">Get the major protocol version that is in use.</span><pre>getMajorProtocolVersion()</pre></a></li>
+<li class="method public inherited"><a href="#method_getMaxRedirects" title="getMaxRedirects() :: Get the maximum number of redirects to follow during HTTP operations"><span class="description">Get the maximum number of redirects to follow during HTTP operations</span><pre>getMaxRedirects()</pre></a></li>
+<li class="method public "><a href="#method_getMemberEntry" title="getMemberEntry() :: Retreive a single MemberEntry object."><span class="description">Retreive a single MemberEntry object.</span><pre>getMemberEntry()</pre></a></li>
+<li class="method public "><a href="#method_getMemberFeed" title="getMemberFeed() :: Retreive MemberFeed object containing multiple MemberEntry
+objects."><span class="description">Retreive MemberFeed object containing multiple MemberEntry
+objects.</span><pre>getMemberFeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getMinorProtocolVersion" title="getMinorProtocolVersion() :: Get the minor protocol version that is in use."><span class="description">Get the minor protocol version that is in use.</span><pre>getMinorProtocolVersion()</pre></a></li>
+<li class="method public inherited"><a href="#method_getNextFeed" title="getNextFeed() :: Retrieve next set of results based on a given feed."><span class="description">Retrieve next set of results based on a given feed.</span><pre>getNextFeed()</pre></a></li>
+<li class="method public "><a href="#method_getNicknameEntry" title="getNicknameEntry() :: Retreive a single NicknameEntry object."><span class="description">Retreive a single NicknameEntry object.</span><pre>getNicknameEntry()</pre></a></li>
+<li class="method public "><a href="#method_getNicknameFeed" title="getNicknameFeed() :: Retreive NicknameFeed object containing multiple NicknameEntry objects."><span class="description">Retreive NicknameFeed object containing multiple NicknameEntry objects.</span><pre>getNicknameFeed()</pre></a></li>
+<li class="method public "><a href="#method_getOwnerEntry" title="getOwnerEntry() :: Retreive a single OwnerEntry object."><span class="description">Retreive a single OwnerEntry object.</span><pre>getOwnerEntry()</pre></a></li>
+<li class="method public "><a href="#method_getOwnerFeed" title="getOwnerFeed() :: Retreive OwnerFeed object containing multiple OwnerEntry
+objects."><span class="description">Retreive OwnerFeed object containing multiple OwnerEntry
+objects.</span><pre>getOwnerFeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getPreviousFeed" title="getPreviousFeed() :: Retrieve previous set of results based on a given feed."><span class="description">Retrieve previous set of results based on a given feed.</span><pre>getPreviousFeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getStaticHttpClient" title="getStaticHttpClient() :: Gets the HTTP client object. If none is set, a new Zend_Http_Client will be used."><span class="description">Gets the HTTP client object. If none is set, a new Zend_Http_Client will be used.</span><pre>getStaticHttpClient()</pre></a></li>
+<li class="method public "><a href="#method_getUserEntry" title="getUserEntry() :: Retreive a single UserEntry object."><span class="description">Retreive a single UserEntry object.</span><pre>getUserEntry()</pre></a></li>
+<li class="method public "><a href="#method_getUserFeed" title="getUserFeed() :: Retrieve a UserFeed containing multiple UserEntry objects."><span class="description">Retrieve a UserFeed containing multiple UserEntry objects.</span><pre>getUserFeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getVerboseExceptionMessages" title="getVerboseExceptionMessages() :: Get whether to use verbose exception messages"><span class="description">Get whether to use verbose exception messages</span><pre>getVerboseExceptionMessages()</pre></a></li>
+<li class="method public "><a href="#method_import" title="import() :: Imports a feed located at $uri."><span class="description">Imports a feed located at $uri.</span><pre>import()</pre></a></li>
+<li class="method public inherited"><a href="#method_import" title="import() :: Imports a feed located at $uri."><span class="description">Imports a feed located at $uri.</span><pre>import()</pre></a></li>
+<li class="method public inherited"><a href="#method_importFile" title="importFile() :: Imports a feed from a file located at $filename."><span class="description">Imports a feed from a file located at $filename.</span><pre>importFile()</pre></a></li>
+<li class="method public inherited"><a href="#method_importString" title="importString() :: Imports a feed represented by $string."><span class="description">Imports a feed represented by $string.</span><pre>importString()</pre></a></li>
+<li class="method public inherited"><a href="#method_importUrl" title="importUrl() :: Imports the specified URL (non-statically)."><span class="description">Imports the specified URL (non-statically).</span><pre>importUrl()</pre></a></li>
+<li class="method public "><a href="#method_insertEmailList" title="insertEmailList() :: Create a new email list from an EmailListEntry."><span class="description">Create a new email list from an EmailListEntry.</span><pre>insertEmailList()</pre></a></li>
+<li class="method public "><a href="#method_insertEmailListRecipient" title="insertEmailListRecipient() :: Create a new email list recipient from an EmailListRecipientEntry."><span class="description">Create a new email list recipient from an EmailListRecipientEntry.</span><pre>insertEmailListRecipient()</pre></a></li>
+<li class="method public inherited"><a href="#method_insertEntry" title="insertEntry() :: Inserts an entry to a given URI and returns the response as a
+fully formed Entry."><span class="description">Inserts an entry to a given URI and returns the response as a
+fully formed Entry.</span><pre>insertEntry()</pre></a></li>
+<li class="method public "><a href="#method_insertGroup" title="insertGroup() :: Create a new group from a GroupEntry."><span class="description">Create a new group from a GroupEntry.</span><pre>insertGroup()</pre></a></li>
+<li class="method public "><a href="#method_insertMember" title="insertMember() :: Create a new member from a MemberEntry."><span class="description">Create a new member from a MemberEntry.</span><pre>insertMember()</pre></a></li>
+<li class="method public "><a href="#method_insertNickname" title="insertNickname() :: Create a new nickname from a NicknameEntry."><span class="description">Create a new nickname from a NicknameEntry.</span><pre>insertNickname()</pre></a></li>
+<li class="method public "><a href="#method_insertOwner" title="insertOwner() :: Create a new group from a OwnerEntry."><span class="description">Create a new group from a OwnerEntry.</span><pre>insertOwner()</pre></a></li>
+<li class="method public "><a href="#method_insertUser" title="insertUser() :: Create a new user from a UserEntry."><span class="description">Create a new user from a UserEntry.</span><pre>insertUser()</pre></a></li>
+<li class="method public inherited"><a href="#method_isAuthenticated" title="isAuthenticated() :: Determines whether service object is authenticated."><span class="description">Determines whether service object is authenticated.</span><pre>isAuthenticated()</pre></a></li>
+<li class="method public "><a href="#method_isMember" title="isMember() :: Check to see if a member id or group id is a member of group"><span class="description">Check to see if a member id or group id is a member of group</span><pre>isMember()</pre></a></li>
+<li class="method public "><a href="#method_isOwner" title="isOwner() :: Checks to see if an email is an owner of a group"><span class="description">Checks to see if an email is an owner of a group</span><pre>isOwner()</pre></a></li>
+<li class="method public inherited"><a href="#method_performHttpRequest" title="performHttpRequest() :: Performs a HTTP request using the specified method"><span class="description">Performs a HTTP request using the specified method</span><pre>performHttpRequest()</pre></a></li>
+<li class="method public "><a href="#method_post" title="post() :: POST data with client object."><span class="description">POST data with client object.</span><pre>post()</pre></a></li>
+<li class="method public inherited"><a href="#method_post" title="post() :: POST data with client object"><span class="description">POST data with client object</span><pre>post()</pre></a></li>
+<li class="method public inherited"><a href="#method_prepareRequest" title="prepareRequest() :: Provides pre-processing for HTTP requests to APP services."><span class="description">Provides pre-processing for HTTP requests to APP services.</span><pre>prepareRequest()</pre></a></li>
+<li class="method public "><a href="#method_put" title="put() :: PUT data with client object
+This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException."><span class="description">PUT data with client object
+This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</span><pre>put()</pre></a></li>
+<li class="method public inherited"><a href="#method_put" title="put() :: PUT data with client object"><span class="description">PUT data with client object</span><pre>put()</pre></a></li>
+<li class="method public inherited"><a href="#method_registerPackage" title="registerPackage() :: Adds a Zend Framework package to the $_registeredPackages array."><span class="description">Adds a Zend Framework package to the $_registeredPackages array.</span><pre>registerPackage()</pre></a></li>
+<li class="method public "><a href="#method_removeMemberFromGroup" title="removeMemberFromGroup() :: Remove a member id from a group"><span class="description">Remove a member id from a group</span><pre>removeMemberFromGroup()</pre></a></li>
+<li class="method public "><a href="#method_removeOwnerFromGroup" title="removeOwnerFromGroup() :: Remove email as an owner of a group"><span class="description">Remove email as an owner of a group</span><pre>removeOwnerFromGroup()</pre></a></li>
+<li class="method public "><a href="#method_removeRecipientFromEmailList" title="removeRecipientFromEmailList() :: Remove a specified recipient from an email list."><span class="description">Remove a specified recipient from an email list.</span><pre>removeRecipientFromEmailList()</pre></a></li>
+<li class="method public "><a href="#method_restoreUser" title="restoreUser() :: Mark a given user as not suspended."><span class="description">Mark a given user as not suspended.</span><pre>restoreUser()</pre></a></li>
+<li class="method public "><a href="#method_retrieveAllEmailLists" title="retrieveAllEmailLists() :: Retrieve all email lists associated with the curent domain. Be aware that
+calling this function on a domain with many email lists will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place."><span class="description">Retrieve all email lists associated with the curent domain. Be aware that
+calling this function on a domain with many email lists will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</span><pre>retrieveAllEmailLists()</pre></a></li>
+<li class="method public inherited"><a href="#method_retrieveAllEntriesForFeed" title="retrieveAllEntriesForFeed() :: Retrieve all entries for a feed, iterating through pages as necessary."><span class="description">Retrieve all entries for a feed, iterating through pages as necessary.</span><pre>retrieveAllEntriesForFeed()</pre></a></li>
+<li class="method public "><a href="#method_retrieveAllGroups" title="retrieveAllGroups() :: Retrieve all groups in the current domain. Be aware that
+calling this function on a domain with many groups will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place."><span class="description">Retrieve all groups in the current domain. Be aware that
+calling this function on a domain with many groups will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</span><pre>retrieveAllGroups()</pre></a></li>
+<li class="method public "><a href="#method_retrieveAllMembers" title="retrieveAllMembers() :: Retrieves all the members of a group"><span class="description">Retrieves all the members of a group</span><pre>retrieveAllMembers()</pre></a></li>
+<li class="method public "><a href="#method_retrieveAllNicknames" title="retrieveAllNicknames() :: Retrieve all nicknames in the current domain. Be aware that
+calling this function on a domain with many nicknames will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place."><span class="description">Retrieve all nicknames in the current domain. Be aware that
+calling this function on a domain with many nicknames will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</span><pre>retrieveAllNicknames()</pre></a></li>
+<li class="method public "><a href="#method_retrieveAllRecipients" title="retrieveAllRecipients() :: Retrieve all recipients associated with an email list. Be aware that
+calling this function on a domain with many email lists will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place."><span class="description">Retrieve all recipients associated with an email list. Be aware that
+calling this function on a domain with many email lists will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</span><pre>retrieveAllRecipients()</pre></a></li>
+<li class="method public "><a href="#method_retrieveAllUsers" title="retrieveAllUsers() :: Retrieve all users in the current domain. Be aware that
+calling this function on a domain with many users will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place."><span class="description">Retrieve all users in the current domain. Be aware that
+calling this function on a domain with many users will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</span><pre>retrieveAllUsers()</pre></a></li>
+<li class="method public "><a href="#method_retrieveEmailLists" title="retrieveEmailLists() :: Retrieve all email lists associated with a recipient."><span class="description">Retrieve all email lists associated with a recipient.</span><pre>retrieveEmailLists()</pre></a></li>
+<li class="method public "><a href="#method_retrieveGroup" title="retrieveGroup() :: Retrieves a group based on group id"><span class="description">Retrieves a group based on group id</span><pre>retrieveGroup()</pre></a></li>
+<li class="method public "><a href="#method_retrieveGroupOwners" title="retrieveGroupOwners() :: Retrieves all the owners of a group"><span class="description">Retrieves all the owners of a group</span><pre>retrieveGroupOwners()</pre></a></li>
+<li class="method public "><a href="#method_retrieveGroups" title="retrieveGroups() :: Retrieve all of the groups that a user is a member of"><span class="description">Retrieve all of the groups that a user is a member of</span><pre>retrieveGroups()</pre></a></li>
+<li class="method public "><a href="#method_retrieveNickname" title="retrieveNickname() :: Retrieve the entry for a specified nickname."><span class="description">Retrieve the entry for a specified nickname.</span><pre>retrieveNickname()</pre></a></li>
+<li class="method public "><a href="#method_retrieveNicknames" title="retrieveNicknames() :: Retrieve all nicknames associated with a specific username."><span class="description">Retrieve all nicknames associated with a specific username.</span><pre>retrieveNicknames()</pre></a></li>
+<li class="method public "><a href="#method_retrievePageOfEmailLists" title="retrievePageOfEmailLists() :: Retrieve a page of email lists in alphabetical order, starting with the
+provided email list."><span class="description">Retrieve a page of email lists in alphabetical order, starting with the
+provided email list.</span><pre>retrievePageOfEmailLists()</pre></a></li>
+<li class="method public "><a href="#method_retrievePageOfGroups" title="retrievePageOfGroups() :: Retrieve a page of groups in alphabetical order, starting with the
+provided group."><span class="description">Retrieve a page of groups in alphabetical order, starting with the
+provided group.</span><pre>retrievePageOfGroups()</pre></a></li>
+<li class="method public "><a href="#method_retrievePageOfMembers" title="retrievePageOfMembers() :: Gets page of Members"><span class="description">Gets page of Members</span><pre>retrievePageOfMembers()</pre></a></li>
+<li class="method public "><a href="#method_retrievePageOfNicknames" title="retrievePageOfNicknames() :: Retrieve a page of nicknames in alphabetical order, starting with the
+provided nickname."><span class="description">Retrieve a page of nicknames in alphabetical order, starting with the
+provided nickname.</span><pre>retrievePageOfNicknames()</pre></a></li>
+<li class="method public "><a href="#method_retrievePageOfRecipients" title="retrievePageOfRecipients() :: Retrieve a page of email list recipients in alphabetical order,
+starting with the provided email list recipient."><span class="description">Retrieve a page of email list recipients in alphabetical order,
+starting with the provided email list recipient.</span><pre>retrievePageOfRecipients()</pre></a></li>
+<li class="method public "><a href="#method_retrievePageOfUsers" title="retrievePageOfUsers() :: Retrieve a page of users in alphabetical order, starting with the
+provided username."><span class="description">Retrieve a page of users in alphabetical order, starting with the
+provided username.</span><pre>retrievePageOfUsers()</pre></a></li>
+<li class="method public "><a href="#method_retrieveUser" title="retrieveUser() :: Retrieve a user based on their username."><span class="description">Retrieve a user based on their username.</span><pre>retrieveUser()</pre></a></li>
+<li class="method public "><a href="#method_setDomain" title="setDomain() :: Set domain for this service instance. This should be a fully qualified
+domain, such as 'foo.example.com'."><span class="description">Set domain for this service instance. This should be a fully qualified
+domain, such as 'foo.example.com'.</span><pre>setDomain()</pre></a></li>
+<li class="method public inherited"><a href="#method_setGzipEnabled" title="setGzipEnabled() :: Toggle requesting gzip encoded responses"><span class="description">Toggle requesting gzip encoded responses</span><pre>setGzipEnabled()</pre></a></li>
+<li class="method public inherited"><a href="#method_setHttpClient" title="setHttpClient() :: Set the Zend_Http_Client object used for communication"><span class="description">Set the Zend_Http_Client object used for communication</span><pre>setHttpClient()</pre></a></li>
+<li class="method public inherited"><a href="#method_setHttpMethodOverride" title="setHttpMethodOverride() :: Toggle using POST instead of PUT and DELETE HTTP methods"><span class="description">Toggle using POST instead of PUT and DELETE HTTP methods</span><pre>setHttpMethodOverride()</pre></a></li>
+<li class="method public inherited"><a href="#method_setMajorProtocolVersion" title="setMajorProtocolVersion() :: Set the major protocol version that should be used. Values &lt; 1 will
+cause a Zend_Gdata_App_InvalidArgumentException to be thrown."><span class="description">Set the major protocol version that should be used. Values &lt; 1 will
+cause a Zend_Gdata_App_InvalidArgumentException to be thrown.</span><pre>setMajorProtocolVersion()</pre></a></li>
+<li class="method public inherited"><a href="#method_setMaxRedirects" title="setMaxRedirects() :: Set the maximum number of redirects to follow during HTTP operations"><span class="description">Set the maximum number of redirects to follow during HTTP operations</span><pre>setMaxRedirects()</pre></a></li>
+<li class="method public inherited"><a href="#method_setMinorProtocolVersion" title="setMinorProtocolVersion() :: Set the minor protocol version that should be used. If set to NULL, no
+minor protocol version will be sent to the server. Values &lt; 0 will
+cause a Zend_Gdata_App_InvalidArgumentException to be thrown."><span class="description">Set the minor protocol version that should be used. If set to NULL, no
+minor protocol version will be sent to the server. Values &lt; 0 will
+cause a Zend_Gdata_App_InvalidArgumentException to be thrown.</span><pre>setMinorProtocolVersion()</pre></a></li>
+<li class="method public inherited"><a href="#method_setStaticHttpClient" title="setStaticHttpClient() :: Set the static HTTP client instance"><span class="description">Set the static HTTP client instance</span><pre>setStaticHttpClient()</pre></a></li>
+<li class="method public inherited"><a href="#method_setVerboseExceptionMessages" title="setVerboseExceptionMessages() :: Set whether to use verbose exception messages"><span class="description">Set whether to use verbose exception messages</span><pre>setVerboseExceptionMessages()</pre></a></li>
+<li class="method public "><a href="#method_suspendUser" title="suspendUser() :: Mark a given user as suspended."><span class="description">Mark a given user as suspended.</span><pre>suspendUser()</pre></a></li>
+<li class="method public "><a href="#method_throwServiceExceptionIfDetected" title="throwServiceExceptionIfDetected() :: Convert an exception to an ServiceException if an AppsForYourDomain
+XML document is contained within the original exception's HTTP
+response. If conversion fails, throw the original error."><span class="description">Convert an exception to an ServiceException if an AppsForYourDomain
+XML document is contained within the original exception's HTTP
+response. If conversion fails, throw the original error.</span><pre>throwServiceExceptionIfDetected()</pre></a></li>
+<li class="method public inherited"><a href="#method_updateEntry" title="updateEntry() :: Update an entry"><span class="description">Update an entry</span><pre>updateEntry()</pre></a></li>
+<li class="method public "><a href="#method_updateGroup" title="updateGroup() :: Update group properties with new values. any property not defined will not
+be updated"><span class="description">Update group properties with new values. any property not defined will not
+be updated</span><pre>updateGroup()</pre></a></li>
+<li class="method public "><a href="#method_updateUser" title="updateUser() :: Overwrite a specified username with the provided UserEntry.  The
+UserEntry does not need to contain an edit link."><span class="description">Overwrite a specified username with the provided UserEntry.  The
+UserEntry does not need to contain an edit link.</span><pre>updateUser()</pre></a></li>
+<li class="method public inherited"><a href="#method_useObjectMapping" title="useObjectMapping() :: Enable/disable the use of XML to object mapping."><span class="description">Enable/disable the use of XML to object mapping.</span><pre>useObjectMapping()</pre></a></li>
+<li class="method public inherited"><a href="#method_usingObjectMapping" title="usingObjectMapping() :: Determine whether service object is using XML to object mapping."><span class="description">Determine whether service object is using XML to object mapping.</span><pre>usingObjectMapping()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_namespaces" title="$namespaces() :: Namespaces used for Zend_Gdata_Gapps"><span class="description"></span><pre>$namespaces</pre></a></li>
+<li class="property public "><a href="#property_namespaces" title="$namespaces() :: Namespaces used for Gdata data"><span class="description"></span><pre>$namespaces</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__defaultPostUri" title="$_defaultPostUri() :: Default URI to which to POST."><span class="description"></span><pre>$_defaultPostUri</pre></a></li>
+<li class="property protected "><a href="#property__domain" title="$_domain() :: The domain which is being administered via the Provisioning API."><span class="description"></span><pre>$_domain</pre></a></li>
+<li class="property protected "><a href="#property__gzipEnabled" title="$_gzipEnabled() :: Enable gzipped responses?"><span class="description"></span><pre>$_gzipEnabled</pre></a></li>
+<li class="property protected "><a href="#property__httpClient" title="$_httpClient() :: Client object used to communicate"><span class="description"></span><pre>$_httpClient</pre></a></li>
+<li class="property protected "><a href="#property__httpMethodOverride" title="$_httpMethodOverride() :: Override HTTP PUT and DELETE request methods?"><span class="description"></span><pre>$_httpMethodOverride</pre></a></li>
+<li class="property protected "><a href="#property__majorProtocolVersion" title="$_majorProtocolVersion() :: Indicates the major protocol version that should be used."><span class="description"></span><pre>$_majorProtocolVersion</pre></a></li>
+<li class="property protected "><a href="#property__maxRedirects" title="$_maxRedirects() :: Maximum number of redirects to follow during HTTP operations"><span class="description"></span><pre>$_maxRedirects</pre></a></li>
+<li class="property protected "><a href="#property__minorProtocolVersion" title="$_minorProtocolVersion() :: Indicates the minor protocol version that should be used. Can be set
+to either an integer &gt;= 0, or NULL if no minor version should be sent
+to the server."><span class="description"></span><pre>$_minorProtocolVersion</pre></a></li>
+<li class="property protected "><a href="#property__registeredPackages" title="$_registeredPackages() :: Packages to search for classes when using magic __call method, in order."><span class="description"></span><pre>$_registeredPackages</pre></a></li>
+<li class="property protected "><a href="#property__staticHttpClient" title="$_staticHttpClient() :: Client object used to communicate in static context"><span class="description"></span><pre>$_staticHttpClient</pre></a></li>
+<li class="property protected "><a href="#property__useObjectMapping" title="$_useObjectMapping() :: Whether we want to use XML to object mapping when fetching data."><span class="description"></span><pre>$_useObjectMapping</pre></a></li>
+<li class="property protected "><a href="#property__verboseExceptionMessages" title="$_verboseExceptionMessages() :: Use verbose exception messages.  In the case of HTTP errors,
+use the body of the HTTP response in the exception message."><span class="description"></span><pre>$_verboseExceptionMessages</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_APPS_BASE_FEED_URI" title="APPS_BASE_FEED_URI() :: "><span class="description">APPS_BASE_FEED_URI</span><pre>APPS_BASE_FEED_URI</pre></a></li>
+<li class="constant  "><a href="#constant_APPS_EMAIL_LIST_PATH" title="APPS_EMAIL_LIST_PATH() :: Path to email list feeds on the Google Apps server."><span class="description">Path to email list feeds on the Google Apps server.</span><pre>APPS_EMAIL_LIST_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_APPS_EMAIL_LIST_RECIPIENT_POSTFIX" title="APPS_EMAIL_LIST_RECIPIENT_POSTFIX() :: Path to email list recipient feeds on the Google Apps server."><span class="description">Path to email list recipient feeds on the Google Apps server.</span><pre>APPS_EMAIL_LIST_RECIPIENT_POSTFIX</pre></a></li>
+<li class="constant  "><a href="#constant_APPS_GROUP_PATH" title="APPS_GROUP_PATH() :: Path to group feeds on the Google Apps server."><span class="description">Path to group feeds on the Google Apps server.</span><pre>APPS_GROUP_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_APPS_NICKNAME_PATH" title="APPS_NICKNAME_PATH() :: Path to nickname feeds on the Google Apps server."><span class="description">Path to nickname feeds on the Google Apps server.</span><pre>APPS_NICKNAME_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_APPS_USER_PATH" title="APPS_USER_PATH() :: Path to user feeds on the Google Apps server."><span class="description">Path to user feeds on the Google Apps server.</span><pre>APPS_USER_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_AUTH_SERVICE_NAME" title="AUTH_SERVICE_NAME() :: Service name for use with Google's authentication mechanisms"><span class="description">Service name for use with Google's authentication mechanisms</span><pre>AUTH_SERVICE_NAME</pre></a></li>
+<li class="constant  "><a href="#constant_AUTH_SERVICE_NAME" title="AUTH_SERVICE_NAME() :: Service name for use with Google's authentication mechanisms"><span class="description">Service name for use with Google's authentication mechanisms</span><pre>AUTH_SERVICE_NAME</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_MAJOR_PROTOCOL_VERSION" title="DEFAULT_MAJOR_PROTOCOL_VERSION() :: Default major protocol version."><span class="description">Default major protocol version.</span><pre>DEFAULT_MAJOR_PROTOCOL_VERSION</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_MINOR_PROTOCOL_VERSION" title="DEFAULT_MINOR_PROTOCOL_VERSION() :: Default minor protocol version."><span class="description">Default minor protocol version.</span><pre>DEFAULT_MINOR_PROTOCOL_VERSION</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Zend_Gdata_Gapps"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Zend_Gdata_Gapps.html">Zend_Gdata_Gapps</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Service class for interacting with the Google Apps Provisioning API.</p>
+<div class="details">
+<div class="long_description"><p>Like other service classes in this module, this class provides access via
+an HTTP client to Google servers for working with entries and feeds.</p>
+<p>Because of the nature of this API, all access must occur over an
+authenticated connection.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>link</th>
+<td><a href="http://code.google.com/apis/apps/gdata_provisioning_api_v2.0_reference.html">http://code.google.com/apis/apps/gdata_provisioning_api_v2.0_reference.html</a></td>
+</tr>
+<tr>
+<th>category</th>
+<td>Zend</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Zend_Gdata.Gapps.html">Zend_Gdata</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Gapps</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___call"></a><div class="element clickable method public method___call " data-toggle="collapse" data-target=".method___call .collapse" title="public">
+<h2>Provides a magic factory method to instantiate new objects with
+shorter syntax than would otherwise be required by the Zend Framework
+naming conventions. For more information, see Zend_Gdata_App::__call().</h2>
+<pre>__call(string $method, array $args) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This overrides the default behavior of __call() so that query classes
+do not need to have their domain manually set when created with
+a magic factory method.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App::__call()"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The method name being called</p></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>The arguments passed to the call</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___call"></a><div class="element clickable method public method___call inherited" data-toggle="collapse" data-target=".method___call .collapse" title="public">
+<h2>Provides a magic factory method to instantiate new objects with
+shorter syntax than would otherwise be required by the Zend Framework
+naming conventions.  For instance, to construct a new
+Zend_Gdata_Calendar_Extension_Color, a developer simply needs to do
+$gCal-&gt;newColor().  For this magic constructor, packages are searched
+in the same order as which they appear in the $_registeredPackages
+array</h2>
+<pre>__call(string $method, array $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The method name being called</p></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code><p>The arguments passed to the call</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Create Gdata_Gapps object</h2>
+<pre>__construct(\Zend_Http_Client $client<code> = null</code>, string $domain<code> = null</code>, string $applicationId<code> = 'MyCompany-MyApp-1.0'</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$client</h4>
+<code>\Zend_Http_Client</code><p>(optional) The HTTP client to use when
+when communicating with the Google Apps servers.</p></div>
+<div class="subelement argument">
+<h4>$domain</h4>
+<code>string</code><p>(optional) The Google Apps domain which is to be
+accessed.</p></div>
+<div class="subelement argument">
+<h4>$applicationId</h4>
+<code>string</code><p>The identity of the app in the form of Company-AppName-Version</p></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Create Gdata object</h2>
+<pre>__construct(\Zend_Http_Client $client<code> = null</code>, string $applicationId<code> = 'MyCompany-MyApp-1.0'</code>) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$client</h4>
+<code>\Zend_Http_Client</code>
+</div>
+<div class="subelement argument">
+<h4>$applicationId</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_addMemberToGroup"></a><div class="element clickable method public method_addMemberToGroup " data-toggle="collapse" data-target=".method_addMemberToGroup .collapse" title="public">
+<h2>Add an email address to a group as a member</h2>
+<pre>addMemberToGroup(string $recipientAddress, string $groupId) : \Zend_Gdata_Gapps_MemberEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$recipientAddress</h4>
+<code>string</code><p>Email address, member id, or group id</p></div>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique id of the group</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_MemberEntry</code>The member entry returned by the server</div>
+</div></div>
+</div>
+<a id="method_addOwnerToGroup"></a><div class="element clickable method public method_addOwnerToGroup " data-toggle="collapse" data-target=".method_addOwnerToGroup .collapse" title="public">
+<h2>Add an email as an owner of a group</h2>
+<pre>addOwnerToGroup(string $email, string $groupId) : \Zend_Gdata_Gapps_OwnerEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$email</h4>
+<code>string</code><p>Owner's email</p></div>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>Group ownership to be checked for</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_OwnerEntry</code>The OwnerEntry returned by the server</div>
+</div></div>
+</div>
+<a id="method_addRecipientToEmailList"></a><div class="element clickable method public method_addRecipientToEmailList " data-toggle="collapse" data-target=".method_addRecipientToEmailList .collapse" title="public">
+<h2>Add a specified recipient to an existing emailList.</h2>
+<pre>addRecipientToEmailList(string $recipientAddress, string $emailList) : \Zend_Gdata_Gapps_EmailListRecipientEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$recipientAddress</h4>
+<code>string</code><p>The address of the recipient to be
+             added to the email list.</p></div>
+<div class="subelement argument">
+<h4>$emailList</h4>
+<code>string</code><p>The name of the email address to which the
+             recipient should be added.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListRecipientEntry</code>The recipient entry
+             created by the server.</div>
+</div></div>
+</div>
+<a id="method_createEmailList"></a><div class="element clickable method public method_createEmailList " data-toggle="collapse" data-target=".method_createEmailList .collapse" title="public">
+<h2>Create a new email list.</h2>
+<pre>createEmailList(string $emailList) : \Zend_Gdata_Gapps_EmailListEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$emailList</h4>
+<code>string</code><p>The name of the email list to be created.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListEntry</code>The email list entry
+         as created on the server.</div>
+</div></div>
+</div>
+<a id="method_createGroup"></a><div class="element clickable method public method_createGroup " data-toggle="collapse" data-target=".method_createGroup .collapse" title="public">
+<h2>Create a new group.</h2>
+<pre>createGroup(string $groupId, string $groupName, string $description<code> = null</code>, string $emailPermission<code> = null</code>) : \Zend_Gdata_Gapps_GroupEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>A unique identifier for the group</p></div>
+<div class="subelement argument">
+<h4>$groupName</h4>
+<code>string</code><p>The name of the group</p></div>
+<div class="subelement argument">
+<h4>$description</h4>
+<code>string</code><p>A description of the group</p></div>
+<div class="subelement argument">
+<h4>$emailPermission</h4>
+<code>string</code><p>The subscription permission of the group</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupEntry</code>The group entry as created on the server.</div>
+</div></div>
+</div>
+<a id="method_createNickname"></a><div class="element clickable method public method_createNickname " data-toggle="collapse" data-target=".method_createNickname .collapse" title="public">
+<h2>Create a nickname for a given user.</h2>
+<pre>createNickname(string $username, string $nickname) : \Zend_Gdata_Gapps_NicknameEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username to which the new nickname should
+         be associated.</p></div>
+<div class="subelement argument">
+<h4>$nickname</h4>
+<code>string</code><p>The new nickname to be created.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_NicknameEntry</code>The nickname entry which was
+         created by the server.</div>
+</div></div>
+</div>
+<a id="method_createUser"></a><div class="element clickable method public method_createUser " data-toggle="collapse" data-target=".method_createUser .collapse" title="public">
+<h2>Create a new user entry and send it to the Google Apps servers.</h2>
+<pre>createUser(string $username, string $givenName, string $familyName, string $password, $passwordHashFunction<code> = null</code>, string $quotaLimitInMB<code> = null</code>) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username for the new user.</p></div>
+<div class="subelement argument">
+<h4>$givenName</h4>
+<code>string</code><p>The given name for the new user.</p></div>
+<div class="subelement argument">
+<h4>$familyName</h4>
+<code>string</code><p>The family name for the new user.</p></div>
+<div class="subelement argument">
+<h4>$password</h4>
+<code>string</code><p>The password for the new user as a plaintext string
+(if $passwordHashFunction is null) or a SHA-1 hashed
+value (if $passwordHashFunction = 'SHA-1').</p></div>
+<div class="subelement argument"><h4>$passwordHashFunction</h4></div>
+<div class="subelement argument">
+<h4>$quotaLimitInMB</h4>
+<code>string</code><p>(optional) The quota limit for the new user in MB.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserEntry</code>(optional) The new user entry as returned by
+                server.</div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete " data-toggle="collapse" data-target=".method_delete .collapse" title="public">
+<h2>DELETE entry with client object
+This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</h2>
+<pre>delete(mixed $data, integer $remainingRedirects<code> = null</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or URL to delete</p></div>
+<div class="subelement argument">
+<h4>$remainingRedirects</h4>
+<code>integer</code><p>(optional)</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete inherited" data-toggle="collapse" data-target=".method_delete .collapse" title="public">
+<h2>DELETE entry with client object</h2>
+<pre>delete(mixed $data, $remainingRedirects<code> = null</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or URL to delete</p></div>
+<div class="subelement argument"><h4>$remainingRedirects</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_deleteEmailList"></a><div class="element clickable method public method_deleteEmailList " data-toggle="collapse" data-target=".method_deleteEmailList .collapse" title="public">
+<h2>Delete a specified email list.</h2>
+<pre>deleteEmailList(string $emailList) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$emailList</h4>
+<code>string</code><p>The name of the emailList to be deleted.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_deleteGroup"></a><div class="element clickable method public method_deleteGroup " data-toggle="collapse" data-target=".method_deleteGroup .collapse" title="public">
+<h2>Delete a group</h2>
+<pre>deleteGroup(string $groupId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique identifier for the group</p></div>
+</div></div>
+</div>
+<a id="method_deleteNickname"></a><div class="element clickable method public method_deleteNickname " data-toggle="collapse" data-target=".method_deleteNickname .collapse" title="public">
+<h2>Delete a specified nickname.</h2>
+<pre>deleteNickname(string $nickname) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$nickname</h4>
+<code>string</code><p>The name of the nickname to be deleted.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_deleteUser"></a><div class="element clickable method public method_deleteUser " data-toggle="collapse" data-target=".method_deleteUser .collapse" title="public">
+<h2>Delete a user by username.</h2>
+<pre>deleteUser(string $username) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username associated with the user who
+         should be deleted.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_enableRequestDebugLogging"></a><div class="element clickable method public method_enableRequestDebugLogging inherited" data-toggle="collapse" data-target=".method_enableRequestDebugLogging .collapse" title="public">
+<h2>This method enables logging of requests by changing the
+Zend_Http_Client_Adapter used for performing the requests.</h2>
+<pre>enableRequestDebugLogging(string $logfile) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>NOTE: This will not work if you have customized the adapter
+already to use a proxy server or other interface.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$logfile</h4>
+<code>string</code><p>The logfile to use when logging the requests</p></div>
+</div></div>
+</div>
+<a id="method_generateIfMatchHeaderData"></a><div class="element clickable method public method_generateIfMatchHeaderData inherited" data-toggle="collapse" data-target=".method_generateIfMatchHeaderData .collapse" title="public">
+<h2>Returns the data for an If-Match header based on the current Etag
+property. If Etags are not supported by the server or cannot be
+extracted from the data, then null will be returned.</h2>
+<pre>generateIfMatchHeaderData($data, $allowWeek) : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$allowWeek</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>$data</div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get " data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<h2>GET a URI using client object.</h2>
+<pre>get(string $uri, array $extraHeaders<code> = array()</code>) : \Zend_Http_Response</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>GET URI</p></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get inherited" data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<h2>GET a URI using client object.</h2>
+<pre>get(string $uri, array $extraHeaders<code> = array()</code>) : \Zend_Http_Response</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>GET URI</p></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_getBaseUrl"></a><div class="element clickable method public method_getBaseUrl " data-toggle="collapse" data-target=".method_getBaseUrl .collapse" title="public">
+<h2>Returns the base URL used to access the Google Apps service, based
+on the current domain. The current domain can be temporarily
+overridden by providing a fully qualified domain as $domain.</h2>
+<pre>getBaseUrl(string $domain<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$domain</h4>
+<code>string</code><p>(optional) A fully-qualified domain to use
+instead of the default domain for this service instance.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getDomain"></a><div class="element clickable method public method_getDomain " data-toggle="collapse" data-target=".method_getDomain .collapse" title="public">
+<h2>Get domain for this service instance. This should be a fully qualified
+domain, such as 'foo.example.com'. If no domain is set, null will be
+returned.</h2>
+<pre>getDomain() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The domain to be used for this session, or null if not
+         set.</div>
+</div></div>
+</div>
+<a id="method_getEmailListEntry"></a><div class="element clickable method public method_getEmailListEntry " data-toggle="collapse" data-target=".method_getEmailListEntry .collapse" title="public">
+<h2>Retreive a single EmailListEntry object.</h2>
+<pre>getEmailListEntry(mixed $location) : \Zend_Gdata_Gapps_EmailListEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_EmailListEntry</code></div>
+</div></div>
+</div>
+<a id="method_getEmailListFeed"></a><div class="element clickable method public method_getEmailListFeed " data-toggle="collapse" data-target=".method_getEmailListFeed .collapse" title="public">
+<h2>Retreive EmailListFeed object containing multiple EmailListEntry
+objects.</h2>
+<pre>getEmailListFeed(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_EmailListFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>(optional) The location for the feed, as a URL
+or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_EmailListFeed</code></div>
+</div></div>
+</div>
+<a id="method_getEmailListRecipientEntry"></a><div class="element clickable method public method_getEmailListRecipientEntry " data-toggle="collapse" data-target=".method_getEmailListRecipientEntry .collapse" title="public">
+<h2>Retreive a single EmailListRecipientEntry object.</h2>
+<pre>getEmailListRecipientEntry(mixed $location) : \Zend_Gdata_Gapps_EmailListRecipientEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_EmailListRecipientEntry</code></div>
+</div></div>
+</div>
+<a id="method_getEmailListRecipientFeed"></a><div class="element clickable method public method_getEmailListRecipientFeed " data-toggle="collapse" data-target=".method_getEmailListRecipientFeed .collapse" title="public">
+<h2>Retreive EmailListRecipientFeed object containing multiple
+EmailListRecipientEntry objects.</h2>
+<pre>getEmailListRecipientFeed(mixed $location) : \Zend_Gdata_Gapps_EmailListRecipientFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_EmailListRecipientFeed</code></div>
+</div></div>
+</div>
+<a id="method_getEntry"></a><div class="element clickable method public method_getEntry inherited" data-toggle="collapse" data-target=".method_getEntry .collapse" title="public">
+<h2>Retrieve entry as string or object</h2>
+<pre>getEntry(string $uri, string $className<code> = 'Zend_Gdata_App_Entry'</code>) : string | \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class which is used as the return type</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>\Zend_Gdata_App_Entry</code>Returns string only if the object
+                                    mapping has been disabled explicitly
+                                    by passing false to the
+                                    useObjectMapping() function.</div>
+</div></div>
+</div>
+<a id="method_getFeed"></a><div class="element clickable method public method_getFeed inherited" data-toggle="collapse" data-target=".method_getFeed .collapse" title="public">
+<h2>Retrieve feed as string or object</h2>
+<pre>getFeed(string $uri, string $className<code> = 'Zend_Gdata_App_Feed'</code>) : string | \Zend_Gdata_App_Feed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>The uri from which to retrieve the feed</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class which is used as the return type</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>\Zend_Gdata_App_Feed</code>Returns string only if the object
+                                   mapping has been disabled explicitly
+                                   by passing false to the
+                                   useObjectMapping() function.</div>
+</div></div>
+</div>
+<a id="method_getGroupEntry"></a><div class="element clickable method public method_getGroupEntry " data-toggle="collapse" data-target=".method_getGroupEntry .collapse" title="public">
+<h2>Retreive a single GroupEntry object.</h2>
+<pre>getGroupEntry(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_GroupEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_GroupEntry</code></div>
+</div></div>
+</div>
+<a id="method_getGroupFeed"></a><div class="element clickable method public method_getGroupFeed " data-toggle="collapse" data-target=".method_getGroupFeed .collapse" title="public">
+<h2>Retreive GroupFeed object containing multiple GroupEntry
+objects.</h2>
+<pre>getGroupFeed(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_GroupFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>(optional) The location for the feed, as a URL
+or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_GroupFeed</code></div>
+</div></div>
+</div>
+<a id="method_getGzipEnabled"></a><div class="element clickable method public method_getGzipEnabled inherited" data-toggle="collapse" data-target=".method_getGzipEnabled .collapse" title="public">
+<h2>Get the HTTP override state</h2>
+<pre>getGzipEnabled() : boolean</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getHttpClient"></a><div class="element clickable method public method_getHttpClient inherited" data-toggle="collapse" data-target=".method_getHttpClient .collapse" title="public">
+<h2>Get the Zend_Http_Client object used for communication</h2>
+<pre>getHttpClient() : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_getHttpMethodOverride"></a><div class="element clickable method public method_getHttpMethodOverride inherited" data-toggle="collapse" data-target=".method_getHttpMethodOverride .collapse" title="public">
+<h2>Get the HTTP override state</h2>
+<pre>getHttpMethodOverride() : boolean</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getMajorProtocolVersion"></a><div class="element clickable method public method_getMajorProtocolVersion inherited" data-toggle="collapse" data-target=".method_getMajorProtocolVersion .collapse" title="public">
+<h2>Get the major protocol version that is in use.</h2>
+<pre>getMajorProtocolVersion() : integer</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5C_majorProtocolVersion"></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>The major protocol version in use.</div>
+</div></div>
+</div>
+<a id="method_getMaxRedirects"></a><div class="element clickable method public method_getMaxRedirects inherited" data-toggle="collapse" data-target=".method_getMaxRedirects .collapse" title="public">
+<h2>Get the maximum number of redirects to follow during HTTP operations</h2>
+<pre>getMaxRedirects() : integer</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Maximum number of redirects to follow</div>
+</div></div>
+</div>
+<a id="method_getMemberEntry"></a><div class="element clickable method public method_getMemberEntry " data-toggle="collapse" data-target=".method_getMemberEntry .collapse" title="public">
+<h2>Retreive a single MemberEntry object.</h2>
+<pre>getMemberEntry(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_MemberEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_MemberEntry</code></div>
+</div></div>
+</div>
+<a id="method_getMemberFeed"></a><div class="element clickable method public method_getMemberFeed " data-toggle="collapse" data-target=".method_getMemberFeed .collapse" title="public">
+<h2>Retreive MemberFeed object containing multiple MemberEntry
+objects.</h2>
+<pre>getMemberFeed(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_MemberFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>(optional) The location for the feed, as a URL
+or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_MemberFeed</code></div>
+</div></div>
+</div>
+<a id="method_getMinorProtocolVersion"></a><div class="element clickable method public method_getMinorProtocolVersion inherited" data-toggle="collapse" data-target=".method_getMinorProtocolVersion .collapse" title="public">
+<h2>Get the minor protocol version that is in use.</h2>
+<pre>getMinorProtocolVersion() : \(int | \NULL)</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5C_minorProtocolVersion"></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\(int</code><code>\NULL)</code>The major protocol version in use, or NULL if no
+        minor version is specified.</div>
+</div></div>
+</div>
+<a id="method_getNextFeed"></a><div class="element clickable method public method_getNextFeed inherited" data-toggle="collapse" data-target=".method_getNextFeed .collapse" title="public">
+<h2>Retrieve next set of results based on a given feed.</h2>
+<pre>getNextFeed(\Zend_Gdata_App_Feed $feed, string $className<code> = null</code>) : \Zend_Gdata_App_Feed | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$feed</h4>
+<code>\Zend_Gdata_App_Feed</code><p>The feed from which to
+         retreive the next set of results.</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>(optional) The class of feed to be returned.
+If null, the next feed (if found) will be the same class as
+the feed that was given as the first argument.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Feed</code><code>null</code>Returns a
+         Zend_Gdata_App_Feed or null if no next set of results
+         exists.</div>
+</div></div>
+</div>
+<a id="method_getNicknameEntry"></a><div class="element clickable method public method_getNicknameEntry " data-toggle="collapse" data-target=".method_getNicknameEntry .collapse" title="public">
+<h2>Retreive a single NicknameEntry object.</h2>
+<pre>getNicknameEntry(mixed $location) : \Zend_Gdata_Gapps_NicknameEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_NicknameEntry</code></div>
+</div></div>
+</div>
+<a id="method_getNicknameFeed"></a><div class="element clickable method public method_getNicknameFeed " data-toggle="collapse" data-target=".method_getNicknameFeed .collapse" title="public">
+<h2>Retreive NicknameFeed object containing multiple NicknameEntry objects.</h2>
+<pre>getNicknameFeed(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_NicknameFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>(optional) The location for the feed, as a URL
+or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_NicknameFeed</code></div>
+</div></div>
+</div>
+<a id="method_getOwnerEntry"></a><div class="element clickable method public method_getOwnerEntry " data-toggle="collapse" data-target=".method_getOwnerEntry .collapse" title="public">
+<h2>Retreive a single OwnerEntry object.</h2>
+<pre>getOwnerEntry(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_OwnerEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_OwnerEntry</code></div>
+</div></div>
+</div>
+<a id="method_getOwnerFeed"></a><div class="element clickable method public method_getOwnerFeed " data-toggle="collapse" data-target=".method_getOwnerFeed .collapse" title="public">
+<h2>Retreive OwnerFeed object containing multiple OwnerEntry
+objects.</h2>
+<pre>getOwnerFeed(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_OwnerFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>(optional) The location for the feed, as a URL
+or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_OwnerFeed</code></div>
+</div></div>
+</div>
+<a id="method_getPreviousFeed"></a><div class="element clickable method public method_getPreviousFeed inherited" data-toggle="collapse" data-target=".method_getPreviousFeed .collapse" title="public">
+<h2>Retrieve previous set of results based on a given feed.</h2>
+<pre>getPreviousFeed(\Zend_Gdata_App_Feed $feed, string $className<code> = null</code>) : \Zend_Gdata_App_Feed | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$feed</h4>
+<code>\Zend_Gdata_App_Feed</code><p>The feed from which to
+         retreive the previous set of results.</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>(optional) The class of feed to be returned.
+If null, the previous feed (if found) will be the same class as
+the feed that was given as the first argument.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Feed</code><code>null</code>Returns a
+         Zend_Gdata_App_Feed or null if no previous set of results
+         exists.</div>
+</div></div>
+</div>
+<a id="method_getStaticHttpClient"></a><div class="element clickable method public method_getStaticHttpClient inherited" data-toggle="collapse" data-target=".method_getStaticHttpClient .collapse" title="public">
+<h2>Gets the HTTP client object. If none is set, a new Zend_Http_Client will be used.</h2>
+<pre>getStaticHttpClient() : \Zend_Http_Client</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_getUserEntry"></a><div class="element clickable method public method_getUserEntry " data-toggle="collapse" data-target=".method_getUserEntry .collapse" title="public">
+<h2>Retreive a single UserEntry object.</h2>
+<pre>getUserEntry(mixed $location) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>The location for the feed, as a URL or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_UserEntry</code></div>
+</div></div>
+</div>
+<a id="method_getUserFeed"></a><div class="element clickable method public method_getUserFeed " data-toggle="collapse" data-target=".method_getUserFeed .collapse" title="public">
+<h2>Retrieve a UserFeed containing multiple UserEntry objects.</h2>
+<pre>getUserFeed(mixed $location<code> = null</code>) : \Zend_Gdata_Gapps_UserFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>mixed</code><p>(optional) The location for the feed, as a URL
+or Query.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_Gapps_UserFeed</code></div>
+</div></div>
+</div>
+<a id="method_getVerboseExceptionMessages"></a><div class="element clickable method public method_getVerboseExceptionMessages inherited" data-toggle="collapse" data-target=".method_getVerboseExceptionMessages .collapse" title="public">
+<h2>Get whether to use verbose exception messages</h2>
+<pre>getVerboseExceptionMessages() : boolean</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In the case of HTTP errors,  use the body of the HTTP response
+in the exception message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_import"></a><div class="element clickable method public method_import " data-toggle="collapse" data-target=".method_import .collapse" title="public">
+<h2>Imports a feed located at $uri.</h2>
+<pre>import(string $uri, \Zend_Http_Client $client<code> = null</code>, string $className<code> = 'Zend_Gdata_App_Feed'</code>, boolean $useObjectMapping<code> = true</code>) : \Zend_Gdata_App_Feed</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata::import()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$client</h4>
+<code>\Zend_Http_Client</code><p>(optional) The client used for
+communication</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>(optional) The class which is used as the
+return type</p></div>
+<div class="subelement argument"><h4>$useObjectMapping</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_App_Feed</code></div>
+</div></div>
+</div>
+<a id="method_import"></a><div class="element clickable method public method_import inherited" data-toggle="collapse" data-target=".method_import .collapse" title="public">
+<h2>Imports a feed located at $uri.</h2>
+<pre>import(string $uri, \Zend_Http_Client $client<code> = null</code>, string $className<code> = 'Zend_Gdata_App_Feed'</code>, boolean $useObjectMapping<code> = true</code>) : string | \Zend_Gdata_App_Feed</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$client</h4>
+<code>\Zend_Http_Client</code><p>The client used for communication</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class which is used as the return type</p></div>
+<div class="subelement argument">
+<h4>$useObjectMapping</h4>
+<code>boolean</code><p>Enable/disable the use of XML to object mapping.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>\Zend_Gdata_App_Feed</code>Returns string only if the fourth
+                                   parameter ($useObjectMapping) is set
+                                   to false.</div>
+</div></div>
+</div>
+<a id="method_importFile"></a><div class="element clickable method public method_importFile inherited" data-toggle="collapse" data-target=".method_importFile .collapse" title="public">
+<h2>Imports a feed from a file located at $filename.</h2>
+<pre>importFile(string $filename, string $className<code> = 'Zend_Gdata_App_Feed'</code>, string $useIncludePath<code> = false</code>) : \Zend_Gdata_App_Feed</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class which is used as the return type</p></div>
+<div class="subelement argument">
+<h4>$useIncludePath</h4>
+<code>string</code><p>Whether the include_path should be searched</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_App_Feed</code></div>
+</div></div>
+</div>
+<a id="method_importString"></a><div class="element clickable method public method_importString inherited" data-toggle="collapse" data-target=".method_importString .collapse" title="public">
+<h2>Imports a feed represented by $string.</h2>
+<pre>importString(string $string, string $className<code> = 'Zend_Gdata_App_Feed'</code>, $majorProtocolVersion<code> = null</code>, $minorProtocolVersion<code> = null</code>) : \Zend_Gdata_App_Feed</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class which is used as the return type</p></div>
+<div class="subelement argument"><h4>$majorProtocolVersion</h4></div>
+<div class="subelement argument"><h4>$minorProtocolVersion</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Gdata_App_Feed</code></div>
+</div></div>
+</div>
+<a id="method_importUrl"></a><div class="element clickable method public method_importUrl inherited" data-toggle="collapse" data-target=".method_importUrl .collapse" title="public">
+<h2>Imports the specified URL (non-statically).</h2>
+<pre>importUrl(string $url, string $className<code> = 'Zend_Gdata_App_Feed'</code>, array $extraHeaders<code> = array()</code>) : string | \Zend_Gdata_App_Feed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>The URL to import</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class which is used as the return type</p></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>\Zend_Gdata_App_Feed</code>Returns string only if the object
+                                   mapping has been disabled explicitly
+                                   by passing false to the
+                                   useObjectMapping() function.</div>
+</div></div>
+</div>
+<a id="method_insertEmailList"></a><div class="element clickable method public method_insertEmailList " data-toggle="collapse" data-target=".method_insertEmailList .collapse" title="public">
+<h2>Create a new email list from an EmailListEntry.</h2>
+<pre>insertEmailList(\Zend_Gdata_Gapps_EmailListEntry $emailList, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_EmailListEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$emailList</h4>
+<code>\Zend_Gdata_Gapps_EmailListEntry</code><p>The email list entry
+         to insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the email list should be
+uploaded to. If null, the default email list creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListEntry</code>The inserted email list entry
+         as returned by the server.</div>
+</div></div>
+</div>
+<a id="method_insertEmailListRecipient"></a><div class="element clickable method public method_insertEmailListRecipient " data-toggle="collapse" data-target=".method_insertEmailListRecipient .collapse" title="public">
+<h2>Create a new email list recipient from an EmailListRecipientEntry.</h2>
+<pre>insertEmailListRecipient(\Zend_Gdata_Gapps_EmailListRecipientEntry $recipient, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_EmailListRecipientEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$recipient</h4>
+<code>\Zend_Gdata_Gapps_EmailListRecipientEntry</code><p>The recipient
+         entry to insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the recipient should be
+uploaded to. If null, the default recipient creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListRecipientEntry</code>The inserted
+         recipient entry as returned by the server.</div>
+</div></div>
+</div>
+<a id="method_insertEntry"></a><div class="element clickable method public method_insertEntry inherited" data-toggle="collapse" data-target=".method_insertEntry .collapse" title="public">
+<h2>Inserts an entry to a given URI and returns the response as a
+fully formed Entry.</h2>
+<pre>insertEntry(mixed $data, string $uri, string $className<code> = 'Zend_Gdata_App_Entry'</code>, array $extraHeaders<code> = array()</code>) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or XML to post</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>POST URI</p></div>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>The class of entry to be returned.</p></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>The entry returned by the service after
+        insertion.</div>
+</div></div>
+</div>
+<a id="method_insertGroup"></a><div class="element clickable method public method_insertGroup " data-toggle="collapse" data-target=".method_insertGroup .collapse" title="public">
+<h2>Create a new group from a GroupEntry.</h2>
+<pre>insertGroup(\Zend_Gdata_Gapps_GroupEntry $group, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_GroupEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>\Zend_Gdata_Gapps_GroupEntry</code><p>The group entry to insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the group should be
+uploaded to. If null, the default user creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupEntry</code>The inserted group entry as
+         returned by the server.</div>
+</div></div>
+</div>
+<a id="method_insertMember"></a><div class="element clickable method public method_insertMember " data-toggle="collapse" data-target=".method_insertMember .collapse" title="public">
+<h2>Create a new member from a MemberEntry.</h2>
+<pre>insertMember(\Zend_Gdata_Gapps_MemberEntry $member, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_MemberEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$member</h4>
+<code>\Zend_Gdata_Gapps_MemberEntry</code><p>The member entry to insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the group should be
+uploaded to. If null, the default user creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_MemberEntry</code>The inserted member entry as
+         returned by the server.</div>
+</div></div>
+</div>
+<a id="method_insertNickname"></a><div class="element clickable method public method_insertNickname " data-toggle="collapse" data-target=".method_insertNickname .collapse" title="public">
+<h2>Create a new nickname from a NicknameEntry.</h2>
+<pre>insertNickname(\Zend_Gdata_Gapps_NicknameEntry $nickname, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_NicknameEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$nickname</h4>
+<code>\Zend_Gdata_Gapps_NicknameEntry</code><p>The nickname entry to
+         insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the nickname should be
+uploaded to. If null, the default nickname creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_NicknameEntry</code>The inserted nickname entry as
+         returned by the server.</div>
+</div></div>
+</div>
+<a id="method_insertOwner"></a><div class="element clickable method public method_insertOwner " data-toggle="collapse" data-target=".method_insertOwner .collapse" title="public">
+<h2>Create a new group from a OwnerEntry.</h2>
+<pre>insertOwner(\Zend_Gdata_Gapps_OwnerEntry $owner, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_OwnerEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$owner</h4>
+<code>\Zend_Gdata_Gapps_OwnerEntry</code><p>The owner entry to insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the owner should be
+uploaded to. If null, the default user creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_OwnerEntry</code>The inserted owner entry as
+         returned by the server.</div>
+</div></div>
+</div>
+<a id="method_insertUser"></a><div class="element clickable method public method_insertUser " data-toggle="collapse" data-target=".method_insertUser .collapse" title="public">
+<h2>Create a new user from a UserEntry.</h2>
+<pre>insertUser(\Zend_Gdata_Gapps_UserEntry $user, string $uri<code> = null</code>) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>\Zend_Gdata_Gapps_UserEntry</code><p>The user entry to insert.</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) The URI where the user should be
+uploaded to. If null, the default user creation URI for
+this domain will be used.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserEntry</code>The inserted user entry as
+         returned by the server.</div>
+</div></div>
+</div>
+<a id="method_isAuthenticated"></a><div class="element clickable method public method_isAuthenticated inherited" data-toggle="collapse" data-target=".method_isAuthenticated .collapse" title="public">
+<h2>Determines whether service object is authenticated.</h2>
+<pre>isAuthenticated() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if service object is authenticated, false otherwise.</div>
+</div></div>
+</div>
+<a id="method_isMember"></a><div class="element clickable method public method_isMember " data-toggle="collapse" data-target=".method_isMember .collapse" title="public">
+<h2>Check to see if a member id or group id is a member of group</h2>
+<pre>isMember(string $memberId, string $groupId) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$memberId</h4>
+<code>string</code><p>Member id or group group id</p></div>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>Group to be checked for</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True, if given entity is a member</div>
+</div></div>
+</div>
+<a id="method_isOwner"></a><div class="element clickable method public method_isOwner " data-toggle="collapse" data-target=".method_isOwner .collapse" title="public">
+<h2>Checks to see if an email is an owner of a group</h2>
+<pre>isOwner(string $email, string $groupId) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$email</h4>
+<code>string</code><p>Owner's email</p></div>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>Group ownership to be checked for</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True, if given entity is an owner</div>
+</div></div>
+</div>
+<a id="method_performHttpRequest"></a><div class="element clickable method public method_performHttpRequest inherited" data-toggle="collapse" data-target=".method_performHttpRequest .collapse" title="public">
+<h2>Performs a HTTP request using the specified method</h2>
+<pre>performHttpRequest(string $method, string $url, array $headers<code> = null</code>, string $body<code> = null</code>, string $contentType<code> = null</code>, integer $remainingRedirects<code> = null</code>) : \Zend_Http_Response</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method for the request - 'GET', 'POST',
+'PUT', 'DELETE'</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>The URL to which this request is being performed</p></div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>An associative array of HTTP headers
+                      for this request</p></div>
+<div class="subelement argument">
+<h4>$body</h4>
+<code>string</code><p>The body of the HTTP request</p></div>
+<div class="subelement argument">
+<h4>$contentType</h4>
+<code>string</code><p>The value for the content type
+                               of the request body</p></div>
+<div class="subelement argument">
+<h4>$remainingRedirects</h4>
+<code>integer</code><p>Number of redirects to follow if request
+                             s results in one</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Http_Response</code>The response object</div>
+</div></div>
+</div>
+<a id="method_post"></a><div class="element clickable method public method_post " data-toggle="collapse" data-target=".method_post .collapse" title="public">
+<h2>POST data with client object.</h2>
+<pre>post(mixed $data, string $uri<code> = null</code>, integer $remainingRedirects<code> = null</code>, string $contentType<code> = null</code>, $extraHeaders<code> = null</code>) : \Zend_Http_Response</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or XML to post</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) POST URI</p></div>
+<div class="subelement argument">
+<h4>$remainingRedirects</h4>
+<code>integer</code><p>(optional)</p></div>
+<div class="subelement argument">
+<h4>$contentType</h4>
+<code>string</code><p>Content-type of the data</p></div>
+<div class="subelement argument"><h4>$extraHeaders</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_post"></a><div class="element clickable method public method_post inherited" data-toggle="collapse" data-target=".method_post .collapse" title="public">
+<h2>POST data with client object</h2>
+<pre>post(mixed $data, string $uri<code> = null</code>, $remainingRedirects<code> = null</code>, string $contentType<code> = null</code>, array $extraHeaders<code> = null</code>) : \Zend_Http_Response</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or XML to post</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>POST URI</p></div>
+<div class="subelement argument"><h4>$remainingRedirects</h4></div>
+<div class="subelement argument">
+<h4>$contentType</h4>
+<code>string</code><p>Content-type of the data</p></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_prepareRequest"></a><div class="element clickable method public method_prepareRequest inherited" data-toggle="collapse" data-target=".method_prepareRequest .collapse" title="public">
+<h2>Provides pre-processing for HTTP requests to APP services.</h2>
+<pre>prepareRequest(string $method, string $url<code> = null</code>, array $headers<code> = array()</code>, mixed $data<code> = null</code>, string $contentTypeOverride<code> = null</code>) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><ol>
+<li>Checks the $data element and, if it's an entry, extracts the XML,
+multipart data, edit link (PUT,DELETE), etc.</li>
+<li>If $data is a string, sets the default content-type  header as
+'application/atom+xml' if it's not already been set.</li>
+<li>Adds a x-http-method override header and changes the HTTP method
+to 'POST' if necessary as per getHttpMethodOverride()</li>
+</ol></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method for the request - 'GET', 'POST',
+'PUT', 'DELETE'</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>The URL to which this request is being performed,
+or null if found in $data</p></div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>An associative array of HTTP headers for this
+                      request</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or XML for the
+                   body of the request</p></div>
+<div class="subelement argument">
+<h4>$contentTypeOverride</h4>
+<code>string</code><p>The override value for the
+                                   content type of the request body</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An associative array containing the determined
+              'method', 'url', 'data', 'headers', 'contentType'</div>
+</div></div>
+</div>
+<a id="method_put"></a><div class="element clickable method public method_put " data-toggle="collapse" data-target=".method_put .collapse" title="public">
+<h2>PUT data with client object
+This method overrides the default behavior of Zend_Gdata_App,
+providing support for Zend_Gdata_Gapps_ServiceException.</h2>
+<pre>put(mixed $data, string $uri<code> = null</code>, integer $remainingRedirects<code> = null</code>, string $contentType<code> = null</code>, $extraHeaders<code> = null</code>) : \Zend_Http_Response</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or XML to post</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>(optional) PUT URI</p></div>
+<div class="subelement argument">
+<h4>$remainingRedirects</h4>
+<code>integer</code><p>(optional)</p></div>
+<div class="subelement argument">
+<h4>$contentType</h4>
+<code>string</code><p>Content-type of the data</p></div>
+<div class="subelement argument"><h4>$extraHeaders</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_put"></a><div class="element clickable method public method_put inherited" data-toggle="collapse" data-target=".method_put .collapse" title="public">
+<h2>PUT data with client object</h2>
+<pre>put(mixed $data, string $uri<code> = null</code>, $remainingRedirects<code> = null</code>, string $contentType<code> = null</code>, array $extraHeaders<code> = null</code>) : \Zend_Http_Response</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The Zend_Gdata_App_Entry or XML to post</p></div>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>string</code><p>PUT URI</p></div>
+<div class="subelement argument"><h4>$remainingRedirects</h4></div>
+<div class="subelement argument">
+<h4>$contentType</h4>
+<code>string</code><p>Content-type of the data</p></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_registerPackage"></a><div class="element clickable method public method_registerPackage inherited" data-toggle="collapse" data-target=".method_registerPackage .collapse" title="public">
+<h2>Adds a Zend Framework package to the $_registeredPackages array.</h2>
+<pre>registerPackage(string $name) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This array is searched when using the magic __call method below
+to instantiante new objects.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the package (eg Zend_Gdata_App)</p></div>
+</div></div>
+</div>
+<a id="method_removeMemberFromGroup"></a><div class="element clickable method public method_removeMemberFromGroup " data-toggle="collapse" data-target=".method_removeMemberFromGroup .collapse" title="public">
+<h2>Remove a member id from a group</h2>
+<pre>removeMemberFromGroup(string $memberId, string $groupId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$memberId</h4>
+<code>string</code><p>Member id or group id</p></div>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique id of the group</p></div>
+</div></div>
+</div>
+<a id="method_removeOwnerFromGroup"></a><div class="element clickable method public method_removeOwnerFromGroup " data-toggle="collapse" data-target=".method_removeOwnerFromGroup .collapse" title="public">
+<h2>Remove email as an owner of a group</h2>
+<pre>removeOwnerFromGroup(string $email, string $groupId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$email</h4>
+<code>string</code><p>Owner's email</p></div>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique identifier for the group</p></div>
+</div></div>
+</div>
+<a id="method_removeRecipientFromEmailList"></a><div class="element clickable method public method_removeRecipientFromEmailList " data-toggle="collapse" data-target=".method_removeRecipientFromEmailList .collapse" title="public">
+<h2>Remove a specified recipient from an email list.</h2>
+<pre>removeRecipientFromEmailList(string $recipientAddress, string $emailList) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$recipientAddress</h4>
+<code>string</code><p>The recipient to be removed.</p></div>
+<div class="subelement argument">
+<h4>$emailList</h4>
+<code>string</code><p>The list from which the recipient should
+             be removed.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_restoreUser"></a><div class="element clickable method public method_restoreUser " data-toggle="collapse" data-target=".method_restoreUser .collapse" title="public">
+<h2>Mark a given user as not suspended.</h2>
+<pre>restoreUser(string $username) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username associated with the user who
+         should be restored.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserEntry</code>The UserEntry for the modified
+         user.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllEmailLists"></a><div class="element clickable method public method_retrieveAllEmailLists " data-toggle="collapse" data-target=".method_retrieveAllEmailLists .collapse" title="public">
+<h2>Retrieve all email lists associated with the curent domain. Be aware that
+calling this function on a domain with many email lists will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</h2>
+<pre>retrieveAllEmailLists() : \Zend_Gdata_Gapps_EmailListFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListFeed</code>The list of email lists found
+             as Zend_Gdata_Gapps_EmailListEntry objects.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllEntriesForFeed"></a><div class="element clickable method public method_retrieveAllEntriesForFeed inherited" data-toggle="collapse" data-target=".method_retrieveAllEntriesForFeed .collapse" title="public">
+<h2>Retrieve all entries for a feed, iterating through pages as necessary.</h2>
+<pre>retrieveAllEntriesForFeed(object $feed) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Be aware that calling this function on a large dataset will take a
+significant amount of time to complete. In some cases this may cause
+execution to timeout without proper precautions in place.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$feed</h4>
+<code>object</code><p>The feed to iterate through.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>A new feed of the same type as the one originally
+         passed in, containing all relevent entries.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllGroups"></a><div class="element clickable method public method_retrieveAllGroups " data-toggle="collapse" data-target=".method_retrieveAllGroups .collapse" title="public">
+<h2>Retrieve all groups in the current domain. Be aware that
+calling this function on a domain with many groups will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</h2>
+<pre>retrieveAllGroups() : \Zend_Gdata_Gapps_GroupFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupFeed</code>Collection of Zend_Gdata_GroupEntry objects
+             representing all groups apart of the domain.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllMembers"></a><div class="element clickable method public method_retrieveAllMembers " data-toggle="collapse" data-target=".method_retrieveAllMembers .collapse" title="public">
+<h2>Retrieves all the members of a group</h2>
+<pre>retrieveAllMembers(string $groupId) : \Zend_Gdata_Gapps_MemberFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique id of the group</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_MemberFeed</code>Collection of MemberEntry objects
+             representing all members apart of the group.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllNicknames"></a><div class="element clickable method public method_retrieveAllNicknames " data-toggle="collapse" data-target=".method_retrieveAllNicknames .collapse" title="public">
+<h2>Retrieve all nicknames in the current domain. Be aware that
+calling this function on a domain with many nicknames will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</h2>
+<pre>retrieveAllNicknames() : \Zend_Gdata_Gapps_NicknameFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_NicknameFeed</code>Collection of Zend_Gdata_NicknameEntry
+             objects representing all nicknames in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllRecipients"></a><div class="element clickable method public method_retrieveAllRecipients " data-toggle="collapse" data-target=".method_retrieveAllRecipients .collapse" title="public">
+<h2>Retrieve all recipients associated with an email list. Be aware that
+calling this function on a domain with many email lists will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</h2>
+<pre>retrieveAllRecipients($emailList) : \Zend_Gdata_Gapps_EmailListRecipientFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$emailList</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListRecipientFeed</code>The list of email lists
+             found as Zend_Gdata_Gapps_EmailListRecipientEntry objects.</div>
+</div></div>
+</div>
+<a id="method_retrieveAllUsers"></a><div class="element clickable method public method_retrieveAllUsers " data-toggle="collapse" data-target=".method_retrieveAllUsers .collapse" title="public">
+<h2>Retrieve all users in the current domain. Be aware that
+calling this function on a domain with many users will take a
+signifigant amount of time to complete. On larger domains this may
+may cause execution to timeout without proper precautions in place.</h2>
+<pre>retrieveAllUsers() : \Zend_Gdata_Gapps_UserFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserFeed</code>Collection of Zend_Gdata_UserEntry
+             objects representing all users in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrieveEmailLists"></a><div class="element clickable method public method_retrieveEmailLists " data-toggle="collapse" data-target=".method_retrieveEmailLists .collapse" title="public">
+<h2>Retrieve all email lists associated with a recipient.</h2>
+<pre>retrieveEmailLists($recipient) : \Zend_Gdata_Gapps_EmailListFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$recipient</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListFeed</code>The list of email lists found as
+         Zend_Gdata_EmailListEntry objects.</div>
+</div></div>
+</div>
+<a id="method_retrieveGroup"></a><div class="element clickable method public method_retrieveGroup " data-toggle="collapse" data-target=".method_retrieveGroup .collapse" title="public">
+<h2>Retrieves a group based on group id</h2>
+<pre>retrieveGroup(string $groupId) : \Zend_Gdata_Gapps_GroupEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique identifier for the group</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupEntry</code>The group entry as returned by the server.</div>
+</div></div>
+</div>
+<a id="method_retrieveGroupOwners"></a><div class="element clickable method public method_retrieveGroupOwners " data-toggle="collapse" data-target=".method_retrieveGroupOwners .collapse" title="public">
+<h2>Retrieves all the owners of a group</h2>
+<pre>retrieveGroupOwners(string $groupId) : \Zend_Gdata_Gapps_OwnerFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The unique identifier for the group</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_OwnerFeed</code>Collection of Zend_Gdata_OwnerEntry
+             objects representing all owners apart of the group.</div>
+</div></div>
+</div>
+<a id="method_retrieveGroups"></a><div class="element clickable method public method_retrieveGroups " data-toggle="collapse" data-target=".method_retrieveGroups .collapse" title="public">
+<h2>Retrieve all of the groups that a user is a member of</h2>
+<pre>retrieveGroups(string $memberId, boolean $directOnly<code> = null</code>) : \Zend_Gdata_Gapps_GroupFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$memberId</h4>
+<code>string</code><p>Member username</p></div>
+<div class="subelement argument">
+<h4>$directOnly</h4>
+<code>boolean</code><p>(Optional) If true, members with direct association
+only will be considered</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupFeed</code>Collection of Zend_Gdata_GroupEntry
+             objects representing all groups member is apart of in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrieveNickname"></a><div class="element clickable method public method_retrieveNickname " data-toggle="collapse" data-target=".method_retrieveNickname .collapse" title="public">
+<h2>Retrieve the entry for a specified nickname.</h2>
+<pre>retrieveNickname(string $nickname) : \Zend_Gdata_Gapps_NicknameEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$nickname</h4>
+<code>string</code><p>The nickname to be retrieved.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_NicknameEntry</code>The requested nickname entry.</div>
+</div></div>
+</div>
+<a id="method_retrieveNicknames"></a><div class="element clickable method public method_retrieveNicknames " data-toggle="collapse" data-target=".method_retrieveNicknames .collapse" title="public">
+<h2>Retrieve all nicknames associated with a specific username.</h2>
+<pre>retrieveNicknames(string $username) : \Zend_Gdata_Gapps_NicknameFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username whose nicknames should be
+         returned.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_NicknameFeed</code>A feed containing all nicknames
+         for the given user, or null if</div>
+</div></div>
+</div>
+<a id="method_retrievePageOfEmailLists"></a><div class="element clickable method public method_retrievePageOfEmailLists " data-toggle="collapse" data-target=".method_retrievePageOfEmailLists .collapse" title="public">
+<h2>Retrieve a page of email lists in alphabetical order, starting with the
+provided email list.</h2>
+<pre>retrievePageOfEmailLists($startNickname<code> = null</code>) : \Zend_Gdata_Gapps_EmailListFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$startNickname</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListFeed</code>Collection of Zend_Gdata_EmailListEntry
+             objects representing all nicknames in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrievePageOfGroups"></a><div class="element clickable method public method_retrievePageOfGroups " data-toggle="collapse" data-target=".method_retrievePageOfGroups .collapse" title="public">
+<h2>Retrieve a page of groups in alphabetical order, starting with the
+provided group.</h2>
+<pre>retrievePageOfGroups(string $startGroup<code> = null</code>) : \Zend_Gdata_Gapps_GroupFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$startGroup</h4>
+<code>string</code><p>(optional) The first group to
+retrieve. If null or not defined, the page will begin
+with the first group in the domain.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupFeed</code>Collection of Zend_Gdata_GroupEntry
+             objects representing the groups in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrievePageOfMembers"></a><div class="element clickable method public method_retrievePageOfMembers " data-toggle="collapse" data-target=".method_retrievePageOfMembers .collapse" title="public">
+<h2>Gets page of Members</h2>
+<pre>retrievePageOfMembers(string $groupId, string $startMember<code> = null</code>) : \Zend_Gdata_Gapps_MemberFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>The group id which should be searched.</p></div>
+<div class="subelement argument">
+<h4>$startMember</h4>
+<code>string</code><p>(optinal) The address of the first member,
+or null to start with the first member in the list.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_MemberFeed</code>Collection of Zend_Gdata_MemberEntry
+             objects</div>
+</div></div>
+</div>
+<a id="method_retrievePageOfNicknames"></a><div class="element clickable method public method_retrievePageOfNicknames " data-toggle="collapse" data-target=".method_retrievePageOfNicknames .collapse" title="public">
+<h2>Retrieve a page of nicknames in alphabetical order, starting with the
+provided nickname.</h2>
+<pre>retrievePageOfNicknames(string $startNickname<code> = null</code>) : \Zend_Gdata_Gapps_NicknameFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$startNickname</h4>
+<code>string</code><p>(optional) The first nickname to
+retrieve. If null or not declared, the page will begin with
+the first nickname in the domain.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_NicknameFeed</code>Collection of Zend_Gdata_NicknameEntry
+             objects representing all nicknames in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrievePageOfRecipients"></a><div class="element clickable method public method_retrievePageOfRecipients " data-toggle="collapse" data-target=".method_retrievePageOfRecipients .collapse" title="public">
+<h2>Retrieve a page of email list recipients in alphabetical order,
+starting with the provided email list recipient.</h2>
+<pre>retrievePageOfRecipients($emailList, string $startRecipient<code> = null</code>) : \Zend_Gdata_Gapps_EmailListRecipientFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$emailList</h4></div>
+<div class="subelement argument">
+<h4>$startRecipient</h4>
+<code>string</code><p>(optinal) The address of the first
+recipient, or null to start with the first recipient in
+the list.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_EmailListRecipientFeed</code>Collection of
+             Zend_Gdata_EmailListRecipientEntry objects representing all
+             recpients in the specified list.</div>
+</div></div>
+</div>
+<a id="method_retrievePageOfUsers"></a><div class="element clickable method public method_retrievePageOfUsers " data-toggle="collapse" data-target=".method_retrievePageOfUsers .collapse" title="public">
+<h2>Retrieve a page of users in alphabetical order, starting with the
+provided username.</h2>
+<pre>retrievePageOfUsers(string $startUsername<code> = null</code>) : \Zend_Gdata_Gapps_UserFeed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$startUsername</h4>
+<code>string</code><p>(optional) The first username to retrieve.
+If null or not declared, the page will begin with the first
+user in the domain.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserFeed</code>Collection of Zend_Gdata_UserEntry
+             objects representing all users in the domain.</div>
+</div></div>
+</div>
+<a id="method_retrieveUser"></a><div class="element clickable method public method_retrieveUser " data-toggle="collapse" data-target=".method_retrieveUser .collapse" title="public">
+<h2>Retrieve a user based on their username.</h2>
+<pre>retrieveUser(string $username) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username to search for.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserEntry</code>The username to search for, or null
+             if no match found.</div>
+</div></div>
+</div>
+<a id="method_setDomain"></a><div class="element clickable method public method_setDomain " data-toggle="collapse" data-target=".method_setDomain .collapse" title="public">
+<h2>Set domain for this service instance. This should be a fully qualified
+domain, such as 'foo.example.com'.</h2>
+<pre>setDomain(string $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This value is used when calculating URLs for retrieving and posting
+entries. If no value is specified, a URL will have to be manually
+constructed prior to using any methods which interact with the Google
+Apps provisioning service.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The domain to be used for this session.</p></div>
+</div></div>
+</div>
+<a id="method_setGzipEnabled"></a><div class="element clickable method public method_setGzipEnabled inherited" data-toggle="collapse" data-target=".method_setGzipEnabled .collapse" title="public">
+<h2>Toggle requesting gzip encoded responses</h2>
+<pre>setGzipEnabled(boolean $enabled<code> = false</code>) : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$enabled</h4>
+<code>boolean</code><p>Whether or not to enable gzipped responses</p></div>
+</div></div>
+</div>
+<a id="method_setHttpClient"></a><div class="element clickable method public method_setHttpClient inherited" data-toggle="collapse" data-target=".method_setHttpClient .collapse" title="public">
+<h2>Set the Zend_Http_Client object used for communication</h2>
+<pre>setHttpClient(\Zend_Http_Client $client, $applicationId<code> = 'MyCompany-MyApp-1.0'</code>) : \Zend_Gdata_App</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$client</h4>
+<code>\Zend_Http_Client</code><p>The client to use for communication</p></div>
+<div class="subelement argument"><h4>$applicationId</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setHttpMethodOverride"></a><div class="element clickable method public method_setHttpMethodOverride inherited" data-toggle="collapse" data-target=".method_setHttpMethodOverride .collapse" title="public">
+<h2>Toggle using POST instead of PUT and DELETE HTTP methods</h2>
+<pre>setHttpMethodOverride(boolean $override<code> = true</code>) : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Some feed implementations do not accept PUT and DELETE HTTP
+methods, or they can't be used because of proxies or other
+measures. This allows turning on using POST where PUT and
+DELETE would normally be used; in addition, an
+X-Method-Override header will be sent with a value of PUT or
+DELETE as appropriate.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$override</h4>
+<code>boolean</code><p>Whether to override PUT and DELETE with POST.</p></div>
+</div></div>
+</div>
+<a id="method_setMajorProtocolVersion"></a><div class="element clickable method public method_setMajorProtocolVersion inherited" data-toggle="collapse" data-target=".method_setMajorProtocolVersion .collapse" title="public">
+<h2>Set the major protocol version that should be used. Values &lt; 1 will
+cause a Zend_Gdata_App_InvalidArgumentException to be thrown.</h2>
+<pre>setMajorProtocolVersion(integer $value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5C_majorProtocolVersion"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>integer</code><p>The major protocol version to use.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setMaxRedirects"></a><div class="element clickable method public method_setMaxRedirects inherited" data-toggle="collapse" data-target=".method_setMaxRedirects .collapse" title="public">
+<h2>Set the maximum number of redirects to follow during HTTP operations</h2>
+<pre>setMaxRedirects(integer $maxRedirects) : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$maxRedirects</h4>
+<code>integer</code><p>Maximum number of redirects to follow</p></div>
+</div></div>
+</div>
+<a id="method_setMinorProtocolVersion"></a><div class="element clickable method public method_setMinorProtocolVersion inherited" data-toggle="collapse" data-target=".method_setMinorProtocolVersion .collapse" title="public">
+<h2>Set the minor protocol version that should be used. If set to NULL, no
+minor protocol version will be sent to the server. Values &lt; 0 will
+cause a Zend_Gdata_App_InvalidArgumentException to be thrown.</h2>
+<pre>setMinorProtocolVersion(\(int|\NULL) $value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5C_minorProtocolVersion"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>\(int</code><code>\NULL)</code><p>The minor protocol version to use.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setStaticHttpClient"></a><div class="element clickable method public method_setStaticHttpClient inherited" data-toggle="collapse" data-target=".method_setStaticHttpClient .collapse" title="public">
+<h2>Set the static HTTP client instance</h2>
+<pre>setStaticHttpClient(\Zend_Http_Client $httpClient) : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Sets the static HTTP client object to use for retrieving the feed.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$httpClient</h4>
+<code>\Zend_Http_Client</code>
+</div>
+</div></div>
+</div>
+<a id="method_setVerboseExceptionMessages"></a><div class="element clickable method public method_setVerboseExceptionMessages inherited" data-toggle="collapse" data-target=".method_setVerboseExceptionMessages .collapse" title="public">
+<h2>Set whether to use verbose exception messages</h2>
+<pre>setVerboseExceptionMessages(boolean $verbose) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In the case of HTTP errors, use the body of the HTTP response
+in the exception message.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$verbose</h4>
+<code>boolean</code><p>Whether to use verbose exception messages</p></div>
+</div></div>
+</div>
+<a id="method_suspendUser"></a><div class="element clickable method public method_suspendUser " data-toggle="collapse" data-target=".method_suspendUser .collapse" title="public">
+<h2>Mark a given user as suspended.</h2>
+<pre>suspendUser(string $username) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username associated with the user who
+         should be suspended.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserEntry</code>The UserEntry for the modified
+         user.</div>
+</div></div>
+</div>
+<a id="method_throwServiceExceptionIfDetected"></a><div class="element clickable method public method_throwServiceExceptionIfDetected " data-toggle="collapse" data-target=".method_throwServiceExceptionIfDetected .collapse" title="public">
+<h2>Convert an exception to an ServiceException if an AppsForYourDomain
+XML document is contained within the original exception's HTTP
+response. If conversion fails, throw the original error.</h2>
+<pre>throwServiceExceptionIfDetected(\Zend_Gdata_Exception $e) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$e</h4>
+<code>\Zend_Gdata_Exception</code><p>The exception to convert.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>mixed</code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_updateEntry"></a><div class="element clickable method public method_updateEntry inherited" data-toggle="collapse" data-target=".method_updateEntry .collapse" title="public">
+<h2>Update an entry</h2>
+<pre>updateEntry(mixed $data, $uri<code> = null</code>, $className<code> = null</code>, array $extraHeaders<code> = array()</code>) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>Zend_Gdata_App_Entry or XML (w/ID and link rel='edit')</p></div>
+<div class="subelement argument"><h4>$uri</h4></div>
+<div class="subelement argument"><h4>$className</h4></div>
+<div class="subelement argument">
+<h4>$extraHeaders</h4>
+<code>array</code><p>Extra headers to add to the request, as an
+array of string-based key/value pairs.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>The entry returned from the server</div>
+</div></div>
+</div>
+<a id="method_updateGroup"></a><div class="element clickable method public method_updateGroup " data-toggle="collapse" data-target=".method_updateGroup .collapse" title="public">
+<h2>Update group properties with new values. any property not defined will not
+be updated</h2>
+<pre>updateGroup(string $groupId, string $groupName<code> = null</code>, string $description<code> = null</code>, string $emailPermission<code> = null</code>) : \Zend_Gdata_Gapps_GroupEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groupId</h4>
+<code>string</code><p>A unique identifier for the group</p></div>
+<div class="subelement argument">
+<h4>$groupName</h4>
+<code>string</code><p>The name of the group</p></div>
+<div class="subelement argument">
+<h4>$description</h4>
+<code>string</code><p>A description of the group</p></div>
+<div class="subelement argument">
+<h4>$emailPermission</h4>
+<code>string</code><p>The subscription permission of the group</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_GroupEntry</code>The group entry as updated on the server.</div>
+</div></div>
+</div>
+<a id="method_updateUser"></a><div class="element clickable method public method_updateUser " data-toggle="collapse" data-target=".method_updateUser .collapse" title="public">
+<h2>Overwrite a specified username with the provided UserEntry.  The
+UserEntry does not need to contain an edit link.</h2>
+<pre>updateUser(string $username, \Zend_Gdata_Gapps_UserEntry $userEntry) : \Zend_Gdata_Gapps_UserEntry</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method is provided for compliance with the Google Apps
+Provisioning API specification. Normally users will instead want to
+call UserEntry::save() instead.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App_Entry::save"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><p>The username whose data will be overwritten.</p></div>
+<div class="subelement argument">
+<h4>$userEntry</h4>
+<code>\Zend_Gdata_Gapps_UserEntry</code><p>The user entry which
+         will be overwritten.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_App_HttpException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Zend_Gdata_Gapps_ServiceException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_Gapps_UserEntry</code>The UserEntry returned by the
+         server.</div>
+</div></div>
+</div>
+<a id="method_useObjectMapping"></a><div class="element clickable method public method_useObjectMapping inherited" data-toggle="collapse" data-target=".method_useObjectMapping .collapse" title="public">
+<h2>Enable/disable the use of XML to object mapping.</h2>
+<pre>useObjectMapping(boolean $value) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>boolean</code><p>Pass in true to use the XML to object mapping.
+                      Pass in false or null to disable it.</p></div>
+</div></div>
+</div>
+<a id="method_usingObjectMapping"></a><div class="element clickable method public method_usingObjectMapping inherited" data-toggle="collapse" data-target=".method_usingObjectMapping .collapse" title="public">
+<h2>Determine whether service object is using XML to object mapping.</h2>
+<pre>usingObjectMapping() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if service object is using XML to object mapping,
+                false otherwise.</div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_namespaces"> </a><div class="element clickable property public property_namespaces" data-toggle="collapse" data-target=".property_namespaces .collapse" title="public">
+<h2>Namespaces used for Zend_Gdata_Gapps</h2>
+<pre>$namespaces : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array(array('apps', 'http://schemas.google.com/apps/2006', 1, 0))</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata::namespaces</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_namespaces"> </a><div class="element clickable property public property_namespaces" data-toggle="collapse" data-target=".property_namespaces .collapse" title="public">
+<h2>Namespaces used for Gdata data</h2>
+<pre>$namespaces : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array(array('gd', 'http://schemas.google.com/g/2005', 1, 0), array('openSearch', 'http://a9.com/-/spec/opensearchrss/1.0/', 1, 0), array('openSearch', 'http://a9.com/-/spec/opensearch/1.1/', 2, 0), array('rss', 'http://blogs.law.harvard.edu/tech/rss', 1, 0))</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__defaultPostUri"> </a><div class="element clickable property protected property__defaultPostUri" data-toggle="collapse" data-target=".property__defaultPostUri .collapse" title="protected">
+<h2>Default URI to which to POST.</h2>
+<pre>$_defaultPostUri : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__domain"> </a><div class="element clickable property protected property__domain" data-toggle="collapse" data-target=".property__domain .collapse" title="protected">
+<h2>The domain which is being administered via the Provisioning API.</h2>
+<pre>$_domain : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__gzipEnabled"> </a><div class="element clickable property protected property__gzipEnabled" data-toggle="collapse" data-target=".property__gzipEnabled .collapse" title="protected">
+<h2>Enable gzipped responses?</h2>
+<pre>$_gzipEnabled : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__httpClient"> </a><div class="element clickable property protected property__httpClient" data-toggle="collapse" data-target=".property__httpClient .collapse" title="protected">
+<h2>Client object used to communicate</h2>
+<pre>$_httpClient : \Zend_Http_Client</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__httpMethodOverride"> </a><div class="element clickable property protected property__httpMethodOverride" data-toggle="collapse" data-target=".property__httpMethodOverride .collapse" title="protected">
+<h2>Override HTTP PUT and DELETE request methods?</h2>
+<pre>$_httpMethodOverride : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__majorProtocolVersion"> </a><div class="element clickable property protected property__majorProtocolVersion" data-toggle="collapse" data-target=".property__majorProtocolVersion .collapse" title="protected">
+<h2>Indicates the major protocol version that should be used.</h2>
+<pre>$_majorProtocolVersion </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>At present, recognized values are either 1 or 2. However, any integer
+value &gt;= 1 is considered valid.</p>
+<p>Under most circumtances, this will be automatically set by
+Zend_Gdata_App subclasses.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App::setMajorProtocolVersion()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App::getMajorProtocolVersion()"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__maxRedirects"> </a><div class="element clickable property protected property__maxRedirects" data-toggle="collapse" data-target=".property__maxRedirects .collapse" title="protected">
+<h2>Maximum number of redirects to follow during HTTP operations</h2>
+<pre>$_maxRedirects : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>5</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__minorProtocolVersion"> </a><div class="element clickable property protected property__minorProtocolVersion" data-toggle="collapse" data-target=".property__minorProtocolVersion .collapse" title="protected">
+<h2>Indicates the minor protocol version that should be used. Can be set
+to either an integer &gt;= 0, or NULL if no minor version should be sent
+to the server.</h2>
+<pre>$_minorProtocolVersion </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>At present, this field is not used by any Google services, but may be
+used in the future.</p>
+<p>Under most circumtances, this will be automatically set by
+Zend_Gdata_App subclasses.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App::setMinorProtocolVersion()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App::getMinorProtocolVersion()"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__registeredPackages"> </a><div class="element clickable property protected property__registeredPackages" data-toggle="collapse" data-target=".property__registeredPackages .collapse" title="protected">
+<h2>Packages to search for classes when using magic __call method, in order.</h2>
+<pre>$_registeredPackages : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('Zend_Gdata_App_Extension', 'Zend_Gdata_App')</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__staticHttpClient"> </a><div class="element clickable property protected property__staticHttpClient" data-toggle="collapse" data-target=".property__staticHttpClient .collapse" title="protected">
+<h2>Client object used to communicate in static context</h2>
+<pre>$_staticHttpClient : \Zend_Http_Client</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__useObjectMapping"> </a><div class="element clickable property protected property__useObjectMapping" data-toggle="collapse" data-target=".property__useObjectMapping .collapse" title="protected">
+<h2>Whether we want to use XML to object mapping when fetching data.</h2>
+<pre>$_useObjectMapping : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__verboseExceptionMessages"> </a><div class="element clickable property protected property__verboseExceptionMessages" data-toggle="collapse" data-target=".property__verboseExceptionMessages .collapse" title="protected">
+<h2>Use verbose exception messages.  In the case of HTTP errors,
+use the body of the HTTP response in the exception message.</h2>
+<pre>$_verboseExceptionMessages : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_APPS_BASE_FEED_URI"> </a><div class="element clickable constant  constant_APPS_BASE_FEED_URI" data-toggle="collapse" data-target=".constant_APPS_BASE_FEED_URI .collapse" title="">
+<h2>APPS_BASE_FEED_URI</h2>
+<pre>APPS_BASE_FEED_URI = 'https://apps-apis.google.com/a/feeds' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_APPS_EMAIL_LIST_PATH"> </a><div class="element clickable constant  constant_APPS_EMAIL_LIST_PATH" data-toggle="collapse" data-target=".constant_APPS_EMAIL_LIST_PATH .collapse" title="">
+<h2>Path to email list feeds on the Google Apps server.</h2>
+<pre>APPS_EMAIL_LIST_PATH = '/emailList/2.0' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_APPS_EMAIL_LIST_RECIPIENT_POSTFIX"> </a><div class="element clickable constant  constant_APPS_EMAIL_LIST_RECIPIENT_POSTFIX" data-toggle="collapse" data-target=".constant_APPS_EMAIL_LIST_RECIPIENT_POSTFIX .collapse" title="">
+<h2>Path to email list recipient feeds on the Google Apps server.</h2>
+<pre>APPS_EMAIL_LIST_RECIPIENT_POSTFIX = '/recipient' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_APPS_GROUP_PATH"> </a><div class="element clickable constant  constant_APPS_GROUP_PATH" data-toggle="collapse" data-target=".constant_APPS_GROUP_PATH .collapse" title="">
+<h2>Path to group feeds on the Google Apps server.</h2>
+<pre>APPS_GROUP_PATH = '/group/2.0' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_APPS_NICKNAME_PATH"> </a><div class="element clickable constant  constant_APPS_NICKNAME_PATH" data-toggle="collapse" data-target=".constant_APPS_NICKNAME_PATH .collapse" title="">
+<h2>Path to nickname feeds on the Google Apps server.</h2>
+<pre>APPS_NICKNAME_PATH = '/nickname/2.0' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_APPS_USER_PATH"> </a><div class="element clickable constant  constant_APPS_USER_PATH" data-toggle="collapse" data-target=".constant_APPS_USER_PATH .collapse" title="">
+<h2>Path to user feeds on the Google Apps server.</h2>
+<pre>APPS_USER_PATH = '/user/2.0' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_AUTH_SERVICE_NAME"> </a><div class="element clickable constant  constant_AUTH_SERVICE_NAME" data-toggle="collapse" data-target=".constant_AUTH_SERVICE_NAME .collapse" title="">
+<h2>Service name for use with Google's authentication mechanisms</h2>
+<pre>AUTH_SERVICE_NAME = 'apps' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata::AUTH_SERVICE_NAME</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_AUTH_SERVICE_NAME"> </a><div class="element clickable constant  constant_AUTH_SERVICE_NAME" data-toggle="collapse" data-target=".constant_AUTH_SERVICE_NAME .collapse" title="">
+<h2>Service name for use with Google's authentication mechanisms</h2>
+<pre>AUTH_SERVICE_NAME = 'xapi' : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DEFAULT_MAJOR_PROTOCOL_VERSION"> </a><div class="element clickable constant  constant_DEFAULT_MAJOR_PROTOCOL_VERSION" data-toggle="collapse" data-target=".constant_DEFAULT_MAJOR_PROTOCOL_VERSION .collapse" title="">
+<h2>Default major protocol version.</h2>
+<pre>DEFAULT_MAJOR_PROTOCOL_VERSION = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5C_majorProtocolVersion"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_DEFAULT_MINOR_PROTOCOL_VERSION"> </a><div class="element clickable constant  constant_DEFAULT_MINOR_PROTOCOL_VERSION" data-toggle="collapse" data-target=".constant_DEFAULT_MINOR_PROTOCOL_VERSION .collapse" title="">
+<h2>Default minor protocol version.</h2>
+<pre>DEFAULT_MINOR_PROTOCOL_VERSION = null </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5C_minorProtocolVersion"></a></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:42:10-06:00.<br></footer></div>
+</div>
+</body>
+</html>

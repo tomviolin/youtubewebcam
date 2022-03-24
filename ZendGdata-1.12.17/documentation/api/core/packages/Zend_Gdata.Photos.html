@@ -1,0 +1,415 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » Zend_Gdata\Photos</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Zend_Gdata.Photos.html" title="Photos"><i class="icon-folder-open"></i>Photos</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Zend_Gdata_Photos" title="Service class for interacting with the Google Photos Data API.">Zend_Gdata_Photos</a></li>
+<li><a href="#Zend_Gdata_Photos_UserEntry" title="Data model class for a User Entry.">Zend_Gdata_Photos_UserEntry</a></li>
+<li><a href="#Zend_Gdata_Photos_TagEntry" title="Data model class for a Tag Entry.">Zend_Gdata_Photos_TagEntry</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Height" title="Represents the gphoto:height element used by the API.">Zend_Gdata_Photos_Extension_Height</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_QuotaCurrent" title="Represents the gphoto:quotaCurrent element used by the API.">Zend_Gdata_Photos_Extension_QuotaCurrent</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_PhotoId" title="Represents the gphoto:id element used by the Picasa API.">Zend_Gdata_Photos_Extension_PhotoId</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Checksum" title="Represents the gphoto:checksum element used by the API.">Zend_Gdata_Photos_Extension_Checksum</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_User" title="Represents the gphoto:user element used by the API.">Zend_Gdata_Photos_Extension_User</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_AlbumId" title="Represents the gphoto:albumid element used by the API. This
+class represents the ID of an album and is usually contained
+within an instance of Zend_Gdata_Photos_AlbumEntry or CommentEntry.">Zend_Gdata_Photos_Extension_AlbumId</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_BytesUsed" title="Represents the gphoto:bytesUsed element used by the API.">Zend_Gdata_Photos_Extension_BytesUsed</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_CommentingEnabled" title="Represents the gphoto:commentingEnabled element used by the API.">Zend_Gdata_Photos_Extension_CommentingEnabled</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Client" title="Represents the gphoto:client element used by the API.">Zend_Gdata_Photos_Extension_Client</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_NumPhotos" title="Represents the gphoto:numphotos element used by the API.">Zend_Gdata_Photos_Extension_NumPhotos</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Name" title="Represents the gphoto:name element used by the API.">Zend_Gdata_Photos_Extension_Name</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Rotation" title="Represents the gphoto:rotation element used by the API.">Zend_Gdata_Photos_Extension_Rotation</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_QuotaLimit" title="Represents the gphoto:quotaLimit element used by the API.">Zend_Gdata_Photos_Extension_QuotaLimit</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Thumbnail" title="Represents the gphoto:thumbnail element used by the API.">Zend_Gdata_Photos_Extension_Thumbnail</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Location" title="Represents the gphoto:location element used by the API.">Zend_Gdata_Photos_Extension_Location</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_NumPhotosRemaining" title="Represents the gphoto:numphotosremaining element used by the API.">Zend_Gdata_Photos_Extension_NumPhotosRemaining</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_MaxPhotosPerAlbum" title="Represents the gphoto:maxPhotosPerAlbum element used by the API.">Zend_Gdata_Photos_Extension_MaxPhotosPerAlbum</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_CommentCount" title="Represents the gphoto:commentCount element used by the API. This
+class represents the number of comments attached to an entry and is usually contained
+within an instance of Zend_Gdata_Photos_PhotoEntry or AlbumEntry.">Zend_Gdata_Photos_Extension_CommentCount</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Weight" title="Represents the gphoto:weight element used by the API.">Zend_Gdata_Photos_Extension_Weight</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Width" title="Represents the gphoto:width element used by the API.">Zend_Gdata_Photos_Extension_Width</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Position" title="Represents the gphoto:position element used by the API.">Zend_Gdata_Photos_Extension_Position</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Timestamp" title="Represents the gphoto:timestamp element used by the API.">Zend_Gdata_Photos_Extension_Timestamp</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Access" title="Represents the gphoto:access element used by the API.">Zend_Gdata_Photos_Extension_Access</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Id" title="Represents the gphoto:id element used by the API. This class
+represents the unique ID assigned to an element by the servers.">Zend_Gdata_Photos_Extension_Id</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Nickname" title="Represents the gphoto:nickname element used by the API.">Zend_Gdata_Photos_Extension_Nickname</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Version" title="Represents the gphoto:version element used by the API.">Zend_Gdata_Photos_Extension_Version</a></li>
+<li><a href="#Zend_Gdata_Photos_Extension_Size" title="Represents the gphoto:size element used by the API.">Zend_Gdata_Photos_Extension_Size</a></li>
+<li><a href="#Zend_Gdata_Photos_AlbumEntry" title="Data model class for a Photo Album Entry.">Zend_Gdata_Photos_AlbumEntry</a></li>
+<li><a href="#Zend_Gdata_Photos_AlbumQuery" title="Assists in constructing album queries for various entries.">Zend_Gdata_Photos_AlbumQuery</a></li>
+<li><a href="#Zend_Gdata_Photos_CommentEntry" title="Data model class for a Comment Entry.">Zend_Gdata_Photos_CommentEntry</a></li>
+<li><a href="#Zend_Gdata_Photos_UserQuery" title="Assists in constructing queries for user entries.">Zend_Gdata_Photos_UserQuery</a></li>
+<li><a href="#Zend_Gdata_Photos_PhotoEntry" title="Data model class for a Comment Entry.">Zend_Gdata_Photos_PhotoEntry</a></li>
+<li><a href="#Zend_Gdata_Photos_AlbumFeed" title="Data model for a collection of album entries, usually
+provided by the servers.">Zend_Gdata_Photos_AlbumFeed</a></li>
+<li><a href="#Zend_Gdata_Photos_PhotoFeed" title="Data model for a collection of photo entries, usually
+provided by the Picasa servers.">Zend_Gdata_Photos_PhotoFeed</a></li>
+<li><a href="#Zend_Gdata_Photos_UserFeed" title="Data model for a collection of entries for a specific user, usually
+provided by the servers.">Zend_Gdata_Photos_UserFeed</a></li>
+<li><a href="#Zend_Gdata_Photos_PhotoQuery" title="Assists in constructing queries for comment/tag entries.">Zend_Gdata_Photos_PhotoQuery</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Zend_Gdata.html">Zend_Gdata</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Zend_Gdata.Photos.html">Photos</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos<a href="../classes/Zend_Gdata_Photos.html">¶</a>
+</h1>
+<p class="short_description">Service class for interacting with the Google Photos Data API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_AlbumEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_AlbumEntry<a href="../classes/Zend_Gdata_Photos_AlbumEntry.html">¶</a>
+</h1>
+<p class="short_description">Data model class for a Photo Album Entry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_AlbumEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_AlbumFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_AlbumFeed<a href="../classes/Zend_Gdata_Photos_AlbumFeed.html">¶</a>
+</h1>
+<p class="short_description">Data model for a collection of album entries, usually
+provided by the servers.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_AlbumFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_AlbumQuery" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_AlbumQuery<a href="../classes/Zend_Gdata_Photos_AlbumQuery.html">¶</a>
+</h1>
+<p class="short_description">Assists in constructing album queries for various entries.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_AlbumQuery.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_CommentEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_CommentEntry<a href="../classes/Zend_Gdata_Photos_CommentEntry.html">¶</a>
+</h1>
+<p class="short_description">Data model class for a Comment Entry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_CommentEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Access" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Access<a href="../classes/Zend_Gdata_Photos_Extension_Access.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:access element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Access.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_AlbumId" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_AlbumId<a href="../classes/Zend_Gdata_Photos_Extension_AlbumId.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:albumid element used by the API. This
+class represents the ID of an album and is usually contained
+within an instance of Zend_Gdata_Photos_AlbumEntry or CommentEntry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_AlbumId.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_BytesUsed" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_BytesUsed<a href="../classes/Zend_Gdata_Photos_Extension_BytesUsed.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:bytesUsed element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_BytesUsed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Checksum" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Checksum<a href="../classes/Zend_Gdata_Photos_Extension_Checksum.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:checksum element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Checksum.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Client" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Client<a href="../classes/Zend_Gdata_Photos_Extension_Client.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:client element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Client.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_CommentCount" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_CommentCount<a href="../classes/Zend_Gdata_Photos_Extension_CommentCount.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:commentCount element used by the API. This
+class represents the number of comments attached to an entry and is usually contained
+within an instance of Zend_Gdata_Photos_PhotoEntry or AlbumEntry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_CommentCount.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_CommentingEnabled" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_CommentingEnabled<a href="../classes/Zend_Gdata_Photos_Extension_CommentingEnabled.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:commentingEnabled element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_CommentingEnabled.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Height" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Height<a href="../classes/Zend_Gdata_Photos_Extension_Height.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:height element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Height.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Id" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Id<a href="../classes/Zend_Gdata_Photos_Extension_Id.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:id element used by the API. This class
+represents the unique ID assigned to an element by the servers.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Id.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Location" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Location<a href="../classes/Zend_Gdata_Photos_Extension_Location.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:location element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Location.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_MaxPhotosPerAlbum" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_MaxPhotosPerAlbum<a href="../classes/Zend_Gdata_Photos_Extension_MaxPhotosPerAlbum.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:maxPhotosPerAlbum element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_MaxPhotosPerAlbum.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Name" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Name<a href="../classes/Zend_Gdata_Photos_Extension_Name.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:name element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Name.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Nickname" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Nickname<a href="../classes/Zend_Gdata_Photos_Extension_Nickname.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:nickname element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Nickname.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_NumPhotos" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_NumPhotos<a href="../classes/Zend_Gdata_Photos_Extension_NumPhotos.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:numphotos element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_NumPhotos.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_NumPhotosRemaining" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_NumPhotosRemaining<a href="../classes/Zend_Gdata_Photos_Extension_NumPhotosRemaining.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:numphotosremaining element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_NumPhotosRemaining.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_PhotoId" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_PhotoId<a href="../classes/Zend_Gdata_Photos_Extension_PhotoId.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:id element used by the Picasa API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_PhotoId.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Position" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Position<a href="../classes/Zend_Gdata_Photos_Extension_Position.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:position element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Position.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_QuotaCurrent" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_QuotaCurrent<a href="../classes/Zend_Gdata_Photos_Extension_QuotaCurrent.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:quotaCurrent element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_QuotaCurrent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_QuotaLimit" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_QuotaLimit<a href="../classes/Zend_Gdata_Photos_Extension_QuotaLimit.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:quotaLimit element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_QuotaLimit.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Rotation" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Rotation<a href="../classes/Zend_Gdata_Photos_Extension_Rotation.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:rotation element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Rotation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Size" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Size<a href="../classes/Zend_Gdata_Photos_Extension_Size.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:size element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Size.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Thumbnail" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Thumbnail<a href="../classes/Zend_Gdata_Photos_Extension_Thumbnail.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:thumbnail element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Thumbnail.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Timestamp" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Timestamp<a href="../classes/Zend_Gdata_Photos_Extension_Timestamp.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:timestamp element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Timestamp.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_User" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_User<a href="../classes/Zend_Gdata_Photos_Extension_User.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:user element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_User.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Version" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Version<a href="../classes/Zend_Gdata_Photos_Extension_Version.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:version element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Version.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Weight" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Weight<a href="../classes/Zend_Gdata_Photos_Extension_Weight.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:weight element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Weight.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_Extension_Width" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_Extension_Width<a href="../classes/Zend_Gdata_Photos_Extension_Width.html">¶</a>
+</h1>
+<p class="short_description">Represents the gphoto:width element used by the API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_Extension_Width.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_PhotoEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_PhotoEntry<a href="../classes/Zend_Gdata_Photos_PhotoEntry.html">¶</a>
+</h1>
+<p class="short_description">Data model class for a Comment Entry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_PhotoEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_PhotoFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_PhotoFeed<a href="../classes/Zend_Gdata_Photos_PhotoFeed.html">¶</a>
+</h1>
+<p class="short_description">Data model for a collection of photo entries, usually
+provided by the Picasa servers.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_PhotoFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_PhotoQuery" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_PhotoQuery<a href="../classes/Zend_Gdata_Photos_PhotoQuery.html">¶</a>
+</h1>
+<p class="short_description">Assists in constructing queries for comment/tag entries.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_PhotoQuery.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_TagEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_TagEntry<a href="../classes/Zend_Gdata_Photos_TagEntry.html">¶</a>
+</h1>
+<p class="short_description">Data model class for a Tag Entry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_TagEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_UserEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_UserEntry<a href="../classes/Zend_Gdata_Photos_UserEntry.html">¶</a>
+</h1>
+<p class="short_description">Data model class for a User Entry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_UserEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_UserFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_UserFeed<a href="../classes/Zend_Gdata_Photos_UserFeed.html">¶</a>
+</h1>
+<p class="short_description">Data model for a collection of entries for a specific user, usually
+provided by the servers.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_UserFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Photos_UserQuery" class="element ajax clickable class">
+<h1>Zend_Gdata_Photos_UserQuery<a href="../classes/Zend_Gdata_Photos_UserQuery.html">¶</a>
+</h1>
+<p class="short_description">Assists in constructing queries for user entries.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Photos_UserQuery.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:50-06:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » Zend_Gdata\App</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Zend_Gdata.App.html" title="App"><i class="icon-folder-open"></i>App</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Interfaces" class="icon-custom icon-interface"></i> Interfaces</li>
+<li><a href="#Zend_Gdata_App_MediaSource" title="Interface for defining data that can be encoded and sent over the network.">Zend_Gdata_App_MediaSource</a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Zend_Gdata_App" title="Provides Atom Publishing Protocol (APP) functionality.  This class and all
+other components of Zend_Gdata_App are designed to work independently from
+other Zend_Gdata components in order to interact with generic APP services.">Zend_Gdata_App</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Author" title="Represents the atom:author element">Zend_Gdata_App_Extension_Author</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Icon" title="Represents the atom:icon element">Zend_Gdata_App_Extension_Icon</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Updated" title="Represents the atom:updated element">Zend_Gdata_App_Extension_Updated</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Category" title="Represents the atom:category element">Zend_Gdata_App_Extension_Category</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Uri" title="Represents the atom:uri element">Zend_Gdata_App_Extension_Uri</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Name" title="Represents the atom:name element">Zend_Gdata_App_Extension_Name</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Draft" title="Represents the app:draft element">Zend_Gdata_App_Extension_Draft</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Subtitle" title="Represents the atom:subtitle element">Zend_Gdata_App_Extension_Subtitle</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Content" title="Represents the atom:content element">Zend_Gdata_App_Extension_Content</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Text" title="Abstract class for data models that require only text and type-- such as:
+title, summary, etc.">Zend_Gdata_App_Extension_Text</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Rights" title="Represents the atom:rights element">Zend_Gdata_App_Extension_Rights</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Contributor" title="Represents the atom:contributor element">Zend_Gdata_App_Extension_Contributor</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Edited" title="Represents the app:edited element">Zend_Gdata_App_Extension_Edited</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Summary" title="Represents the atom:summary element">Zend_Gdata_App_Extension_Summary</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Source" title="Atom feed class">Zend_Gdata_App_Extension_Source</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Element" title="Class that represents elements which were not handled by other parsing
+code in the library.">Zend_Gdata_App_Extension_Element</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Link" title="Data model for representing an atom:link element">Zend_Gdata_App_Extension_Link</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Control" title="Represents the app:control element">Zend_Gdata_App_Extension_Control</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Published" title="Represents the atom:published element">Zend_Gdata_App_Extension_Published</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Email" title="Represents the atom:email element">Zend_Gdata_App_Extension_Email</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Generator" title="Represents the atom:generator element">Zend_Gdata_App_Extension_Generator</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Person" title="Base class for people (currently used by atom:author, atom:contributor)">Zend_Gdata_App_Extension_Person</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Logo" title="Represents the atom:logo element">Zend_Gdata_App_Extension_Logo</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Id" title="Represents the atom:id element">Zend_Gdata_App_Extension_Id</a></li>
+<li><a href="#Zend_Gdata_App_Extension_Title" title="Represents the atom:title element">Zend_Gdata_App_Extension_Title</a></li>
+<li><a href="#Zend_Gdata_App_MediaEntry" title="Concrete class for working with Atom entries containing multi-part data.">Zend_Gdata_App_MediaEntry</a></li>
+<li><a href="#Zend_Gdata_App_VersionException" title="Gdata APP exceptions">Zend_Gdata_App_VersionException</a></li>
+<li><a href="#Zend_Gdata_App_Base" title="Abstract class for all XML elements">Zend_Gdata_App_Base</a></li>
+<li><a href="#Zend_Gdata_App_AuthException" title="Gdata exceptions">Zend_Gdata_App_AuthException</a></li>
+<li><a href="#Zend_Gdata_App_Extension" title="Gdata App extensions">Zend_Gdata_App_Extension</a></li>
+<li><a href="#Zend_Gdata_App_LoggingHttpClientAdapterSocket" title="Overrides the traditional socket-based adapter class for Zend_Http_Client to
+enable logging of requests.  All requests are logged to a location specified
+in the config as $config['logfile'].  Requests and responses are logged after
+they are sent and received/processed, thus an error could prevent logging.">Zend_Gdata_App_LoggingHttpClientAdapterSocket</a></li>
+<li><a href="#Zend_Gdata_App_FeedEntryParent" title="Abstract class for common functionality in entries and feeds">Zend_Gdata_App_FeedEntryParent</a></li>
+<li><a href="#Zend_Gdata_App_CaptchaRequiredException" title="Gdata exceptions">Zend_Gdata_App_CaptchaRequiredException</a></li>
+<li><a href="#Zend_Gdata_App_HttpException" title="Gdata exceptions">Zend_Gdata_App_HttpException</a></li>
+<li><a href="#Zend_Gdata_App_Feed" title="Atom feed class">Zend_Gdata_App_Feed</a></li>
+<li><a href="#Zend_Gdata_App_Exception" title="Gdata App exceptions">Zend_Gdata_App_Exception</a></li>
+<li><a href="#Zend_Gdata_App_InvalidArgumentException" title="Gdata exceptions">Zend_Gdata_App_InvalidArgumentException</a></li>
+<li><a href="#Zend_Gdata_App_FeedSourceParent" title="Atom feed class">Zend_Gdata_App_FeedSourceParent</a></li>
+<li><a href="#Zend_Gdata_App_IOException" title="Gdata App IO exceptions.">Zend_Gdata_App_IOException</a></li>
+<li><a href="#Zend_Gdata_App_Entry" title="Concrete class for working with Atom entries.">Zend_Gdata_App_Entry</a></li>
+<li><a href="#Zend_Gdata_App_Util" title="Utility class for static functions needed by Zend_Gdata_App">Zend_Gdata_App_Util</a></li>
+<li><a href="#Zend_Gdata_App_MediaFileSource" title="Concrete class to use a file handle as an attachment within a MediaEntry.">Zend_Gdata_App_MediaFileSource</a></li>
+<li><a href="#Zend_Gdata_App_BaseMediaSource" title="Concrete class to use a file handle as an attachment within a MediaEntry.">Zend_Gdata_App_BaseMediaSource</a></li>
+<li><a href="#Zend_Gdata_App_BadMethodCallException" title="Gdata APP exceptions">Zend_Gdata_App_BadMethodCallException</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Zend_Gdata.html">Zend_Gdata</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Zend_Gdata.App.html">App</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_MediaSource" class="element ajax clickable interface">
+<h1>Zend_Gdata_App_MediaSource<a href="../classes/Zend_Gdata_App_MediaSource.html">¶</a>
+</h1>
+<p class="short_description">Interface for defining data that can be encoded and sent over the network.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_MediaSource.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App" class="element ajax clickable class">
+<h1>Zend_Gdata_App<a href="../classes/Zend_Gdata_App.html">¶</a>
+</h1>
+<p class="short_description">Provides Atom Publishing Protocol (APP) functionality.  This class and all
+other components of Zend_Gdata_App are designed to work independently from
+other Zend_Gdata components in order to interact with generic APP services.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_AuthException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_AuthException<a href="../classes/Zend_Gdata_App_AuthException.html">¶</a>
+</h1>
+<p class="short_description">Gdata exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_AuthException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_BadMethodCallException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_BadMethodCallException<a href="../classes/Zend_Gdata_App_BadMethodCallException.html">¶</a>
+</h1>
+<p class="short_description">Gdata APP exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_BadMethodCallException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Base" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Base<a href="../classes/Zend_Gdata_App_Base.html">¶</a>
+</h1>
+<p class="short_description">Abstract class for all XML elements</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Base.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_BaseMediaSource" class="element ajax clickable class">
+<h1>Zend_Gdata_App_BaseMediaSource<a href="../classes/Zend_Gdata_App_BaseMediaSource.html">¶</a>
+</h1>
+<p class="short_description">Concrete class to use a file handle as an attachment within a MediaEntry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_BaseMediaSource.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_CaptchaRequiredException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_CaptchaRequiredException<a href="../classes/Zend_Gdata_App_CaptchaRequiredException.html">¶</a>
+</h1>
+<p class="short_description">Gdata exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_CaptchaRequiredException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Entry" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Entry<a href="../classes/Zend_Gdata_App_Entry.html">¶</a>
+</h1>
+<p class="short_description">Concrete class for working with Atom entries.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Entry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Exception" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Exception<a href="../classes/Zend_Gdata_App_Exception.html">¶</a>
+</h1>
+<p class="short_description">Gdata App exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Exception.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension<a href="../classes/Zend_Gdata_App_Extension.html">¶</a>
+</h1>
+<p class="short_description">Gdata App extensions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Author" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Author<a href="../classes/Zend_Gdata_App_Extension_Author.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:author element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Author.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Category" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Category<a href="../classes/Zend_Gdata_App_Extension_Category.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:category element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Category.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Content" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Content<a href="../classes/Zend_Gdata_App_Extension_Content.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:content element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Content.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Contributor" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Contributor<a href="../classes/Zend_Gdata_App_Extension_Contributor.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:contributor element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Contributor.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Control" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Control<a href="../classes/Zend_Gdata_App_Extension_Control.html">¶</a>
+</h1>
+<p class="short_description">Represents the app:control element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Control.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Draft" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Draft<a href="../classes/Zend_Gdata_App_Extension_Draft.html">¶</a>
+</h1>
+<p class="short_description">Represents the app:draft element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Draft.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Edited" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Edited<a href="../classes/Zend_Gdata_App_Extension_Edited.html">¶</a>
+</h1>
+<p class="short_description">Represents the app:edited element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Edited.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Element" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Element<a href="../classes/Zend_Gdata_App_Extension_Element.html">¶</a>
+</h1>
+<p class="short_description">Class that represents elements which were not handled by other parsing
+code in the library.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Element.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Email" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Email<a href="../classes/Zend_Gdata_App_Extension_Email.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:email element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Email.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Generator" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Generator<a href="../classes/Zend_Gdata_App_Extension_Generator.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:generator element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Generator.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Icon" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Icon<a href="../classes/Zend_Gdata_App_Extension_Icon.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:icon element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Icon.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Id" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Id<a href="../classes/Zend_Gdata_App_Extension_Id.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:id element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Id.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Link" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Link<a href="../classes/Zend_Gdata_App_Extension_Link.html">¶</a>
+</h1>
+<p class="short_description">Data model for representing an atom:link element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Link.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Logo" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Logo<a href="../classes/Zend_Gdata_App_Extension_Logo.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:logo element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Logo.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Name" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Name<a href="../classes/Zend_Gdata_App_Extension_Name.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:name element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Name.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Person" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Person<a href="../classes/Zend_Gdata_App_Extension_Person.html">¶</a>
+</h1>
+<p class="short_description">Base class for people (currently used by atom:author, atom:contributor)</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Person.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Published" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Published<a href="../classes/Zend_Gdata_App_Extension_Published.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:published element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Published.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Rights" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Rights<a href="../classes/Zend_Gdata_App_Extension_Rights.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:rights element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Rights.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Source" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Source<a href="../classes/Zend_Gdata_App_Extension_Source.html">¶</a>
+</h1>
+<p class="short_description">Atom feed class</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Source.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Subtitle" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Subtitle<a href="../classes/Zend_Gdata_App_Extension_Subtitle.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:subtitle element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Subtitle.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Summary" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Summary<a href="../classes/Zend_Gdata_App_Extension_Summary.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:summary element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Summary.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Text" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Text<a href="../classes/Zend_Gdata_App_Extension_Text.html">¶</a>
+</h1>
+<p class="short_description">Abstract class for data models that require only text and type-- such as:
+title, summary, etc.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Text.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Title" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Title<a href="../classes/Zend_Gdata_App_Extension_Title.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:title element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Title.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Updated" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Updated<a href="../classes/Zend_Gdata_App_Extension_Updated.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:updated element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Updated.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Extension_Uri" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Extension_Uri<a href="../classes/Zend_Gdata_App_Extension_Uri.html">¶</a>
+</h1>
+<p class="short_description">Represents the atom:uri element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Extension_Uri.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Feed" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Feed<a href="../classes/Zend_Gdata_App_Feed.html">¶</a>
+</h1>
+<p class="short_description">Atom feed class</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Feed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_FeedEntryParent" class="element ajax clickable class">
+<h1>Zend_Gdata_App_FeedEntryParent<a href="../classes/Zend_Gdata_App_FeedEntryParent.html">¶</a>
+</h1>
+<p class="short_description">Abstract class for common functionality in entries and feeds</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_FeedEntryParent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_FeedSourceParent" class="element ajax clickable class">
+<h1>Zend_Gdata_App_FeedSourceParent<a href="../classes/Zend_Gdata_App_FeedSourceParent.html">¶</a>
+</h1>
+<p class="short_description">Atom feed class</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_FeedSourceParent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_HttpException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_HttpException<a href="../classes/Zend_Gdata_App_HttpException.html">¶</a>
+</h1>
+<p class="short_description">Gdata exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_HttpException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_IOException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_IOException<a href="../classes/Zend_Gdata_App_IOException.html">¶</a>
+</h1>
+<p class="short_description">Gdata App IO exceptions.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_IOException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_InvalidArgumentException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_InvalidArgumentException<a href="../classes/Zend_Gdata_App_InvalidArgumentException.html">¶</a>
+</h1>
+<p class="short_description">Gdata exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_InvalidArgumentException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_LoggingHttpClientAdapterSocket" class="element ajax clickable class">
+<h1>Zend_Gdata_App_LoggingHttpClientAdapterSocket<a href="../classes/Zend_Gdata_App_LoggingHttpClientAdapterSocket.html">¶</a>
+</h1>
+<p class="short_description">Overrides the traditional socket-based adapter class for Zend_Http_Client to
+enable logging of requests.  All requests are logged to a location specified
+in the config as $config['logfile'].  Requests and responses are logged after
+they are sent and received/processed, thus an error could prevent logging.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_LoggingHttpClientAdapterSocket.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_MediaEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_App_MediaEntry<a href="../classes/Zend_Gdata_App_MediaEntry.html">¶</a>
+</h1>
+<p class="short_description">Concrete class for working with Atom entries containing multi-part data.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_MediaEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_MediaFileSource" class="element ajax clickable class">
+<h1>Zend_Gdata_App_MediaFileSource<a href="../classes/Zend_Gdata_App_MediaFileSource.html">¶</a>
+</h1>
+<p class="short_description">Concrete class to use a file handle as an attachment within a MediaEntry.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_MediaFileSource.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_Util" class="element ajax clickable class">
+<h1>Zend_Gdata_App_Util<a href="../classes/Zend_Gdata_App_Util.html">¶</a>
+</h1>
+<p class="short_description">Utility class for static functions needed by Zend_Gdata_App</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_Util.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_App_VersionException" class="element ajax clickable class">
+<h1>Zend_Gdata_App_VersionException<a href="../classes/Zend_Gdata_App_VersionException.html">¶</a>
+</h1>
+<p class="short_description">Gdata APP exceptions</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_App_VersionException.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:49-06:00.<br></footer></div>
+</div>
+</body>
+</html>

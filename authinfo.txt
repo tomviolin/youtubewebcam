@@ -1,0 +1,4 @@
+$application_name = 'Freshwater Webcams'; 
+$client_secret = 'MY6n0NuNIq5TgLDPauqsVFCZ';
+$client_id = '86690683607-4tb8l4s5mifec643rpatfdeed85g53ab.apps.googleusercontent.com';
+$scope = array('https://www.googleapis.com/auth/youtube.upload', 'https://www.googleapis.com/auth/youtube', 'https://www.googleapis.com/auth/youtubepartner');

@@ -1,0 +1,608 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » \Zend_Validate_Abstract</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___get" title="__get() :: Magic function returns the value of the requested property, if and only if it is the value or a
+message variable."><span class="description">Magic function returns the value of the requested property, if and only if it is the value or a
+message variable.</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method_getDefaultTranslator" title="getDefaultTranslator() :: Get default translation object for all validate objects"><span class="description">Get default translation object for all validate objects</span><pre>getDefaultTranslator()</pre></a></li>
+<li class="method public "><a href="#method_getErrors" title="getErrors() :: Returns array of validation failure message codes"><span class="description">Returns array of validation failure message codes</span><pre>getErrors()</pre></a></li>
+<li class="method public "><a href="#method_getMessageLength" title="getMessageLength() :: Returns the maximum allowed message length"><span class="description">Returns the maximum allowed message length</span><pre>getMessageLength()</pre></a></li>
+<li class="method public "><a href="#method_getMessageTemplates" title="getMessageTemplates() :: Returns the message templates from the validator"><span class="description">Returns the message templates from the validator</span><pre>getMessageTemplates()</pre></a></li>
+<li class="method public "><a href="#method_getMessageVariables" title="getMessageVariables() :: Returns an array of the names of variables that are used in constructing validation failure messages"><span class="description">Returns an array of the names of variables that are used in constructing validation failure messages</span><pre>getMessageVariables()</pre></a></li>
+<li class="method public "><a href="#method_getMessages" title="getMessages() :: Returns array of validation failure messages"><span class="description">Returns array of validation failure messages</span><pre>getMessages()</pre></a></li>
+<li class="method public "><a href="#method_getObscureValue" title="getObscureValue() :: Retrieve flag indicating whether or not value should be obfuscated in
+messages"><span class="description">Retrieve flag indicating whether or not value should be obfuscated in
+messages</span><pre>getObscureValue()</pre></a></li>
+<li class="method public "><a href="#method_getTranslator" title="getTranslator() :: Return translation object"><span class="description">Return translation object</span><pre>getTranslator()</pre></a></li>
+<li class="method public "><a href="#method_hasDefaultTranslator" title="hasDefaultTranslator() :: Is there a default translation object set?"><span class="description">Is there a default translation object set?</span><pre>hasDefaultTranslator()</pre></a></li>
+<li class="method public "><a href="#method_hasTranslator" title="hasTranslator() :: Does this validator have its own specific translator?"><span class="description">Does this validator have its own specific translator?</span><pre>hasTranslator()</pre></a></li>
+<li class="method public "><a href="#method_setDefaultTranslator" title="setDefaultTranslator() :: Set default translation object for all validate objects"><span class="description">Set default translation object for all validate objects</span><pre>setDefaultTranslator()</pre></a></li>
+<li class="method public "><a href="#method_setDisableTranslator" title="setDisableTranslator() :: Indicate whether or not translation should be disabled"><span class="description">Indicate whether or not translation should be disabled</span><pre>setDisableTranslator()</pre></a></li>
+<li class="method public "><a href="#method_setMessage" title="setMessage() :: Sets the validation failure message template for a particular key"><span class="description">Sets the validation failure message template for a particular key</span><pre>setMessage()</pre></a></li>
+<li class="method public "><a href="#method_setMessageLength" title="setMessageLength() :: Sets the maximum allowed message length"><span class="description">Sets the maximum allowed message length</span><pre>setMessageLength()</pre></a></li>
+<li class="method public "><a href="#method_setMessages" title="setMessages() :: Sets validation failure message templates given as an array, where the array keys are the message keys,
+and the array values are the message template strings."><span class="description">Sets validation failure message templates given as an array, where the array keys are the message keys,
+and the array values are the message template strings.</span><pre>setMessages()</pre></a></li>
+<li class="method public "><a href="#method_setObscureValue" title="setObscureValue() :: Set flag indicating whether or not value should be obfuscated in messages"><span class="description">Set flag indicating whether or not value should be obfuscated in messages</span><pre>setObscureValue()</pre></a></li>
+<li class="method public "><a href="#method_setTranslator" title="setTranslator() :: Set translation object"><span class="description">Set translation object</span><pre>setTranslator()</pre></a></li>
+<li class="method public "><a href="#method_translatorIsDisabled" title="translatorIsDisabled() :: Is translation disabled?"><span class="description">Is translation disabled?</span><pre>translatorIsDisabled()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__createMessage" title="_createMessage() :: Constructs and returns a validation failure message with the given message key and value."><span class="description">Constructs and returns a validation failure message with the given message key and value.</span><pre>_createMessage()</pre></a></li>
+<li class="method protected "><a href="#method__error" title="_error() :: "><span class="description">_error()
+        </span><pre>_error()</pre></a></li>
+<li class="method protected "><a href="#method__implodeRecursive" title="_implodeRecursive() :: Joins elements of a multidimensional array"><span class="description">Joins elements of a multidimensional array</span><pre>_implodeRecursive()</pre></a></li>
+<li class="method protected "><a href="#method__setValue" title="_setValue() :: Sets the value to be validated and clears the messages and errors arrays"><span class="description">Sets the value to be validated and clears the messages and errors arrays</span><pre>_setValue()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__defaultTranslator" title="$_defaultTranslator() :: Default translation object for all validate objects"><span class="description"></span><pre>$_defaultTranslator</pre></a></li>
+<li class="property protected "><a href="#property__errors" title="$_errors() :: Array of validation failure message codes"><span class="description"></span><pre>$_errors</pre></a></li>
+<li class="property protected "><a href="#property__messageLength" title="$_messageLength() :: Limits the maximum returned length of a error message"><span class="description"></span><pre>$_messageLength</pre></a></li>
+<li class="property protected "><a href="#property__messageTemplates" title="$_messageTemplates() :: Validation failure message template definitions"><span class="description"></span><pre>$_messageTemplates</pre></a></li>
+<li class="property protected "><a href="#property__messageVariables" title="$_messageVariables() :: Additional variables available for validation failure messages"><span class="description"></span><pre>$_messageVariables</pre></a></li>
+<li class="property protected "><a href="#property__messages" title="$_messages() :: Array of validation failure messages"><span class="description"></span><pre>$_messages</pre></a></li>
+<li class="property protected "><a href="#property__obscureValue" title="$_obscureValue() :: Flag indidcating whether or not value should be obfuscated in error
+messages"><span class="description"></span><pre>$_obscureValue</pre></a></li>
+<li class="property protected "><a href="#property__translator" title="$_translator() :: Translation object"><span class="description"></span><pre>$_translator</pre></a></li>
+<li class="property protected "><a href="#property__translatorDisabled" title="$_translatorDisabled() :: Is translation disabled?"><span class="description"></span><pre>$_translatorDisabled</pre></a></li>
+<li class="property protected "><a href="#property__value" title="$_value() :: The value to be validated"><span class="description"></span><pre>$_value</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Zend_Validate_Abstract"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Zend_Validate_Abstract.html">Zend_Validate_Abstract</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Zend</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Zend_Validate.html">Zend_Validate</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___get"></a><div class="element clickable method public method___get " data-toggle="collapse" data-target=".method___get .collapse" title="public">
+<h2>Magic function returns the value of the requested property, if and only if it is the value or a
+message variable.</h2>
+<pre>__get(string $property) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Validate_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_getDefaultTranslator"></a><div class="element clickable method public method_getDefaultTranslator " data-toggle="collapse" data-target=".method_getDefaultTranslator .collapse" title="public">
+<h2>Get default translation object for all validate objects</h2>
+<pre>getDefaultTranslator() : \Zend_Translate_Adapter | null</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Translate_Adapter</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getErrors"></a><div class="element clickable method public method_getErrors " data-toggle="collapse" data-target=".method_getErrors .collapse" title="public">
+<h2>Returns array of validation failure message codes</h2>
+<pre>getErrors() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Since 1.5.0</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getMessageLength"></a><div class="element clickable method public method_getMessageLength " data-toggle="collapse" data-target=".method_getMessageLength .collapse" title="public">
+<h2>Returns the maximum allowed message length</h2>
+<pre>getMessageLength() : integer</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getMessageTemplates"></a><div class="element clickable method public method_getMessageTemplates " data-toggle="collapse" data-target=".method_getMessageTemplates .collapse" title="public">
+<h2>Returns the message templates from the validator</h2>
+<pre>getMessageTemplates() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getMessageVariables"></a><div class="element clickable method public method_getMessageVariables " data-toggle="collapse" data-target=".method_getMessageVariables .collapse" title="public">
+<h2>Returns an array of the names of variables that are used in constructing validation failure messages</h2>
+<pre>getMessageVariables() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getMessages"></a><div class="element clickable method public method_getMessages " data-toggle="collapse" data-target=".method_getMessages .collapse" title="public">
+<h2>Returns array of validation failure messages</h2>
+<pre>getMessages() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If isValid() was never called or if the most recent isValid() call
+returned true, then this method returns an empty array.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Validate_Interface::getMessages()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getObscureValue"></a><div class="element clickable method public method_getObscureValue " data-toggle="collapse" data-target=".method_getObscureValue .collapse" title="public">
+<h2>Retrieve flag indicating whether or not value should be obfuscated in
+messages</h2>
+<pre>getObscureValue() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getTranslator"></a><div class="element clickable method public method_getTranslator " data-toggle="collapse" data-target=".method_getTranslator .collapse" title="public">
+<h2>Return translation object</h2>
+<pre>getTranslator() : \Zend_Translate_Adapter | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Translate_Adapter</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_hasDefaultTranslator"></a><div class="element clickable method public method_hasDefaultTranslator " data-toggle="collapse" data-target=".method_hasDefaultTranslator .collapse" title="public">
+<h2>Is there a default translation object set?</h2>
+<pre>hasDefaultTranslator() : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_hasTranslator"></a><div class="element clickable method public method_hasTranslator " data-toggle="collapse" data-target=".method_hasTranslator .collapse" title="public">
+<h2>Does this validator have its own specific translator?</h2>
+<pre>hasTranslator() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_setDefaultTranslator"></a><div class="element clickable method public method_setDefaultTranslator " data-toggle="collapse" data-target=".method_setDefaultTranslator .collapse" title="public">
+<h2>Set default translation object for all validate objects</h2>
+<pre>setDefaultTranslator(\Zend_Translate|\Zend_Translate_Adapter|null $translator<code> = null</code>) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$translator</h4>
+<code>\Zend_Translate</code><code>\Zend_Translate_Adapter</code><code>null</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Validate_Exception</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setDisableTranslator"></a><div class="element clickable method public method_setDisableTranslator " data-toggle="collapse" data-target=".method_setDisableTranslator .collapse" title="public">
+<h2>Indicate whether or not translation should be disabled</h2>
+<pre>setDisableTranslator(boolean $flag) : \Zend_Validate_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Validate_Abstract</code></div>
+</div></div>
+</div>
+<a id="method_setMessage"></a><div class="element clickable method public method_setMessage " data-toggle="collapse" data-target=".method_setMessage .collapse" title="public">
+<h2>Sets the validation failure message template for a particular key</h2>
+<pre>setMessage(string $messageString, string $messageKey<code> = null</code>) : \Zend_Validate_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$messageString</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$messageKey</h4>
+<code>string</code><p>OPTIONAL</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Validate_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Validate_Abstract</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setMessageLength"></a><div class="element clickable method public method_setMessageLength " data-toggle="collapse" data-target=".method_setMessageLength .collapse" title="public">
+<h2>Sets the maximum allowed message length</h2>
+<pre>setMessageLength(integer $length<code> = -1</code>) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$length</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setMessages"></a><div class="element clickable method public method_setMessages " data-toggle="collapse" data-target=".method_setMessages .collapse" title="public">
+<h2>Sets validation failure message templates given as an array, where the array keys are the message keys,
+and the array values are the message template strings.</h2>
+<pre>setMessages(array $messages) : \Zend_Validate_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$messages</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Validate_Abstract</code></div>
+</div></div>
+</div>
+<a id="method_setObscureValue"></a><div class="element clickable method public method_setObscureValue " data-toggle="collapse" data-target=".method_setObscureValue .collapse" title="public">
+<h2>Set flag indicating whether or not value should be obfuscated in messages</h2>
+<pre>setObscureValue(boolean $flag) : \Zend_Validate_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Validate_Abstract</code></div>
+</div></div>
+</div>
+<a id="method_setTranslator"></a><div class="element clickable method public method_setTranslator " data-toggle="collapse" data-target=".method_setTranslator .collapse" title="public">
+<h2>Set translation object</h2>
+<pre>setTranslator(\Zend_Translate|\Zend_Translate_Adapter|null $translator<code> = null</code>) : \Zend_Validate_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$translator</h4>
+<code>\Zend_Translate</code><code>\Zend_Translate_Adapter</code><code>null</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Validate_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Validate_Abstract</code></div>
+</div></div>
+</div>
+<a id="method_translatorIsDisabled"></a><div class="element clickable method public method_translatorIsDisabled " data-toggle="collapse" data-target=".method_translatorIsDisabled .collapse" title="public">
+<h2>Is translation disabled?</h2>
+<pre>translatorIsDisabled() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method__createMessage"></a><div class="element clickable method protected method__createMessage " data-toggle="collapse" data-target=".method__createMessage .collapse" title="protected">
+<h2>Constructs and returns a validation failure message with the given message key and value.</h2>
+<pre>_createMessage(string $messageKey, string $value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns null if and only if $messageKey does not correspond to an existing template.</p>
+<p>If a translator is available and a translation exists for $messageKey,
+the translation will be used.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$messageKey</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__error"></a><div class="element clickable method protected method__error " data-toggle="collapse" data-target=".method__error .collapse" title="protected">
+<h2>_error()
+        </h2>
+<pre>_error(string $messageKey, string $value<code> = null</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$messageKey</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>OPTIONAL</p></div>
+</div></div>
+</div>
+<a id="method__implodeRecursive"></a><div class="element clickable method protected method__implodeRecursive " data-toggle="collapse" data-target=".method__implodeRecursive .collapse" title="protected">
+<h2>Joins elements of a multidimensional array</h2>
+<pre>_implodeRecursive(array $pieces) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pieces</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__setValue"></a><div class="element clickable method protected method__setValue " data-toggle="collapse" data-target=".method__setValue .collapse" title="protected">
+<h2>Sets the value to be validated and clears the messages and errors arrays</h2>
+<pre>_setValue(mixed $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__defaultTranslator"> </a><div class="element clickable property protected property__defaultTranslator" data-toggle="collapse" data-target=".property__defaultTranslator .collapse" title="protected">
+<h2>Default translation object for all validate objects</h2>
+<pre>$_defaultTranslator : \Zend_Translate</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__errors"> </a><div class="element clickable property protected property__errors" data-toggle="collapse" data-target=".property__errors .collapse" title="protected">
+<h2>Array of validation failure message codes</h2>
+<pre>$_errors : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>Since 1.5.0</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__messageLength"> </a><div class="element clickable property protected property__messageLength" data-toggle="collapse" data-target=".property__messageLength .collapse" title="protected">
+<h2>Limits the maximum returned length of a error message</h2>
+<pre>$_messageLength : Integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>-1</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__messageTemplates"> </a><div class="element clickable property protected property__messageTemplates" data-toggle="collapse" data-target=".property__messageTemplates .collapse" title="protected">
+<h2>Validation failure message template definitions</h2>
+<pre>$_messageTemplates : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__messageVariables"> </a><div class="element clickable property protected property__messageVariables" data-toggle="collapse" data-target=".property__messageVariables .collapse" title="protected">
+<h2>Additional variables available for validation failure messages</h2>
+<pre>$_messageVariables : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__messages"> </a><div class="element clickable property protected property__messages" data-toggle="collapse" data-target=".property__messages .collapse" title="protected">
+<h2>Array of validation failure messages</h2>
+<pre>$_messages : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__obscureValue"> </a><div class="element clickable property protected property__obscureValue" data-toggle="collapse" data-target=".property__obscureValue .collapse" title="protected">
+<h2>Flag indidcating whether or not value should be obfuscated in error
+messages</h2>
+<pre>$_obscureValue : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__translator"> </a><div class="element clickable property protected property__translator" data-toggle="collapse" data-target=".property__translator .collapse" title="protected">
+<h2>Translation object</h2>
+<pre>$_translator : \Zend_Translate</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__translatorDisabled"> </a><div class="element clickable property protected property__translatorDisabled" data-toggle="collapse" data-target=".property__translatorDisabled .collapse" title="protected">
+<h2>Is translation disabled?</h2>
+<pre>$_translatorDisabled : Boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__value"> </a><div class="element clickable property protected property__value" data-toggle="collapse" data-target=".property__value .collapse" title="protected">
+<h2>The value to be validated</h2>
+<pre>$_value : mixed</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:53-06:00.<br></footer></div>
+</div>
+</body>
+</html>

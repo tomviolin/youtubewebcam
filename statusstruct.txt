@@ -1,0 +1,75 @@
+--status: --
+Google_Service_YouTube_Video Object
+(
+    [internal_gapi_mappings:protected] => Array
+        (
+        )
+
+    [ageGatingType:protected] => Google_Service_YouTube_VideoAgeGating
+    [ageGatingDataType:protected] => 
+    [contentDetailsType:protected] => Google_Service_YouTube_VideoContentDetails
+    [contentDetailsDataType:protected] => 
+    [etag] => "DsOZ7qVJA4mxdTxZeNzis6uE6ck/G0yo774QLa74OrpfJ89nrR3MOwQ"
+    [fileDetailsType:protected] => Google_Service_YouTube_VideoFileDetails
+    [fileDetailsDataType:protected] => 
+    [id] => Sxcjmfe7aMc
+    [kind] => youtube#video
+    [liveStreamingDetailsType:protected] => Google_Service_YouTube_VideoLiveStreamingDetails
+    [liveStreamingDetailsDataType:protected] => 
+    [localizationsType:protected] => Google_Service_YouTube_VideoLocalization
+    [localizationsDataType:protected] => map
+    [monetizationDetailsType:protected] => Google_Service_YouTube_VideoMonetizationDetails
+    [monetizationDetailsDataType:protected] => 
+    [playerType:protected] => Google_Service_YouTube_VideoPlayer
+    [playerDataType:protected] => 
+    [processingDetailsType:protected] => Google_Service_YouTube_VideoProcessingDetails
+    [processingDetailsDataType:protected] => 
+    [projectDetailsType:protected] => Google_Service_YouTube_VideoProjectDetails
+    [projectDetailsDataType:protected] => 
+    [recordingDetailsType:protected] => Google_Service_YouTube_VideoRecordingDetails
+    [recordingDetailsDataType:protected] => 
+    [snippetType:protected] => Google_Service_YouTube_VideoSnippet
+    [snippetDataType:protected] => 
+    [statisticsType:protected] => Google_Service_YouTube_VideoStatistics
+    [statisticsDataType:protected] => 
+    [statusType:protected] => Google_Service_YouTube_VideoStatus
+    [statusDataType:protected] => 
+    [suggestionsType:protected] => Google_Service_YouTube_VideoSuggestions
+    [suggestionsDataType:protected] => 
+    [topicDetailsType:protected] => Google_Service_YouTube_VideoTopicDetails
+    [topicDetailsDataType:protected] => 
+    [modelData:protected] => Array
+        (
+            [snippet] => Array
+                (
+                    [publishedAt] => 2016-02-12T23:49:49.000Z
+                    [channelId] => UCBZUPE1k9XIueU0hznmAsjg
+                    [title] => HD Webcam Timelapse 02-12-2016 15:00-15:59
+                    [description] => Timelapse Video from HD Webcam of Milwaukee Inner Harbor taken on 02-12-2016 from 15:00 to 15:59.
+
+http://www.freshwater.uwm.edu/
+                    [thumbnails] => Array
+                        (
+                            [default] => Array
+                                (
+                                    [url] => https://i.ytimg.com/vi/Sxcjmfe7aMc/default.jpg
+                                    [width] => 120
+                                    [height] => 90
+                                )
+
+                            [medium] => Array
+                                (
+                                    [url] => https://i.ytimg.com/vi/Sxcjmfe7aMc/mqdefault.jpg
+                                    [width] => 320
+                                    [height] => 180
+                                )
+
+                            [high] => Array
+                                (
+                                    [url] => https://i.ytimg.com/vi/Sxcjmfe7aMc/hqdefault.jpg
+                                    [width] => 480
+                                    [height] => 360
+                                )
+
+                        )
+

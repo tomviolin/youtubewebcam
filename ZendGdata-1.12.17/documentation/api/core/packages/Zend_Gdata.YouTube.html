@@ -1,0 +1,581 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » Zend_Gdata\YouTube</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Zend_Gdata.YouTube.html" title="YouTube"><i class="icon-folder-open"></i>YouTube</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Zend_Gdata_YouTube" title="Service class for interacting with the YouTube Data API.">Zend_Gdata_YouTube</a></li>
+<li><a href="#Zend_Gdata_YouTube_SubscriptionFeed" title="The YouTube video subscription list flavor of an Atom Feed with media support
+Represents a list of individual subscriptions, where each contained entry is
+a subscription.">Zend_Gdata_YouTube_SubscriptionFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_MediaRating" title="Represents the media:rating element specific to YouTube.">Zend_Gdata_YouTube_Extension_MediaRating</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Token" title="Represents the yt:token element used by the YouTube data API">Zend_Gdata_YouTube_Extension_Token</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_School" title="Represents the yt:school element">Zend_Gdata_YouTube_Extension_School</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Racy" title="Represents the yt:racy element used by the YouTube data API">Zend_Gdata_YouTube_Extension_Racy</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Recorded" title="Represents the yt:recorded element">Zend_Gdata_YouTube_Extension_Recorded</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_AboutMe" title="Represents the yt:aboutMe element">Zend_Gdata_YouTube_Extension_AboutMe</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_State" title="Represents the yt:state element used by the YouTube data API">Zend_Gdata_YouTube_Extension_State</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Music" title="Represents the yt:music element">Zend_Gdata_YouTube_Extension_Music</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Duration" title="Represents the yt:duration element used by the YouTube data API">Zend_Gdata_YouTube_Extension_Duration</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_NoEmbed" title="Represents the yt:noembed element used by the YouTube data API">Zend_Gdata_YouTube_Extension_NoEmbed</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Hobbies" title="Represents the yt:hobbies element">Zend_Gdata_YouTube_Extension_Hobbies</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Books" title="Represents the yt:books element">Zend_Gdata_YouTube_Extension_Books</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_QueryString" title="Represents the yt:queryString element">Zend_Gdata_YouTube_Extension_QueryString</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Status" title="Represents the yt:status element">Zend_Gdata_YouTube_Extension_Status</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_LastName" title="Represents the yt:lastName element">Zend_Gdata_YouTube_Extension_LastName</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Statistics" title="Represents the yt:statistics element used by the YouTube data API">Zend_Gdata_YouTube_Extension_Statistics</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Hometown" title="Represents the yt:hometown element">Zend_Gdata_YouTube_Extension_Hometown</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Location" title="Represents the yt:location element">Zend_Gdata_YouTube_Extension_Location</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_PlaylistId" title="Represents the yt:playlistId element">Zend_Gdata_YouTube_Extension_PlaylistId</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_FirstName" title="Represents the yt:firstName element">Zend_Gdata_YouTube_Extension_FirstName</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Link" title="Specialized Link class for use with YouTube. Enables use of yt extension elements.">Zend_Gdata_YouTube_Extension_Link</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Uploaded" title="Represents the yt:uploaded element">Zend_Gdata_YouTube_Extension_Uploaded</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Occupation" title="Represents the yt:occupation element">Zend_Gdata_YouTube_Extension_Occupation</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Position" title="Data model class to represent a playlist item's position in the list (yt:position)">Zend_Gdata_YouTube_Extension_Position</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Control" title="Specialized Control class for use with YouTube. Enables use of yt extension elements.">Zend_Gdata_YouTube_Extension_Control</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Movies" title="Represents the yt:movies element">Zend_Gdata_YouTube_Extension_Movies</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_ReleaseDate" title="Represents the yt:releaseDate element">Zend_Gdata_YouTube_Extension_ReleaseDate</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Description" title="Represents the yt:description element">Zend_Gdata_YouTube_Extension_Description</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_MediaGroup" title="This class represents the media:group element of Media RSS.">Zend_Gdata_YouTube_Extension_MediaGroup</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Private" title="Represents the yt:private element used by the YouTube data API">Zend_Gdata_YouTube_Extension_Private</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Username" title="Represents the yt:username element">Zend_Gdata_YouTube_Extension_Username</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_MediaContent" title="Represents the media:content element of Media RSS.">Zend_Gdata_YouTube_Extension_MediaContent</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Gender" title="Represents the yt:gender element">Zend_Gdata_YouTube_Extension_Gender</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_PlaylistTitle" title="Represents the yt:playlistTitle element">Zend_Gdata_YouTube_Extension_PlaylistTitle</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Company" title="Represents the yt:company element">Zend_Gdata_YouTube_Extension_Company</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_CountHint" title="Represents the yt:countHint element">Zend_Gdata_YouTube_Extension_CountHint</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Relationship" title="Represents the yt:relationship element">Zend_Gdata_YouTube_Extension_Relationship</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_VideoId" title="Represents the yt:videoid element">Zend_Gdata_YouTube_Extension_VideoId</a></li>
+<li><a href="#Zend_Gdata_YouTube_Extension_Age" title="Represents the yt:age element">Zend_Gdata_YouTube_Extension_Age</a></li>
+<li><a href="#Zend_Gdata_YouTube_MediaEntry" title="Represents the YouTube flavor of a Gdata Media Entry">Zend_Gdata_YouTube_MediaEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_ActivityEntry" title="A concrete class for working with YouTube user activity entries.">Zend_Gdata_YouTube_ActivityEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_ContactEntry" title="The YouTube contacts flavor of an Atom Entry with media support
+Represents a an individual contact">Zend_Gdata_YouTube_ContactEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_UserProfileEntry" title="Represents the YouTube video playlist flavor of an Atom entry">Zend_Gdata_YouTube_UserProfileEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_CommentEntry" title="The YouTube comments flavor of an Atom Entry">Zend_Gdata_YouTube_CommentEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_InboxFeed" title="The YouTube inbox feed list flavor of an Atom Feed with media support
+Represents a list of individual inbox entries, where each contained entry is
+a message.">Zend_Gdata_YouTube_InboxFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_ContactFeed" title="The YouTube contacts flavor of an Atom Feed with media support
+Represents a list of individual contacts, where each contained entry is
+a contact.">Zend_Gdata_YouTube_ContactFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_ActivityFeed" title="A feed of user activity entries for YouTube">Zend_Gdata_YouTube_ActivityFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_PlaylistVideoFeed" title="The YouTube video playlist flavor of an Atom Feed with media support
+Represents a list of videos contained in a playlist.  Each entry in this
+feed represents an individual video.">Zend_Gdata_YouTube_PlaylistVideoFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_VideoFeed" title="The YouTube video flavor of an Atom Feed with media support">Zend_Gdata_YouTube_VideoFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_VideoQuery" title="Assists in constructing queries for YouTube videos">Zend_Gdata_YouTube_VideoQuery</a></li>
+<li><a href="#Zend_Gdata_YouTube_PlaylistListEntry" title="Represents the YouTube video playlist flavor of an Atom entry">Zend_Gdata_YouTube_PlaylistListEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_InboxEntry" title="Represents the YouTube message flavor of an Atom entry">Zend_Gdata_YouTube_InboxEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_VideoEntry" title="Represents the YouTube video flavor of an Atom entry">Zend_Gdata_YouTube_VideoEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_CommentFeed" title="The YouTube comments flavor of an Atom Feed">Zend_Gdata_YouTube_CommentFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_SubscriptionEntry" title="Represents the YouTube video subscription flavor of an Atom entry">Zend_Gdata_YouTube_SubscriptionEntry</a></li>
+<li><a href="#Zend_Gdata_YouTube_PlaylistListFeed" title="The YouTube video playlist flavor of an Atom Feed with media support
+Represents a list of individual playlists, where each contained entry is
+a playlist.">Zend_Gdata_YouTube_PlaylistListFeed</a></li>
+<li><a href="#Zend_Gdata_YouTube_PlaylistVideoEntry" title="Represents the YouTube video playlist flavor of an Atom entry">Zend_Gdata_YouTube_PlaylistVideoEntry</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Zend_Gdata.html">Zend_Gdata</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Zend_Gdata.YouTube.html">YouTube</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube<a href="../classes/Zend_Gdata_YouTube.html">¶</a>
+</h1>
+<p class="short_description">Service class for interacting with the YouTube Data API.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_ActivityEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_ActivityEntry<a href="../classes/Zend_Gdata_YouTube_ActivityEntry.html">¶</a>
+</h1>
+<p class="short_description">A concrete class for working with YouTube user activity entries.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_ActivityEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_ActivityFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_ActivityFeed<a href="../classes/Zend_Gdata_YouTube_ActivityFeed.html">¶</a>
+</h1>
+<p class="short_description">A feed of user activity entries for YouTube</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_ActivityFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_CommentEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_CommentEntry<a href="../classes/Zend_Gdata_YouTube_CommentEntry.html">¶</a>
+</h1>
+<p class="short_description">The YouTube comments flavor of an Atom Entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_CommentEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_CommentFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_CommentFeed<a href="../classes/Zend_Gdata_YouTube_CommentFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube comments flavor of an Atom Feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_CommentFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_ContactEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_ContactEntry<a href="../classes/Zend_Gdata_YouTube_ContactEntry.html">¶</a>
+</h1>
+<p class="short_description">The YouTube contacts flavor of an Atom Entry with media support
+Represents a an individual contact</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_ContactEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_ContactFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_ContactFeed<a href="../classes/Zend_Gdata_YouTube_ContactFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube contacts flavor of an Atom Feed with media support
+Represents a list of individual contacts, where each contained entry is
+a contact.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_ContactFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_AboutMe" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_AboutMe<a href="../classes/Zend_Gdata_YouTube_Extension_AboutMe.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:aboutMe element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_AboutMe.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Age" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Age<a href="../classes/Zend_Gdata_YouTube_Extension_Age.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:age element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Age.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Books" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Books<a href="../classes/Zend_Gdata_YouTube_Extension_Books.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:books element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Books.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Company" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Company<a href="../classes/Zend_Gdata_YouTube_Extension_Company.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:company element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Company.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Control" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Control<a href="../classes/Zend_Gdata_YouTube_Extension_Control.html">¶</a>
+</h1>
+<p class="short_description">Specialized Control class for use with YouTube. Enables use of yt extension elements.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Control.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_CountHint" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_CountHint<a href="../classes/Zend_Gdata_YouTube_Extension_CountHint.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:countHint element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_CountHint.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Description" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Description<a href="../classes/Zend_Gdata_YouTube_Extension_Description.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:description element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Description.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Duration" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Duration<a href="../classes/Zend_Gdata_YouTube_Extension_Duration.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:duration element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Duration.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_FirstName" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_FirstName<a href="../classes/Zend_Gdata_YouTube_Extension_FirstName.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:firstName element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_FirstName.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Gender" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Gender<a href="../classes/Zend_Gdata_YouTube_Extension_Gender.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:gender element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Gender.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Hobbies" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Hobbies<a href="../classes/Zend_Gdata_YouTube_Extension_Hobbies.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:hobbies element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Hobbies.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Hometown" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Hometown<a href="../classes/Zend_Gdata_YouTube_Extension_Hometown.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:hometown element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Hometown.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_LastName" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_LastName<a href="../classes/Zend_Gdata_YouTube_Extension_LastName.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:lastName element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_LastName.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Link" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Link<a href="../classes/Zend_Gdata_YouTube_Extension_Link.html">¶</a>
+</h1>
+<p class="short_description">Specialized Link class for use with YouTube. Enables use of yt extension elements.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Link.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Location" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Location<a href="../classes/Zend_Gdata_YouTube_Extension_Location.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:location element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Location.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_MediaContent" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_MediaContent<a href="../classes/Zend_Gdata_YouTube_Extension_MediaContent.html">¶</a>
+</h1>
+<p class="short_description">Represents the media:content element of Media RSS.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_MediaContent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_MediaGroup" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_MediaGroup<a href="../classes/Zend_Gdata_YouTube_Extension_MediaGroup.html">¶</a>
+</h1>
+<p class="short_description">This class represents the media:group element of Media RSS.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_MediaGroup.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_MediaRating" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_MediaRating<a href="../classes/Zend_Gdata_YouTube_Extension_MediaRating.html">¶</a>
+</h1>
+<p class="short_description">Represents the media:rating element specific to YouTube.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_MediaRating.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Movies" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Movies<a href="../classes/Zend_Gdata_YouTube_Extension_Movies.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:movies element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Movies.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Music" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Music<a href="../classes/Zend_Gdata_YouTube_Extension_Music.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:music element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Music.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_NoEmbed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_NoEmbed<a href="../classes/Zend_Gdata_YouTube_Extension_NoEmbed.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:noembed element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_NoEmbed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Occupation" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Occupation<a href="../classes/Zend_Gdata_YouTube_Extension_Occupation.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:occupation element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Occupation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_PlaylistId" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_PlaylistId<a href="../classes/Zend_Gdata_YouTube_Extension_PlaylistId.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:playlistId element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_PlaylistId.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_PlaylistTitle" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_PlaylistTitle<a href="../classes/Zend_Gdata_YouTube_Extension_PlaylistTitle.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:playlistTitle element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_PlaylistTitle.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Position" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Position<a href="../classes/Zend_Gdata_YouTube_Extension_Position.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent a playlist item's position in the list (yt:position)</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Position.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Private" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Private<a href="../classes/Zend_Gdata_YouTube_Extension_Private.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:private element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Private.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_QueryString" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_QueryString<a href="../classes/Zend_Gdata_YouTube_Extension_QueryString.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:queryString element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_QueryString.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Racy" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Racy<a href="../classes/Zend_Gdata_YouTube_Extension_Racy.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:racy element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Racy.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Recorded" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Recorded<a href="../classes/Zend_Gdata_YouTube_Extension_Recorded.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:recorded element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Recorded.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Relationship" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Relationship<a href="../classes/Zend_Gdata_YouTube_Extension_Relationship.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:relationship element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Relationship.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_ReleaseDate" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_ReleaseDate<a href="../classes/Zend_Gdata_YouTube_Extension_ReleaseDate.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:releaseDate element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_ReleaseDate.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_School" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_School<a href="../classes/Zend_Gdata_YouTube_Extension_School.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:school element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_School.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_State" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_State<a href="../classes/Zend_Gdata_YouTube_Extension_State.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:state element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_State.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Statistics" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Statistics<a href="../classes/Zend_Gdata_YouTube_Extension_Statistics.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:statistics element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Statistics.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Status" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Status<a href="../classes/Zend_Gdata_YouTube_Extension_Status.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:status element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Status.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Token" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Token<a href="../classes/Zend_Gdata_YouTube_Extension_Token.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:token element used by the YouTube data API</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Token.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Uploaded" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Uploaded<a href="../classes/Zend_Gdata_YouTube_Extension_Uploaded.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:uploaded element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Uploaded.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_Username" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_Username<a href="../classes/Zend_Gdata_YouTube_Extension_Username.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:username element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_Username.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_Extension_VideoId" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_Extension_VideoId<a href="../classes/Zend_Gdata_YouTube_Extension_VideoId.html">¶</a>
+</h1>
+<p class="short_description">Represents the yt:videoid element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_Extension_VideoId.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_InboxEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_InboxEntry<a href="../classes/Zend_Gdata_YouTube_InboxEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube message flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_InboxEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_InboxFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_InboxFeed<a href="../classes/Zend_Gdata_YouTube_InboxFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube inbox feed list flavor of an Atom Feed with media support
+Represents a list of individual inbox entries, where each contained entry is
+a message.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_InboxFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_MediaEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_MediaEntry<a href="../classes/Zend_Gdata_YouTube_MediaEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube flavor of a Gdata Media Entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_MediaEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_PlaylistListEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_PlaylistListEntry<a href="../classes/Zend_Gdata_YouTube_PlaylistListEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube video playlist flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_PlaylistListEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_PlaylistListFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_PlaylistListFeed<a href="../classes/Zend_Gdata_YouTube_PlaylistListFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube video playlist flavor of an Atom Feed with media support
+Represents a list of individual playlists, where each contained entry is
+a playlist.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_PlaylistListFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_PlaylistVideoEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_PlaylistVideoEntry<a href="../classes/Zend_Gdata_YouTube_PlaylistVideoEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube video playlist flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_PlaylistVideoEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_PlaylistVideoFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_PlaylistVideoFeed<a href="../classes/Zend_Gdata_YouTube_PlaylistVideoFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube video playlist flavor of an Atom Feed with media support
+Represents a list of videos contained in a playlist.  Each entry in this
+feed represents an individual video.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_PlaylistVideoFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_SubscriptionEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_SubscriptionEntry<a href="../classes/Zend_Gdata_YouTube_SubscriptionEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube video subscription flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_SubscriptionEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_SubscriptionFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_SubscriptionFeed<a href="../classes/Zend_Gdata_YouTube_SubscriptionFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube video subscription list flavor of an Atom Feed with media support
+Represents a list of individual subscriptions, where each contained entry is
+a subscription.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_SubscriptionFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_UserProfileEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_UserProfileEntry<a href="../classes/Zend_Gdata_YouTube_UserProfileEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube video playlist flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_UserProfileEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_VideoEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_VideoEntry<a href="../classes/Zend_Gdata_YouTube_VideoEntry.html">¶</a>
+</h1>
+<p class="short_description">Represents the YouTube video flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_VideoEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_VideoFeed" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_VideoFeed<a href="../classes/Zend_Gdata_YouTube_VideoFeed.html">¶</a>
+</h1>
+<p class="short_description">The YouTube video flavor of an Atom Feed with media support</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_VideoFeed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_YouTube_VideoQuery" class="element ajax clickable class">
+<h1>Zend_Gdata_YouTube_VideoQuery<a href="../classes/Zend_Gdata_YouTube_VideoQuery.html">¶</a>
+</h1>
+<p class="short_description">Assists in constructing queries for YouTube videos</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_YouTube_VideoQuery.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:50-06:00.<br></footer></div>
+</div>
+</body>
+</html>

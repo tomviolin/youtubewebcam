@@ -1,0 +1,1628 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » \Zend_Gdata_HttpClient</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Constructor method. Will create a new HTTP client. Accepts the target
+URL and optionally configuration array."><span class="description">Constructor method. Will create a new HTTP client. Accepts the target
+URL and optionally configuration array.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_encodeAuthHeader" title='encodeAuthHeader() :: Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.'><span class="description">Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.</span><pre>encodeAuthHeader()</pre></a></li>
+<li class="method public inherited"><a href="#method_encodeFormData" title="encodeFormData() :: Encode data to a multipart/form-data part suitable for a POST request."><span class="description">Encode data to a multipart/form-data part suitable for a POST request.</span><pre>encodeFormData()</pre></a></li>
+<li class="method public "><a href="#method_filterHttpRequest" title="filterHttpRequest() :: Filters the HTTP requests being sent to add the Authorization header."><span class="description">Filters the HTTP requests being sent to add the Authorization header.</span><pre>filterHttpRequest()</pre></a></li>
+<li class="method public "><a href="#method_filterHttpResponse" title="filterHttpResponse() :: Method for filtering the HTTP response, though no filtering is
+currently done."><span class="description">Method for filtering the HTTP response, though no filtering is
+currently done.</span><pre>filterHttpResponse()</pre></a></li>
+<li class="method public "><a href="#method_getAdapter" title="getAdapter() :: Return the current connection adapter"><span class="description">Return the current connection adapter</span><pre>getAdapter()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAdapter" title="getAdapter() :: Load the connection adapter"><span class="description">Load the connection adapter</span><pre>getAdapter()</pre></a></li>
+<li class="method public "><a href="#method_getAuthSubPrivateKeyId" title="getAuthSubPrivateKeyId() :: Gets the openssl private key id"><span class="description">Gets the openssl private key id</span><pre>getAuthSubPrivateKeyId()</pre></a></li>
+<li class="method public "><a href="#method_getAuthSubToken" title="getAuthSubToken() :: Gets the AuthSub token used for authentication"><span class="description">Gets the AuthSub token used for authentication</span><pre>getAuthSubToken()</pre></a></li>
+<li class="method public "><a href="#method_getClientLoginToken" title="getClientLoginToken() :: Gets the ClientLogin token used for authentication"><span class="description">Gets the ClientLogin token used for authentication</span><pre>getClientLoginToken()</pre></a></li>
+<li class="method public inherited"><a href="#method_getCookieJar" title="getCookieJar() :: Return the current cookie jar or null if none."><span class="description">Return the current cookie jar or null if none.</span><pre>getCookieJar()</pre></a></li>
+<li class="method public inherited"><a href="#method_getHeader" title="getHeader() :: Get the value of a specific header"><span class="description">Get the value of a specific header</span><pre>getHeader()</pre></a></li>
+<li class="method public inherited"><a href="#method_getLastRequest" title="getLastRequest() :: Get the last HTTP request as string"><span class="description">Get the last HTTP request as string</span><pre>getLastRequest()</pre></a></li>
+<li class="method public inherited"><a href="#method_getLastResponse" title="getLastResponse() :: Get the last HTTP response received by this client"><span class="description">Get the last HTTP response received by this client</span><pre>getLastResponse()</pre></a></li>
+<li class="method public inherited"><a href="#method_getRedirectionsCount" title="getRedirectionsCount() :: Get the number of redirections done on the last request"><span class="description">Get the number of redirections done on the last request</span><pre>getRedirectionsCount()</pre></a></li>
+<li class="method public inherited"><a href="#method_getStream" title="getStream() :: Get status of streaming for received data"><span class="description">Get status of streaming for received data</span><pre>getStream()</pre></a></li>
+<li class="method public "><a href="#method_getStreamingRequest" title="getStreamingRequest() :: Check whether the client is set to perform streaming requests."><span class="description">Check whether the client is set to perform streaming requests.</span><pre>getStreamingRequest()</pre></a></li>
+<li class="method public inherited"><a href="#method_getUnmaskStatus" title="getUnmaskStatus() :: Returns the currently configured unmask status"><span class="description">Returns the currently configured unmask status</span><pre>getUnmaskStatus()</pre></a></li>
+<li class="method public inherited"><a href="#method_getUri" title="getUri() :: Get the URI for the next request"><span class="description">Get the URI for the next request</span><pre>getUri()</pre></a></li>
+<li class="method public inherited"><a href="#method_request" title="request() :: Send the HTTP request and return an HTTP response object"><span class="description">Send the HTTP request and return an HTTP response object</span><pre>request()</pre></a></li>
+<li class="method public "><a href="#method_resetParameters" title="resetParameters() :: Clear all custom parameters we set."><span class="description">Clear all custom parameters we set.</span><pre>resetParameters()</pre></a></li>
+<li class="method public inherited"><a href="#method_resetParameters" title="resetParameters() :: Clear all GET and POST parameters"><span class="description">Clear all GET and POST parameters</span><pre>resetParameters()</pre></a></li>
+<li class="method public "><a href="#method_setAdapter" title="setAdapter() :: Load the connection adapter"><span class="description">Load the connection adapter</span><pre>setAdapter()</pre></a></li>
+<li class="method public inherited"><a href="#method_setAdapter" title="setAdapter() :: Load the connection adapter"><span class="description">Load the connection adapter</span><pre>setAdapter()</pre></a></li>
+<li class="method public inherited"><a href="#method_setAuth" title="setAuth() :: Set HTTP authentication parameters"><span class="description">Set HTTP authentication parameters</span><pre>setAuth()</pre></a></li>
+<li class="method public "><a href="#method_setAuthSubPrivateKey" title="setAuthSubPrivateKey() :: Sets the PEM formatted private key to be used for secure AuthSub auth."><span class="description">Sets the PEM formatted private key to be used for secure AuthSub auth.</span><pre>setAuthSubPrivateKey()</pre></a></li>
+<li class="method public "><a href="#method_setAuthSubPrivateKeyFile" title="setAuthSubPrivateKeyFile() :: Sets the PEM formatted private key, as read from a file."><span class="description">Sets the PEM formatted private key, as read from a file.</span><pre>setAuthSubPrivateKeyFile()</pre></a></li>
+<li class="method public "><a href="#method_setAuthSubToken" title="setAuthSubToken() :: Sets the AuthSub token used for authentication"><span class="description">Sets the AuthSub token used for authentication</span><pre>setAuthSubToken()</pre></a></li>
+<li class="method public "><a href="#method_setClientLoginToken" title="setClientLoginToken() :: Sets the ClientLogin token used for authentication"><span class="description">Sets the ClientLogin token used for authentication</span><pre>setClientLoginToken()</pre></a></li>
+<li class="method public inherited"><a href="#method_setConfig" title="setConfig() :: Set configuration parameters for this HTTP client"><span class="description">Set configuration parameters for this HTTP client</span><pre>setConfig()</pre></a></li>
+<li class="method public inherited"><a href="#method_setCookie" title='setCookie() :: Add a cookie to the request. If the client has no Cookie Jar, the cookies
+will be added directly to the headers array as "Cookie" headers.'><span class="description">Add a cookie to the request. If the client has no Cookie Jar, the cookies
+will be added directly to the headers array as "Cookie" headers.</span><pre>setCookie()</pre></a></li>
+<li class="method public inherited"><a href="#method_setCookieJar" title="setCookieJar() :: Set the HTTP client's cookie jar."><span class="description">Set the HTTP client's cookie jar.</span><pre>setCookieJar()</pre></a></li>
+<li class="method public inherited"><a href="#method_setEncType" title="setEncType() :: Set the encoding type for POST data"><span class="description">Set the encoding type for POST data</span><pre>setEncType()</pre></a></li>
+<li class="method public inherited"><a href="#method_setFileUpload" title="setFileUpload() :: Set a file to upload (using a POST request)"><span class="description">Set a file to upload (using a POST request)</span><pre>setFileUpload()</pre></a></li>
+<li class="method public inherited"><a href="#method_setHeaders" title="setHeaders() :: Set one or more request headers"><span class="description">Set one or more request headers</span><pre>setHeaders()</pre></a></li>
+<li class="method public inherited"><a href="#method_setMethod" title="setMethod() :: Set the next request's method"><span class="description">Set the next request's method</span><pre>setMethod()</pre></a></li>
+<li class="method public inherited"><a href="#method_setParameterGet" title="setParameterGet() :: Set a GET parameter for the request. Wrapper around _setParameter"><span class="description">Set a GET parameter for the request. Wrapper around _setParameter</span><pre>setParameterGet()</pre></a></li>
+<li class="method public inherited"><a href="#method_setParameterPost" title="setParameterPost() :: Set a POST parameter for the request. Wrapper around _setParameter"><span class="description">Set a POST parameter for the request. Wrapper around _setParameter</span><pre>setParameterPost()</pre></a></li>
+<li class="method public inherited"><a href="#method_setRawData" title="setRawData() :: Set the raw (already encoded) POST data."><span class="description">Set the raw (already encoded) POST data.</span><pre>setRawData()</pre></a></li>
+<li class="method public "><a href="#method_setRawDataStream" title="setRawDataStream() :: Set the raw (already encoded) POST data from a stream source."><span class="description">Set the raw (already encoded) POST data from a stream source.</span><pre>setRawDataStream()</pre></a></li>
+<li class="method public inherited"><a href="#method_setStream" title="setStream() :: Set streaming for received data"><span class="description">Set streaming for received data</span><pre>setStream()</pre></a></li>
+<li class="method public "><a href="#method_setStreamingRequest" title="setStreamingRequest() :: Set the streamingRequest variable which controls whether we are
+sending the raw (already encoded) POST data from a stream source."><span class="description">Set the streamingRequest variable which controls whether we are
+sending the raw (already encoded) POST data from a stream source.</span><pre>setStreamingRequest()</pre></a></li>
+<li class="method public inherited"><a href="#method_setUnmaskStatus" title="setUnmaskStatus() :: Set the unmask feature for GET parameters as array"><span class="description">Set the unmask feature for GET parameters as array</span><pre>setUnmaskStatus()</pre></a></li>
+<li class="method public inherited"><a href="#method_setUri" title="setUri() :: Set the URI for the next request"><span class="description">Set the URI for the next request</span><pre>setUri()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method__detectFileMimeType" title="_detectFileMimeType() :: Attempt to detect the MIME type of a file using available extensions"><span class="description">Attempt to detect the MIME type of a file using available extensions</span><pre>_detectFileMimeType()</pre></a></li>
+<li class="method protected inherited"><a href="#method__flattenParametersArray" title="_flattenParametersArray() :: Convert an array of parameters into a flat array of (key, value) pairs"><span class="description">Convert an array of parameters into a flat array of (key, value) pairs</span><pre>_flattenParametersArray()</pre></a></li>
+<li class="method protected inherited"><a href="#method__getParametersRecursive" title="_getParametersRecursive() :: Helper method that gets a possibly multi-level parameters array (get or
+post) and flattens it."><span class="description">Helper method that gets a possibly multi-level parameters array (get or
+post) and flattens it.</span><pre>_getParametersRecursive()</pre></a></li>
+<li class="method protected inherited"><a href="#method__openTempStream" title="_openTempStream() :: Create temporary stream"><span class="description">Create temporary stream</span><pre>_openTempStream()</pre></a></li>
+<li class="method protected "><a href="#method__prepareBody" title="_prepareBody() :: Prepare the request body (for POST and PUT requests)"><span class="description">Prepare the request body (for POST and PUT requests)</span><pre>_prepareBody()</pre></a></li>
+<li class="method protected inherited"><a href="#method__prepareBody" title="_prepareBody() :: Prepare the request body (for POST and PUT requests)"><span class="description">Prepare the request body (for POST and PUT requests)</span><pre>_prepareBody()</pre></a></li>
+<li class="method protected inherited"><a href="#method__prepareHeaders" title="_prepareHeaders() :: Prepare the request headers"><span class="description">Prepare the request headers</span><pre>_prepareHeaders()</pre></a></li>
+<li class="method protected inherited"><a href="#method__setParameter" title="_setParameter() :: Set a GET or POST parameter - used by SetParameterGet and SetParameterPost"><span class="description">Set a GET or POST parameter - used by SetParameterGet and SetParameterPost</span><pre>_setParameter()</pre></a></li>
+<li class="method protected inherited"><a href="#method__validateHeaderValue" title="_validateHeaderValue() :: Ensure a header value is valid per RFC 7230."><span class="description">Ensure a header value is valid per RFC 7230.</span><pre>_validateHeaderValue()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__fileInfoDb" title="$_fileInfoDb() :: Fileinfo magic database resource"><span class="description"></span><pre>$_fileInfoDb</pre></a></li>
+<li class="property protected "><a href="#property__queryBracketsEscaped" title="$_queryBracketsEscaped() :: Status if the http_build_query function escapes brackets"><span class="description"></span><pre>$_queryBracketsEscaped</pre></a></li>
+<li class="property protected "><a href="#property__streamingRequest" title="$_streamingRequest() :: True if this request is being made with data supplied by
+a stream object instead of a raw encoded string."><span class="description"></span><pre>$_streamingRequest</pre></a></li>
+<li class="property protected "><a href="#property__unmaskStatus" title="$_unmaskStatus() :: Status for unmasking GET array params"><span class="description"></span><pre>$_unmaskStatus</pre></a></li>
+<li class="property protected "><a href="#property_adapter" title="$adapter() :: The adapter used to perform the actual connection to the server"><span class="description"></span><pre>$adapter</pre></a></li>
+<li class="property protected "><a href="#property_auth" title="$auth() :: HTTP Authentication settings"><span class="description"></span><pre>$auth</pre></a></li>
+<li class="property protected "><a href="#property_body_field_order" title="$body_field_order() :: Ordered list of keys from key/value pair data to include in body"><span class="description"></span><pre>$body_field_order</pre></a></li>
+<li class="property protected "><a href="#property_config" title="$config() :: Configuration array, set using the constructor or using ::setConfig()"><span class="description"></span><pre>$config</pre></a></li>
+<li class="property protected "><a href="#property_cookiejar" title="$cookiejar() :: The client's cookie jar"><span class="description"></span><pre>$cookiejar</pre></a></li>
+<li class="property protected "><a href="#property_enctype" title="$enctype() :: Request body content type (for POST requests)"><span class="description"></span><pre>$enctype</pre></a></li>
+<li class="property protected "><a href="#property_files" title="$files() :: File upload arrays (used in POST requests)"><span class="description"></span><pre>$files</pre></a></li>
+<li class="property protected "><a href="#property_headers" title="$headers() :: Associative array of request headers"><span class="description"></span><pre>$headers</pre></a></li>
+<li class="property protected "><a href="#property_last_request" title="$last_request() :: The last HTTP request sent by the client, as string"><span class="description"></span><pre>$last_request</pre></a></li>
+<li class="property protected "><a href="#property_last_response" title="$last_response() :: The last HTTP response received by the client"><span class="description"></span><pre>$last_response</pre></a></li>
+<li class="property protected "><a href="#property_method" title="$method() :: HTTP request method"><span class="description"></span><pre>$method</pre></a></li>
+<li class="property protected "><a href="#property_paramsGet" title="$paramsGet() :: Associative array of GET parameters"><span class="description"></span><pre>$paramsGet</pre></a></li>
+<li class="property protected "><a href="#property_paramsPost" title="$paramsPost() :: Associative array of POST parameters"><span class="description"></span><pre>$paramsPost</pre></a></li>
+<li class="property protected "><a href="#property_raw_post_data" title="$raw_post_data() :: The raw post data to send. Could be set by setRawData($data, $enctype)."><span class="description"></span><pre>$raw_post_data</pre></a></li>
+<li class="property protected "><a href="#property_redirectCounter" title="$redirectCounter() :: Redirection counter"><span class="description"></span><pre>$redirectCounter</pre></a></li>
+<li class="property protected "><a href="#property_uri" title="$uri() :: Request URI"><span class="description"></span><pre>$uri</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__authSubPrivateKeyId" title="$_authSubPrivateKeyId() :: OpenSSL private key resource id
+This key is used for AuthSub authentication.  If this value is set,
+it is assuemd that secure AuthSub is desired."><span class="description"></span><pre>$_authSubPrivateKeyId</pre></a></li>
+<li class="property private "><a href="#property__authSubToken" title="$_authSubToken() :: Token for AuthSub authentication."><span class="description"></span><pre>$_authSubToken</pre></a></li>
+<li class="property private "><a href="#property__clientLoginKey" title="$_clientLoginKey() :: Token for ClientLogin authentication."><span class="description"></span><pre>$_clientLoginKey</pre></a></li>
+<li class="property private "><a href="#property__clientLoginToken" title="$_clientLoginToken() :: Token for ClientLogin authentication."><span class="description"></span><pre>$_clientLoginToken</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_AUTH_BASIC" title="AUTH_BASIC() :: Supported HTTP Authentication methods"><span class="description">Supported HTTP Authentication methods</span><pre>AUTH_BASIC</pre></a></li>
+<li class="constant  "><a href="#constant_CONNECT" title="CONNECT() :: "><span class="description">CONNECT</span><pre>CONNECT</pre></a></li>
+<li class="constant  "><a href="#constant_CONTENT_LENGTH" title="CONTENT_LENGTH() :: "><span class="description">CONTENT_LENGTH</span><pre>CONTENT_LENGTH</pre></a></li>
+<li class="constant  "><a href="#constant_CONTENT_TYPE" title="CONTENT_TYPE() :: Content attributes"><span class="description">Content attributes</span><pre>CONTENT_TYPE</pre></a></li>
+<li class="constant  "><a href="#constant_DELETE" title="DELETE() :: "><span class="description">DELETE</span><pre>DELETE</pre></a></li>
+<li class="constant  "><a href="#constant_ENC_FORMDATA" title="ENC_FORMDATA() :: "><span class="description">ENC_FORMDATA</span><pre>ENC_FORMDATA</pre></a></li>
+<li class="constant  "><a href="#constant_ENC_URLENCODED" title="ENC_URLENCODED() :: POST data encoding methods"><span class="description">POST data encoding methods</span><pre>ENC_URLENCODED</pre></a></li>
+<li class="constant  "><a href="#constant_GET" title="GET() :: HTTP request methods"><span class="description">HTTP request methods</span><pre>GET</pre></a></li>
+<li class="constant  "><a href="#constant_HEAD" title="HEAD() :: "><span class="description">HEAD</span><pre>HEAD</pre></a></li>
+<li class="constant  "><a href="#constant_HTTP_0" title="HTTP_0() :: "><span class="description">HTTP_0</span><pre>HTTP_0</pre></a></li>
+<li class="constant  "><a href="#constant_HTTP_1" title="HTTP_1() :: HTTP protocol versions"><span class="description">HTTP protocol versions</span><pre>HTTP_1</pre></a></li>
+<li class="constant  "><a href="#constant_MERGE" title="MERGE() :: "><span class="description">MERGE</span><pre>MERGE</pre></a></li>
+<li class="constant  "><a href="#constant_OPTIONS" title="OPTIONS() :: "><span class="description">OPTIONS</span><pre>OPTIONS</pre></a></li>
+<li class="constant  "><a href="#constant_PATCH" title="PATCH() :: "><span class="description">PATCH</span><pre>PATCH</pre></a></li>
+<li class="constant  "><a href="#constant_POST" title="POST() :: "><span class="description">POST</span><pre>POST</pre></a></li>
+<li class="constant  "><a href="#constant_PUT" title="PUT() :: "><span class="description">PUT</span><pre>PUT</pre></a></li>
+<li class="constant  "><a href="#constant_TRACE" title="TRACE() :: "><span class="description">TRACE</span><pre>TRACE</pre></a></li>
+<li class="constant  "><a href="#constant_VTYPE_FILE" title="VTYPE_FILE() :: "><span class="description">VTYPE_FILE</span><pre>VTYPE_FILE</pre></a></li>
+<li class="constant  "><a href="#constant_VTYPE_SCALAR" title="VTYPE_SCALAR() :: Value types for Body key/value pairs"><span class="description">Value types for Body key/value pairs</span><pre>VTYPE_SCALAR</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Zend_Gdata_HttpClient"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Zend_Gdata_HttpClient.html">Zend_Gdata_HttpClient</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Gdata Http Client object.</p>
+<div class="details">
+<div class="long_description"><p>Class to extend the generic Zend Http Client with the ability to perform
+secure AuthSub requests</p></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Zend</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Zend_Gdata.Gdata.html">Zend_Gdata</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Gdata</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Zend_Http_Client</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor method. Will create a new HTTP client. Accepts the target
+URL and optionally configuration array.</h2>
+<pre>__construct(\Zend_Uri_Http|string $uri<code> = null</code>, array $config<code> = null</code>) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>\Zend_Uri_Http</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code><p>Configuration key-value pairs.</p></div>
+</div></div>
+</div>
+<a id="method_encodeAuthHeader"></a><div class="element clickable method public method_encodeAuthHeader inherited" data-toggle="collapse" data-target=".method_encodeAuthHeader .collapse" title="public">
+<h2>Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.</h2>
+<pre>encodeAuthHeader(string $user, string $password, string $type<code> = self::AUTH_BASIC</code>) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="http://www.faqs.org/rfcs/rfc2617.html"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$password</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_encodeFormData"></a><div class="element clickable method public method_encodeFormData inherited" data-toggle="collapse" data-target=".method_encodeFormData .collapse" title="public">
+<h2>Encode data to a multipart/form-data part suitable for a POST request.</h2>
+<pre>encodeFormData(string $boundary, string $name, mixed $value, string $filename<code> = null</code>, array $headers<code> = array()</code>) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$boundary</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>Associative array of optional headers @example ("Content-Transfer-Encoding" => "binary")</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_filterHttpRequest"></a><div class="element clickable method public method_filterHttpRequest " data-toggle="collapse" data-target=".method_filterHttpRequest .collapse" title="public">
+<h2>Filters the HTTP requests being sent to add the Authorization header.</h2>
+<pre>filterHttpRequest(string $method, string $url, array $headers<code> = array()</code>, string $body<code> = null</code>, string $contentType<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If both AuthSub and ClientLogin tokens are set,
+AuthSub takes precedence.  If an AuthSub key is set, then
+secure AuthSub authentication is used, and the request is signed.
+Requests must be signed only with the private key corresponding to the
+public key registered with Google.  If an AuthSub key is set, but
+openssl support is not enabled in the PHP installation, an exception is
+thrown.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>The URL</p></div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>An associate array of headers to be
+                      sent with the request or null</p></div>
+<div class="subelement argument">
+<h4>$body</h4>
+<code>string</code><p>The body of the request or null</p></div>
+<div class="subelement argument">
+<h4>$contentType</h4>
+<code>string</code><p>The MIME content type of the body or null</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_Exception</code></th>
+<td>if there was a signing failure</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The processed values in an associative array,
+              using the same names as the params</div>
+</div></div>
+</div>
+<a id="method_filterHttpResponse"></a><div class="element clickable method public method_filterHttpResponse " data-toggle="collapse" data-target=".method_filterHttpResponse .collapse" title="public">
+<h2>Method for filtering the HTTP response, though no filtering is
+currently done.</h2>
+<pre>filterHttpResponse(\Zend_Http_Response $response) : \Zend_Http_Response</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$response</h4>
+<code>\Zend_Http_Response</code><p>The response object to filter</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Http_Response</code>The filterd response object</div>
+</div></div>
+</div>
+<a id="method_getAdapter"></a><div class="element clickable method public method_getAdapter " data-toggle="collapse" data-target=".method_getAdapter .collapse" title="public">
+<h2>Return the current connection adapter</h2>
+<pre>getAdapter() : \Zend_Http_Client_Adapter_Interface | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Http_Client::getAdapter()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Http_Client_Adapter_Interface</code><code>string</code>$adapter</div>
+</div></div>
+</div>
+<a id="method_getAdapter"></a><div class="element clickable method public method_getAdapter inherited" data-toggle="collapse" data-target=".method_getAdapter .collapse" title="public">
+<h2>Load the connection adapter</h2>
+<pre>getAdapter() : \Zend_Http_Client_Adapter_Interface</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Http_Client_Adapter_Interface</code>$adapter</div>
+</div></div>
+</div>
+<a id="method_getAuthSubPrivateKeyId"></a><div class="element clickable method public method_getAuthSubPrivateKeyId " data-toggle="collapse" data-target=".method_getAuthSubPrivateKeyId .collapse" title="public">
+<h2>Gets the openssl private key id</h2>
+<pre>getAuthSubPrivateKeyId() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The private key</div>
+</div></div>
+</div>
+<a id="method_getAuthSubToken"></a><div class="element clickable method public method_getAuthSubToken " data-toggle="collapse" data-target=".method_getAuthSubToken .collapse" title="public">
+<h2>Gets the AuthSub token used for authentication</h2>
+<pre>getAuthSubToken() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The token</div>
+</div></div>
+</div>
+<a id="method_getClientLoginToken"></a><div class="element clickable method public method_getClientLoginToken " data-toggle="collapse" data-target=".method_getClientLoginToken .collapse" title="public">
+<h2>Gets the ClientLogin token used for authentication</h2>
+<pre>getClientLoginToken() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The token</div>
+</div></div>
+</div>
+<a id="method_getCookieJar"></a><div class="element clickable method public method_getCookieJar inherited" data-toggle="collapse" data-target=".method_getCookieJar .collapse" title="public">
+<h2>Return the current cookie jar or null if none.</h2>
+<pre>getCookieJar() : \Zend_Http_CookieJar | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Http_CookieJar</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getHeader"></a><div class="element clickable method public method_getHeader inherited" data-toggle="collapse" data-target=".method_getHeader .collapse" title="public">
+<h2>Get the value of a specific header</h2>
+<pre>getHeader(string $key) : string | array | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Note that if the header has more than one value, an array
+will be returned.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>array</code><code>null</code>The header value or null if it is not set</div>
+</div></div>
+</div>
+<a id="method_getLastRequest"></a><div class="element clickable method public method_getLastRequest inherited" data-toggle="collapse" data-target=".method_getLastRequest .collapse" title="public">
+<h2>Get the last HTTP request as string</h2>
+<pre>getLastRequest() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getLastResponse"></a><div class="element clickable method public method_getLastResponse inherited" data-toggle="collapse" data-target=".method_getLastResponse .collapse" title="public">
+<h2>Get the last HTTP response received by this client</h2>
+<pre>getLastResponse() : \Zend_Http_Response</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If $config['storeresponse'] is set to false, or no response was
+stored yet, will return null</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Http_Response</code>or null if none</div>
+</div></div>
+</div>
+<a id="method_getRedirectionsCount"></a><div class="element clickable method public method_getRedirectionsCount inherited" data-toggle="collapse" data-target=".method_getRedirectionsCount .collapse" title="public">
+<h2>Get the number of redirections done on the last request</h2>
+<pre>getRedirectionsCount() : integer</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getStream"></a><div class="element clickable method public method_getStream inherited" data-toggle="collapse" data-target=".method_getStream .collapse" title="public">
+<h2>Get status of streaming for received data</h2>
+<pre>getStream() : boolean | string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_getStreamingRequest"></a><div class="element clickable method public method_getStreamingRequest " data-toggle="collapse" data-target=".method_getStreamingRequest .collapse" title="public">
+<h2>Check whether the client is set to perform streaming requests.</h2>
+<pre>getStreamingRequest() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if yes, false otherwise.</div>
+</div></div>
+</div>
+<a id="method_getUnmaskStatus"></a><div class="element clickable method public method_getUnmaskStatus inherited" data-toggle="collapse" data-target=".method_getUnmaskStatus .collapse" title="public">
+<h2>Returns the currently configured unmask status</h2>
+<pre>getUnmaskStatus() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getUri"></a><div class="element clickable method public method_getUri inherited" data-toggle="collapse" data-target=".method_getUri .collapse" title="public">
+<h2>Get the URI for the next request</h2>
+<pre>getUri(boolean $as_string<code> = false</code>) : \Zend_Uri_Http | string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$as_string</h4>
+<code>boolean</code><p>If true, will return the URI as a string</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Uri_Http</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_request"></a><div class="element clickable method public method_request inherited" data-toggle="collapse" data-target=".method_request .collapse" title="public">
+<h2>Send the HTTP request and return an HTTP response object</h2>
+<pre>request(string $method<code> = null</code>) : \Zend_Http_Response</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Response</code></div>
+</div></div>
+</div>
+<a id="method_resetParameters"></a><div class="element clickable method public method_resetParameters " data-toggle="collapse" data-target=".method_resetParameters .collapse" title="public">
+<h2>Clear all custom parameters we set.</h2>
+<pre>resetParameters(boolean $clearAll<code> = false</code>) : \Zend_Http_Client</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Should be used to reset the request parameters if the client is
+used for several concurrent requests.</p>
+<p>clearAll parameter controls if we clean just parameters or also
+headers and last_*</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Http_Client::resetParameters()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$clearAll</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_resetParameters"></a><div class="element clickable method public method_resetParameters inherited" data-toggle="collapse" data-target=".method_resetParameters .collapse" title="public">
+<h2>Clear all GET and POST parameters</h2>
+<pre>resetParameters(boolean $clearAll<code> = false</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Should be used to reset the request parameters if the client is
+used for several concurrent requests.</p>
+<p>clearAll parameter controls if we clean just parameters or also
+headers and last_*</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearAll</h4>
+<code>boolean</code><p>Should all data be cleared?</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setAdapter"></a><div class="element clickable method public method_setAdapter " data-toggle="collapse" data-target=".method_setAdapter .collapse" title="public">
+<h2>Load the connection adapter</h2>
+<pre>setAdapter(\Zend_Http_Client_Adapter_Interface $adapter) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>While this method is not called more than one for a client, it is
+seperated from -&gt;request() to preserve logic and readability</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Http_Client::setAdapter()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$adapter</h4>
+<code>\Zend_Http_Client_Adapter_Interface</code>
+</div>
+</div></div>
+</div>
+<a id="method_setAdapter"></a><div class="element clickable method public method_setAdapter inherited" data-toggle="collapse" data-target=".method_setAdapter .collapse" title="public">
+<h2>Load the connection adapter</h2>
+<pre>setAdapter(\Zend_Http_Client_Adapter_Interface|string $adapter) : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>While this method is not called more than one for a client, it is
+seperated from -&gt;request() to preserve logic and readability</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$adapter</h4>
+<code>\Zend_Http_Client_Adapter_Interface</code><code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a id="method_setAuth"></a><div class="element clickable method public method_setAuth inherited" data-toggle="collapse" data-target=".method_setAuth .collapse" title="public">
+<h2>Set HTTP authentication parameters</h2>
+<pre>setAuth(string|false $user, string $password<code> = ''</code>, string $type<code> = self::AUTH_BASIC</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>$type should be one of the supported types - see the self::AUTH_*
+constants.</p>
+<p>To enable authentication:
+<code>
+$this-&gt;setAuth('shahar', 'secret', Zend_Http_Client::AUTH_BASIC);
+</code></p>
+<p>To disable authentication:
+<code>
+$this-&gt;setAuth(false);
+</code></p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="http://www.faqs.org/rfcs/rfc2617.html"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>string</code><code>false</code><p>User name or false disable authentication</p></div>
+<div class="subelement argument">
+<h4>$password</h4>
+<code>string</code><p>Password</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><p>Authentication type</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setAuthSubPrivateKey"></a><div class="element clickable method public method_setAuthSubPrivateKey " data-toggle="collapse" data-target=".method_setAuthSubPrivateKey .collapse" title="public">
+<h2>Sets the PEM formatted private key to be used for secure AuthSub auth.</h2>
+<pre>setAuthSubPrivateKey(string $key, string $passphrase<code> = null</code>) : \Zend_Gdata_HttpClient</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In order to call this method, openssl must be enabled in your PHP
+installation.  Otherwise, a Zend_Gdata_App_InvalidArgumentException
+will be thrown.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The private key</p></div>
+<div class="subelement argument">
+<h4>$passphrase</h4>
+<code>string</code><p>The optional private key passphrase</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Gdata_App_InvalidArgumentException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_HttpClient</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setAuthSubPrivateKeyFile"></a><div class="element clickable method public method_setAuthSubPrivateKeyFile " data-toggle="collapse" data-target=".method_setAuthSubPrivateKeyFile .collapse" title="public">
+<h2>Sets the PEM formatted private key, as read from a file.</h2>
+<pre>setAuthSubPrivateKeyFile(string $file, string $passphrase<code> = null</code>, boolean $useIncludePath<code> = false</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method reads the file and then calls setAuthSubPrivateKey()
+with the file contents.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>The location of the file containing the PEM key</p></div>
+<div class="subelement argument">
+<h4>$passphrase</h4>
+<code>string</code><p>The optional private key passphrase</p></div>
+<div class="subelement argument">
+<h4>$useIncludePath</h4>
+<code>boolean</code><p>Whether to search the include_path
+                            for the file</p></div>
+</div></div>
+</div>
+<a id="method_setAuthSubToken"></a><div class="element clickable method public method_setAuthSubToken " data-toggle="collapse" data-target=".method_setAuthSubToken .collapse" title="public">
+<h2>Sets the AuthSub token used for authentication</h2>
+<pre>setAuthSubToken(string $token) : \Zend_Gdata_HttpClient</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$token</h4>
+<code>string</code><p>The token</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_HttpClient</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setClientLoginToken"></a><div class="element clickable method public method_setClientLoginToken " data-toggle="collapse" data-target=".method_setClientLoginToken .collapse" title="public">
+<h2>Sets the ClientLogin token used for authentication</h2>
+<pre>setClientLoginToken(string $token) : \Zend_Gdata_HttpClient</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$token</h4>
+<code>string</code><p>The token</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_HttpClient</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setConfig"></a><div class="element clickable method public method_setConfig inherited" data-toggle="collapse" data-target=".method_setConfig .collapse" title="public">
+<h2>Set configuration parameters for this HTTP client</h2>
+<pre>setConfig($config<code> = array()</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$config</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setCookie"></a><div class="element clickable method public method_setCookie inherited" data-toggle="collapse" data-target=".method_setCookie .collapse" title="public">
+<h2>Add a cookie to the request. If the client has no Cookie Jar, the cookies
+will be added directly to the headers array as "Cookie" headers.</h2>
+<pre>setCookie(\Zend_Http_Cookie|string $cookie, string|null $value<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cookie</h4>
+<code>\Zend_Http_Cookie</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code><p>If "cookie" is a string, this is the cookie value.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setCookieJar"></a><div class="element clickable method public method_setCookieJar inherited" data-toggle="collapse" data-target=".method_setCookieJar .collapse" title="public">
+<h2>Set the HTTP client's cookie jar.</h2>
+<pre>setCookieJar(\Zend_Http_CookieJar|boolean $cookiejar<code> = true</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>A cookie jar is an object that holds and maintains cookies across HTTP requests
+and responses.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cookiejar</h4>
+<code>\Zend_Http_CookieJar</code><code>boolean</code><p>Existing cookiejar object, true to create a new one, false to disable</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setEncType"></a><div class="element clickable method public method_setEncType inherited" data-toggle="collapse" data-target=".method_setEncType .collapse" title="public">
+<h2>Set the encoding type for POST data</h2>
+<pre>setEncType(string $enctype<code> = self::ENC_URLENCODED</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$enctype</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setFileUpload"></a><div class="element clickable method public method_setFileUpload inherited" data-toggle="collapse" data-target=".method_setFileUpload .collapse" title="public">
+<h2>Set a file to upload (using a POST request)</h2>
+<pre>setFileUpload(string $filename, string $formname, string $data<code> = null</code>, string $ctype<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Can be used in two ways:</p>
+<ol>
+<li>$data is null (default): $filename is treated as the name if a local file which
+will be read and sent. Will try to guess the content type using mime_content_type().</li>
+<li>$data is set - $filename is sent as the file name, but $data is sent as the file
+contents and no file is read from the file system. In this case, you need to
+manually set the Content-Type ($ctype) or it will default to
+application/octet-stream.</li>
+</ol></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>Name of file to upload, or name to save as</p></div>
+<div class="subelement argument">
+<h4>$formname</h4>
+<code>string</code><p>Name of form element to send as</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>Data to send (if null, $filename is read and sent)</p></div>
+<div class="subelement argument">
+<h4>$ctype</h4>
+<code>string</code><p>Content type to use (if $data is set and $ctype is
+null, will be application/octet-stream)</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setHeaders"></a><div class="element clickable method public method_setHeaders inherited" data-toggle="collapse" data-target=".method_setHeaders .collapse" title="public">
+<h2>Set one or more request headers</h2>
+<pre>setHeaders(string|array $name, mixed $value<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This function can be used in several ways to set the client's request
+headers:</p>
+<ol>
+<li>By providing two parameters: $name as the header to set (e.g. 'Host')
+and $value as it's value (e.g. 'www.example.com').</li>
+<li>By providing a single header string as the only parameter
+e.g. 'Host: www.example.com'</li>
+<li>By providing an array of headers as the first parameter
+e.g. array('host' =&gt; 'www.example.com', 'x-foo: bar'). In This case
+the function will call itself recursively for each array item.</li>
+</ol></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><code>array</code><p>Header name, full header string ('Header: value')
+or an array of headers</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Header value or null</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setMethod"></a><div class="element clickable method public method_setMethod inherited" data-toggle="collapse" data-target=".method_setMethod .collapse" title="public">
+<h2>Set the next request's method</h2>
+<pre>setMethod(string $method<code> = self::GET</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Validated the passed method and sets it. If we have files set for
+POST requests, and the new method is not POST, the files are silently
+dropped.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setParameterGet"></a><div class="element clickable method public method_setParameterGet inherited" data-toggle="collapse" data-target=".method_setParameterGet .collapse" title="public">
+<h2>Set a GET parameter for the request. Wrapper around _setParameter</h2>
+<pre>setParameterGet(string|array $name, string $value<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setParameterPost"></a><div class="element clickable method public method_setParameterPost inherited" data-toggle="collapse" data-target=".method_setParameterPost .collapse" title="public">
+<h2>Set a POST parameter for the request. Wrapper around _setParameter</h2>
+<pre>setParameterPost(string|array $name, string $value<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setRawData"></a><div class="element clickable method public method_setRawData inherited" data-toggle="collapse" data-target=".method_setRawData .collapse" title="public">
+<h2>Set the raw (already encoded) POST data.</h2>
+<pre>setRawData(string|resource $data, string $enctype<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This function is here for two reasons:</p>
+<ol>
+<li>For advanced user who would like to set their own data, already encoded</li>
+<li>For backwards compatibilty: If someone uses the old post($data) method.
+this method will be used to set the encoded data.</li>
+</ol>
+<p>$data can also be stream (such as file) from which the data will be read.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><code>resource</code>
+</div>
+<div class="subelement argument">
+<h4>$enctype</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setRawDataStream"></a><div class="element clickable method public method_setRawDataStream " data-toggle="collapse" data-target=".method_setRawDataStream .collapse" title="public">
+<h2>Set the raw (already encoded) POST data from a stream source.</h2>
+<pre>setRawDataStream(string $data, string $enctype<code> = null</code>) : \Zend_Http_Client</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This is used to support POSTing from open file handles without
+caching the entire body into memory. It is a wrapper around
+Zend_Http_Client::setRawData().</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>The request data</p></div>
+<div class="subelement argument">
+<h4>$enctype</h4>
+<code>string</code><p>The encoding type</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setStream"></a><div class="element clickable method public method_setStream inherited" data-toggle="collapse" data-target=".method_setStream .collapse" title="public">
+<h2>Set streaming for received data</h2>
+<pre>setStream(string|boolean $streamfile<code> = true</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$streamfile</h4>
+<code>string</code><code>boolean</code><p>Stream file, true for temp file, false/null for no streaming</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setStreamingRequest"></a><div class="element clickable method public method_setStreamingRequest " data-toggle="collapse" data-target=".method_setStreamingRequest .collapse" title="public">
+<h2>Set the streamingRequest variable which controls whether we are
+sending the raw (already encoded) POST data from a stream source.</h2>
+<pre>setStreamingRequest(boolean $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>boolean</code><p>The value to set.</p></div>
+</div></div>
+</div>
+<a id="method_setUnmaskStatus"></a><div class="element clickable method public method_setUnmaskStatus inherited" data-toggle="collapse" data-target=".method_setUnmaskStatus .collapse" title="public">
+<h2>Set the unmask feature for GET parameters as array</h2>
+<pre>setUnmaskStatus(boolean $status<code> = true</code>) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Example:
+foo%5B0%5D=a&amp;foo%5B1%5D=b
+becomes
+foo=a&amp;foo=b</p>
+<p>This is usefull for some services</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$status</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method_setUri"></a><div class="element clickable method public method_setUri inherited" data-toggle="collapse" data-target=".method_setUri .collapse" title="public">
+<h2>Set the URI for the next request</h2>
+<pre>setUri(\Zend_Uri_Http|string $uri) : \Zend_Http_Client</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uri</h4>
+<code>\Zend_Uri_Http</code><code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Http_Client</code></div>
+</div></div>
+</div>
+<a id="method__detectFileMimeType"></a><div class="element clickable method protected method__detectFileMimeType inherited" data-toggle="collapse" data-target=".method__detectFileMimeType .collapse" title="protected">
+<h2>Attempt to detect the MIME type of a file using available extensions</h2>
+<pre>_detectFileMimeType(string $file) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method will try to detect the MIME type of a file. If the fileinfo
+extension is available, it will be used. If not, the mime_magic
+extension which is deprected but is still available in many PHP setups
+will be tried.</p>
+<p>If neither extension is available, the default application/octet-stream
+MIME type will be returned</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>File path</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>MIME type</div>
+</div></div>
+</div>
+<a id="method__flattenParametersArray"></a><div class="element clickable method protected method__flattenParametersArray inherited" data-toggle="collapse" data-target=".method__flattenParametersArray .collapse" title="protected">
+<h2>Convert an array of parameters into a flat array of (key, value) pairs</h2>
+<pre>_flattenParametersArray(array $parray, string $prefix<code> = null</code>) : array</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will flatten a potentially multi-dimentional array of parameters (such
+as POST parameters) into a flat array of (key, value) paris. In case
+of multi-dimentional arrays, square brackets ([]) will be added to the
+key to indicate an array.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.9</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parray</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$prefix</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__getParametersRecursive"></a><div class="element clickable method protected method__getParametersRecursive inherited" data-toggle="collapse" data-target=".method__getParametersRecursive .collapse" title="protected">
+<h2>Helper method that gets a possibly multi-level parameters array (get or
+post) and flattens it.</h2>
+<pre>_getParametersRecursive(array $parray, boolean $urlencode<code> = false</code>) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The method returns an array of (key, value) pairs (because keys are not
+necessarily unique. If one of the parameters in as array, it will also
+add a [] suffix to the key.</p>
+<p>This method is deprecated since Zend Framework 1.9 in favour of
+self::_flattenParametersArray() and will be dropped in 2.0</p></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>since 1.9</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parray</h4>
+<code>array</code><p>The parameters array</p></div>
+<div class="subelement argument">
+<h4>$urlencode</h4>
+<code>boolean</code><p>Whether to urlencode the name and value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__openTempStream"></a><div class="element clickable method protected method__openTempStream inherited" data-toggle="collapse" data-target=".method__openTempStream .collapse" title="protected">
+<h2>Create temporary stream</h2>
+<pre>_openTempStream() : resource</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>resource</code></div>
+</div></div>
+</div>
+<a id="method__prepareBody"></a><div class="element clickable method protected method__prepareBody " data-toggle="collapse" data-target=".method__prepareBody .collapse" title="protected">
+<h2>Prepare the request body (for POST and PUT requests)</h2>
+<pre>_prepareBody() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Http_Client::_prepareBody()</td>
+</tr></table>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__prepareBody"></a><div class="element clickable method protected method__prepareBody inherited" data-toggle="collapse" data-target=".method__prepareBody .collapse" title="protected">
+<h2>Prepare the request body (for POST and PUT requests)</h2>
+<pre>_prepareBody() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Zend_Http_Client_Exception</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__prepareHeaders"></a><div class="element clickable method protected method__prepareHeaders inherited" data-toggle="collapse" data-target=".method__prepareHeaders .collapse" title="protected">
+<h2>Prepare the request headers</h2>
+<pre>_prepareHeaders() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__setParameter"></a><div class="element clickable method protected method__setParameter inherited" data-toggle="collapse" data-target=".method__setParameter .collapse" title="protected">
+<h2>Set a GET or POST parameter - used by SetParameterGet and SetParameterPost</h2>
+<pre>_setParameter(string $type, string $name, string $value) : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><p>GET or POST</p></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a id="method__validateHeaderValue"></a><div class="element clickable method protected method__validateHeaderValue inherited" data-toggle="collapse" data-target=".method__validateHeaderValue .collapse" title="protected">
+<h2>Ensure a header value is valid per RFC 7230.</h2>
+<pre>_validateHeaderValue(string|object|array $value, boolean $recurse<code> = true</code>) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="http://tools.ietf.org/html/rfc7230#section-3.2"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>object</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$recurse</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__fileInfoDb"> </a><div class="element clickable property protected property__fileInfoDb" data-toggle="collapse" data-target=".property__fileInfoDb .collapse" title="protected">
+<h2>Fileinfo magic database resource</h2>
+<pre>$_fileInfoDb : resource</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>This variable is populated the first time _detectFileMimeType is called
+and is then reused on every call to this method</p></div></div></div>
+</div>
+<a id="property__queryBracketsEscaped"> </a><div class="element clickable property protected property__queryBracketsEscaped" data-toggle="collapse" data-target=".property__queryBracketsEscaped .collapse" title="protected">
+<h2>Status if the http_build_query function escapes brackets</h2>
+<pre>$_queryBracketsEscaped : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__streamingRequest"> </a><div class="element clickable property protected property__streamingRequest" data-toggle="collapse" data-target=".property__streamingRequest .collapse" title="protected">
+<h2>True if this request is being made with data supplied by
+a stream object instead of a raw encoded string.</h2>
+<pre>$_streamingRequest : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__unmaskStatus"> </a><div class="element clickable property protected property__unmaskStatus" data-toggle="collapse" data-target=".property__unmaskStatus .collapse" title="protected">
+<h2>Status for unmasking GET array params</h2>
+<pre>$_unmaskStatus : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_adapter"> </a><div class="element clickable property protected property_adapter" data-toggle="collapse" data-target=".property_adapter .collapse" title="protected">
+<h2>The adapter used to perform the actual connection to the server</h2>
+<pre>$adapter : \Zend_Http_Client_Adapter_Interface</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_auth"> </a><div class="element clickable property protected property_auth" data-toggle="collapse" data-target=".property_auth .collapse" title="protected">
+<h2>HTTP Authentication settings</h2>
+<pre>$auth : array | null</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Expected to be an associative array with this structure:
+$this-&gt;auth = array('user' =&gt; 'username', 'password' =&gt; 'password', 'type' =&gt; 'basic')
+Where 'type' should be one of the supported authentication types (see the AUTH_*
+constants), for example 'basic' or 'digest'.</p>
+<p>If null, no authentication will be used.</p></div></div></div>
+</div>
+<a id="property_body_field_order"> </a><div class="element clickable property protected property_body_field_order" data-toggle="collapse" data-target=".property_body_field_order .collapse" title="protected">
+<h2>Ordered list of keys from key/value pair data to include in body</h2>
+<pre>$body_field_order : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>An associative array, where each element is of the format:
+'<field name>' =&gt; VTYPE_SCALAR | VTYPE_FILE</p></div></div></div>
+</div>
+<a id="property_config"> </a><div class="element clickable property protected property_config" data-toggle="collapse" data-target=".property_config .collapse" title="protected">
+<h2>Configuration array, set using the constructor or using ::setConfig()</h2>
+<pre>$config : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('maxredirects' => 5, 'strictredirects' => false, 'useragent' => 'Zend_Http_Client', 'timeout' => 10, 'adapter' => 'Zend_Http_Client_Adapter_Socket', 'httpversion' => self::HTTP_1, 'keepalive' => false, 'storeresponse' => true, 'strict' => true, 'output_stream' => false, 'encodecookies' => true, 'rfc3986_strict' => false)</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_cookiejar"> </a><div class="element clickable property protected property_cookiejar" data-toggle="collapse" data-target=".property_cookiejar .collapse" title="protected">
+<h2>The client's cookie jar</h2>
+<pre>$cookiejar : \Zend_Http_CookieJar</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_enctype"> </a><div class="element clickable property protected property_enctype" data-toggle="collapse" data-target=".property_enctype .collapse" title="protected">
+<h2>Request body content type (for POST requests)</h2>
+<pre>$enctype : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_files"> </a><div class="element clickable property protected property_files" data-toggle="collapse" data-target=".property_files .collapse" title="protected">
+<h2>File upload arrays (used in POST requests)</h2>
+<pre>$files : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>An associative array, where each element is of the format:
+'name' =&gt; array('filename.txt', 'text/plain', 'This is the actual file contents')</p></div></div></div>
+</div>
+<a id="property_headers"> </a><div class="element clickable property protected property_headers" data-toggle="collapse" data-target=".property_headers .collapse" title="protected">
+<h2>Associative array of request headers</h2>
+<pre>$headers : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_last_request"> </a><div class="element clickable property protected property_last_request" data-toggle="collapse" data-target=".property_last_request .collapse" title="protected">
+<h2>The last HTTP request sent by the client, as string</h2>
+<pre>$last_request : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_last_response"> </a><div class="element clickable property protected property_last_response" data-toggle="collapse" data-target=".property_last_response .collapse" title="protected">
+<h2>The last HTTP response received by the client</h2>
+<pre>$last_response : \Zend_Http_Response</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_method"> </a><div class="element clickable property protected property_method" data-toggle="collapse" data-target=".property_method .collapse" title="protected">
+<h2>HTTP request method</h2>
+<pre>$method : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>self::GET</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paramsGet"> </a><div class="element clickable property protected property_paramsGet" data-toggle="collapse" data-target=".property_paramsGet .collapse" title="protected">
+<h2>Associative array of GET parameters</h2>
+<pre>$paramsGet : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_paramsPost"> </a><div class="element clickable property protected property_paramsPost" data-toggle="collapse" data-target=".property_paramsPost .collapse" title="protected">
+<h2>Associative array of POST parameters</h2>
+<pre>$paramsPost : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_raw_post_data"> </a><div class="element clickable property protected property_raw_post_data" data-toggle="collapse" data-target=".property_raw_post_data .collapse" title="protected">
+<h2>The raw post data to send. Could be set by setRawData($data, $enctype).</h2>
+<pre>$raw_post_data : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_redirectCounter"> </a><div class="element clickable property protected property_redirectCounter" data-toggle="collapse" data-target=".property_redirectCounter .collapse" title="protected">
+<h2>Redirection counter</h2>
+<pre>$redirectCounter : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_uri"> </a><div class="element clickable property protected property_uri" data-toggle="collapse" data-target=".property_uri .collapse" title="protected">
+<h2>Request URI</h2>
+<pre>$uri : \Zend_Uri_Http</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__authSubPrivateKeyId"> </a><div class="element clickable property private property__authSubPrivateKeyId" data-toggle="collapse" data-target=".property__authSubPrivateKeyId .collapse" title="private">
+<h2>OpenSSL private key resource id
+This key is used for AuthSub authentication.  If this value is set,
+it is assuemd that secure AuthSub is desired.</h2>
+<pre>$_authSubPrivateKeyId : resource</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__authSubToken"> </a><div class="element clickable property private property__authSubToken" data-toggle="collapse" data-target=".property__authSubToken .collapse" title="private">
+<h2>Token for AuthSub authentication.</h2>
+<pre>$_authSubToken : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>If this token is set, AuthSub authentication is used.</p></div></div></div>
+</div>
+<a id="property__clientLoginKey"> </a><div class="element clickable property private property__clientLoginKey" data-toggle="collapse" data-target=".property__clientLoginKey .collapse" title="private">
+<h2>Token for ClientLogin authentication.</h2>
+<pre>$_clientLoginKey : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>If this token is set, and the AuthSub key is not set,
+ClientLogin authentication is used</p></div></div></div>
+</div>
+<a id="property__clientLoginToken"> </a><div class="element clickable property private property__clientLoginToken" data-toggle="collapse" data-target=".property__clientLoginToken .collapse" title="private">
+<h2>Token for ClientLogin authentication.</h2>
+<pre>$_clientLoginToken : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>If only this token is set, ClientLogin authentication is used.</p></div></div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_AUTH_BASIC"> </a><div class="element clickable constant  constant_AUTH_BASIC" data-toggle="collapse" data-target=".constant_AUTH_BASIC .collapse" title="">
+<h2>Supported HTTP Authentication methods</h2>
+<pre>AUTH_BASIC = 'basic' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CONNECT"> </a><div class="element clickable constant  constant_CONNECT" data-toggle="collapse" data-target=".constant_CONNECT .collapse" title="">
+<h2>CONNECT</h2>
+<pre>CONNECT = 'CONNECT' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CONTENT_LENGTH"> </a><div class="element clickable constant  constant_CONTENT_LENGTH" data-toggle="collapse" data-target=".constant_CONTENT_LENGTH .collapse" title="">
+<h2>CONTENT_LENGTH</h2>
+<pre>CONTENT_LENGTH = 'Content-Length' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CONTENT_TYPE"> </a><div class="element clickable constant  constant_CONTENT_TYPE" data-toggle="collapse" data-target=".constant_CONTENT_TYPE .collapse" title="">
+<h2>Content attributes</h2>
+<pre>CONTENT_TYPE = 'Content-Type' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DELETE"> </a><div class="element clickable constant  constant_DELETE" data-toggle="collapse" data-target=".constant_DELETE .collapse" title="">
+<h2>DELETE</h2>
+<pre>DELETE = 'DELETE' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ENC_FORMDATA"> </a><div class="element clickable constant  constant_ENC_FORMDATA" data-toggle="collapse" data-target=".constant_ENC_FORMDATA .collapse" title="">
+<h2>ENC_FORMDATA</h2>
+<pre>ENC_FORMDATA = 'multipart/form-data' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ENC_URLENCODED"> </a><div class="element clickable constant  constant_ENC_URLENCODED" data-toggle="collapse" data-target=".constant_ENC_URLENCODED .collapse" title="">
+<h2>POST data encoding methods</h2>
+<pre>ENC_URLENCODED = 'application/x-www-form-urlencoded' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_GET"> </a><div class="element clickable constant  constant_GET" data-toggle="collapse" data-target=".constant_GET .collapse" title="">
+<h2>HTTP request methods</h2>
+<pre>GET = 'GET' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HEAD"> </a><div class="element clickable constant  constant_HEAD" data-toggle="collapse" data-target=".constant_HEAD .collapse" title="">
+<h2>HEAD</h2>
+<pre>HEAD = 'HEAD' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HTTP_0"> </a><div class="element clickable constant  constant_HTTP_0" data-toggle="collapse" data-target=".constant_HTTP_0 .collapse" title="">
+<h2>HTTP_0</h2>
+<pre>HTTP_0 = '1.0' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HTTP_1"> </a><div class="element clickable constant  constant_HTTP_1" data-toggle="collapse" data-target=".constant_HTTP_1 .collapse" title="">
+<h2>HTTP protocol versions</h2>
+<pre>HTTP_1 = '1.1' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MERGE"> </a><div class="element clickable constant  constant_MERGE" data-toggle="collapse" data-target=".constant_MERGE .collapse" title="">
+<h2>MERGE</h2>
+<pre>MERGE = 'MERGE' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_OPTIONS"> </a><div class="element clickable constant  constant_OPTIONS" data-toggle="collapse" data-target=".constant_OPTIONS .collapse" title="">
+<h2>OPTIONS</h2>
+<pre>OPTIONS = 'OPTIONS' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PATCH"> </a><div class="element clickable constant  constant_PATCH" data-toggle="collapse" data-target=".constant_PATCH .collapse" title="">
+<h2>PATCH</h2>
+<pre>PATCH = 'PATCH' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_POST"> </a><div class="element clickable constant  constant_POST" data-toggle="collapse" data-target=".constant_POST .collapse" title="">
+<h2>POST</h2>
+<pre>POST = 'POST' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PUT"> </a><div class="element clickable constant  constant_PUT" data-toggle="collapse" data-target=".constant_PUT .collapse" title="">
+<h2>PUT</h2>
+<pre>PUT = 'PUT' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TRACE"> </a><div class="element clickable constant  constant_TRACE" data-toggle="collapse" data-target=".constant_TRACE .collapse" title="">
+<h2>TRACE</h2>
+<pre>TRACE = 'TRACE' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_VTYPE_FILE"> </a><div class="element clickable constant  constant_VTYPE_FILE" data-toggle="collapse" data-target=".constant_VTYPE_FILE .collapse" title="">
+<h2>VTYPE_FILE</h2>
+<pre>VTYPE_FILE = 'FILE' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_VTYPE_SCALAR"> </a><div class="element clickable constant  constant_VTYPE_SCALAR" data-toggle="collapse" data-target=".constant_VTYPE_SCALAR .collapse" title="">
+<h2>Value types for Body key/value pairs</h2>
+<pre>VTYPE_SCALAR = 'SCALAR' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:55-06:00.<br></footer></div>
+</div>
+</body>
+</html>

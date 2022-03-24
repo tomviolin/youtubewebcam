@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » Zend_Gdata\Gdata</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Zend_Gdata.Gdata.html" title="Gdata"><i class="icon-folder-open"></i>Gdata</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Zend_Gdata" title="Provides functionality to interact with Google data APIs
+Subclasses exist to implement service-specific features">Zend_Gdata</a></li>
+<li><a href="#Zend_Gdata_HttpClient" title="Gdata Http Client object.">Zend_Gdata_HttpClient</a></li>
+<li><a href="#Zend_Gdata_AuthSub" title="Wrapper around Zend_Http_Client to facilitate Google's &quot;Account Authentication
+Proxy for Web-Based Applications&quot;.">Zend_Gdata_AuthSub</a></li>
+<li><a href="#Zend_Gdata_MimeBodyString" title="A wrapper for strings for buffered reading.">Zend_Gdata_MimeBodyString</a></li>
+<li><a href="#Zend_Gdata_Extension_Recurrence" title="Represents the gd:recurrence element">Zend_Gdata_Extension_Recurrence</a></li>
+<li><a href="#Zend_Gdata_Extension_OriginalEvent" title="Represents the gd:originalEvent element">Zend_Gdata_Extension_OriginalEvent</a></li>
+<li><a href="#Zend_Gdata_Extension_When" title="Represents the gd:when element">Zend_Gdata_Extension_When</a></li>
+<li><a href="#Zend_Gdata_Extension_Comments" title="Represents the gd:comments element">Zend_Gdata_Extension_Comments</a></li>
+<li><a href="#Zend_Gdata_Extension_AttendeeStatus" title="Data model class to represent an attendee's status (gd:attendeeStatus)">Zend_Gdata_Extension_AttendeeStatus</a></li>
+<li><a href="#Zend_Gdata_Extension_Visibility" title="Data model class to represent an entry's visibility">Zend_Gdata_Extension_Visibility</a></li>
+<li><a href="#Zend_Gdata_Extension_Who" title="Data model class to represent a participant">Zend_Gdata_Extension_Who</a></li>
+<li><a href="#Zend_Gdata_Extension_Rating" title="Implements the gd:rating element">Zend_Gdata_Extension_Rating</a></li>
+<li><a href="#Zend_Gdata_Extension_RecurrenceException" title="Data model class to represent an entry's recurrenceException">Zend_Gdata_Extension_RecurrenceException</a></li>
+<li><a href="#Zend_Gdata_Extension_OpenSearchItemsPerPage" title="Represents the openSearch:itemsPerPage element">Zend_Gdata_Extension_OpenSearchItemsPerPage</a></li>
+<li><a href="#Zend_Gdata_Extension_Reminder" title="Implements the gd:reminder element used to set/retrieve notifications">Zend_Gdata_Extension_Reminder</a></li>
+<li><a href="#Zend_Gdata_Extension_OpenSearchStartIndex" title="Represents the openSeach:startIndex element">Zend_Gdata_Extension_OpenSearchStartIndex</a></li>
+<li><a href="#Zend_Gdata_Extension_Where" title="Data model class to represent a location (gd:where element)">Zend_Gdata_Extension_Where</a></li>
+<li><a href="#Zend_Gdata_Extension_OpenSearchTotalResults" title="Represents the openSearch:totalResults element">Zend_Gdata_Extension_OpenSearchTotalResults</a></li>
+<li><a href="#Zend_Gdata_Extension_Transparency" title="Data model class to represent an entry's transparency">Zend_Gdata_Extension_Transparency</a></li>
+<li><a href="#Zend_Gdata_Extension_EntryLink" title="Represents the gd:entryLink element">Zend_Gdata_Extension_EntryLink</a></li>
+<li><a href="#Zend_Gdata_Extension_FeedLink" title="Represents the gd:feedLink element">Zend_Gdata_Extension_FeedLink</a></li>
+<li><a href="#Zend_Gdata_Extension_AttendeeType" title="Data model class to represent an attendee's type (gd:attendeeType)">Zend_Gdata_Extension_AttendeeType</a></li>
+<li><a href="#Zend_Gdata_Extension_EventStatus" title="Represents the gd:eventStatus element">Zend_Gdata_Extension_EventStatus</a></li>
+<li><a href="#Zend_Gdata_Extension_ExtendedProperty" title="Data model for gd:extendedProperty element, used by some Gdata
+services to implement arbitrary name/value pair storage">Zend_Gdata_Extension_ExtendedProperty</a></li>
+<li><a href="#Zend_Gdata_Extension" title="Represents a Gdata extension">Zend_Gdata_Extension</a></li>
+<li><a href="#Zend_Gdata_Feed" title="The Gdata flavor of an Atom Feed">Zend_Gdata_Feed</a></li>
+<li><a href="#Zend_Gdata_Query" title="Provides a mechanism to build a query URL for Gdata services.">Zend_Gdata_Query</a></li>
+<li><a href="#Zend_Gdata_Kind_EventEntry" title='Data model for the Gdata Event "Kind".  Google Calendar has a separate
+EventEntry class which extends this.'>Zend_Gdata_Kind_EventEntry</a></li>
+<li><a href="#Zend_Gdata_MimeFile" title="A wrapper for strings for buffered reading.">Zend_Gdata_MimeFile</a></li>
+<li><a href="#Zend_Gdata_MediaMimeStream" title="A streaming Media MIME class that allows for buffered read operations.">Zend_Gdata_MediaMimeStream</a></li>
+<li><a href="#Zend_Gdata_Entry" title="Represents the Gdata flavor of an Atom entry">Zend_Gdata_Entry</a></li>
+<li><a href="#Zend_Gdata_HttpAdapterStreamingSocket" title="Extends the default HTTP adapter to handle streams instead of discrete body
+strings.">Zend_Gdata_HttpAdapterStreamingSocket</a></li>
+<li><a href="#Zend_Gdata_HttpAdapterStreamingProxy" title="Extends the proxy HTTP adapter to handle streams instead of discrete body
+strings.">Zend_Gdata_HttpAdapterStreamingProxy</a></li>
+<li><a href="#Zend_Gdata_ClientLogin" title="Class to facilitate Google's &quot;Account Authentication
+for Installed Applications&quot; also known as &quot;ClientLogin&quot;.">Zend_Gdata_ClientLogin</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Zend_Gdata.html">Zend_Gdata</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Zend_Gdata.Gdata.html">Gdata</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata" class="element ajax clickable class">
+<h1>Zend_Gdata<a href="../classes/Zend_Gdata.html">¶</a>
+</h1>
+<p class="short_description">Provides functionality to interact with Google data APIs
+Subclasses exist to implement service-specific features</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_AuthSub" class="element ajax clickable class">
+<h1>Zend_Gdata_AuthSub<a href="../classes/Zend_Gdata_AuthSub.html">¶</a>
+</h1>
+<p class="short_description">Wrapper around Zend_Http_Client to facilitate Google's "Account Authentication
+Proxy for Web-Based Applications".</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_AuthSub.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_ClientLogin" class="element ajax clickable class">
+<h1>Zend_Gdata_ClientLogin<a href="../classes/Zend_Gdata_ClientLogin.html">¶</a>
+</h1>
+<p class="short_description">Class to facilitate Google's "Account Authentication
+for Installed Applications" also known as "ClientLogin".</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_ClientLogin.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Entry" class="element ajax clickable class">
+<h1>Zend_Gdata_Entry<a href="../classes/Zend_Gdata_Entry.html">¶</a>
+</h1>
+<p class="short_description">Represents the Gdata flavor of an Atom entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Entry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension<a href="../classes/Zend_Gdata_Extension.html">¶</a>
+</h1>
+<p class="short_description">Represents a Gdata extension</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_AttendeeStatus" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_AttendeeStatus<a href="../classes/Zend_Gdata_Extension_AttendeeStatus.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent an attendee's status (gd:attendeeStatus)</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_AttendeeStatus.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_AttendeeType" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_AttendeeType<a href="../classes/Zend_Gdata_Extension_AttendeeType.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent an attendee's type (gd:attendeeType)</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_AttendeeType.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Comments" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Comments<a href="../classes/Zend_Gdata_Extension_Comments.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:comments element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Comments.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_EntryLink" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_EntryLink<a href="../classes/Zend_Gdata_Extension_EntryLink.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:entryLink element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_EntryLink.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_EventStatus" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_EventStatus<a href="../classes/Zend_Gdata_Extension_EventStatus.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:eventStatus element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_EventStatus.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_ExtendedProperty" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_ExtendedProperty<a href="../classes/Zend_Gdata_Extension_ExtendedProperty.html">¶</a>
+</h1>
+<p class="short_description">Data model for gd:extendedProperty element, used by some Gdata
+services to implement arbitrary name/value pair storage</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_ExtendedProperty.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_FeedLink" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_FeedLink<a href="../classes/Zend_Gdata_Extension_FeedLink.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:feedLink element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_FeedLink.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_OpenSearchItemsPerPage" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_OpenSearchItemsPerPage<a href="../classes/Zend_Gdata_Extension_OpenSearchItemsPerPage.html">¶</a>
+</h1>
+<p class="short_description">Represents the openSearch:itemsPerPage element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_OpenSearchItemsPerPage.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_OpenSearchStartIndex" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_OpenSearchStartIndex<a href="../classes/Zend_Gdata_Extension_OpenSearchStartIndex.html">¶</a>
+</h1>
+<p class="short_description">Represents the openSeach:startIndex element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_OpenSearchStartIndex.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_OpenSearchTotalResults" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_OpenSearchTotalResults<a href="../classes/Zend_Gdata_Extension_OpenSearchTotalResults.html">¶</a>
+</h1>
+<p class="short_description">Represents the openSearch:totalResults element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_OpenSearchTotalResults.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_OriginalEvent" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_OriginalEvent<a href="../classes/Zend_Gdata_Extension_OriginalEvent.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:originalEvent element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_OriginalEvent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Rating" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Rating<a href="../classes/Zend_Gdata_Extension_Rating.html">¶</a>
+</h1>
+<p class="short_description">Implements the gd:rating element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Rating.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Recurrence" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Recurrence<a href="../classes/Zend_Gdata_Extension_Recurrence.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:recurrence element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Recurrence.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_RecurrenceException" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_RecurrenceException<a href="../classes/Zend_Gdata_Extension_RecurrenceException.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent an entry's recurrenceException</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_RecurrenceException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Reminder" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Reminder<a href="../classes/Zend_Gdata_Extension_Reminder.html">¶</a>
+</h1>
+<p class="short_description">Implements the gd:reminder element used to set/retrieve notifications</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Reminder.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Transparency" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Transparency<a href="../classes/Zend_Gdata_Extension_Transparency.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent an entry's transparency</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Transparency.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Visibility" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Visibility<a href="../classes/Zend_Gdata_Extension_Visibility.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent an entry's visibility</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Visibility.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_When" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_When<a href="../classes/Zend_Gdata_Extension_When.html">¶</a>
+</h1>
+<p class="short_description">Represents the gd:when element</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_When.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Where" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Where<a href="../classes/Zend_Gdata_Extension_Where.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent a location (gd:where element)</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Where.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Extension_Who" class="element ajax clickable class">
+<h1>Zend_Gdata_Extension_Who<a href="../classes/Zend_Gdata_Extension_Who.html">¶</a>
+</h1>
+<p class="short_description">Data model class to represent a participant</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Extension_Who.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Feed" class="element ajax clickable class">
+<h1>Zend_Gdata_Feed<a href="../classes/Zend_Gdata_Feed.html">¶</a>
+</h1>
+<p class="short_description">The Gdata flavor of an Atom Feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Feed.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_HttpAdapterStreamingProxy" class="element ajax clickable class">
+<h1>Zend_Gdata_HttpAdapterStreamingProxy<a href="../classes/Zend_Gdata_HttpAdapterStreamingProxy.html">¶</a>
+</h1>
+<p class="short_description">Extends the proxy HTTP adapter to handle streams instead of discrete body
+strings.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_HttpAdapterStreamingProxy.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_HttpAdapterStreamingSocket" class="element ajax clickable class">
+<h1>Zend_Gdata_HttpAdapterStreamingSocket<a href="../classes/Zend_Gdata_HttpAdapterStreamingSocket.html">¶</a>
+</h1>
+<p class="short_description">Extends the default HTTP adapter to handle streams instead of discrete body
+strings.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_HttpAdapterStreamingSocket.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_HttpClient" class="element ajax clickable class">
+<h1>Zend_Gdata_HttpClient<a href="../classes/Zend_Gdata_HttpClient.html">¶</a>
+</h1>
+<p class="short_description">Gdata Http Client object.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_HttpClient.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Kind_EventEntry" class="element ajax clickable class">
+<h1>Zend_Gdata_Kind_EventEntry<a href="../classes/Zend_Gdata_Kind_EventEntry.html">¶</a>
+</h1>
+<p class="short_description">Data model for the Gdata Event "Kind".  Google Calendar has a separate
+EventEntry class which extends this.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Kind_EventEntry.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_MediaMimeStream" class="element ajax clickable class">
+<h1>Zend_Gdata_MediaMimeStream<a href="../classes/Zend_Gdata_MediaMimeStream.html">¶</a>
+</h1>
+<p class="short_description">A streaming Media MIME class that allows for buffered read operations.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_MediaMimeStream.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_MimeBodyString" class="element ajax clickable class">
+<h1>Zend_Gdata_MimeBodyString<a href="../classes/Zend_Gdata_MimeBodyString.html">¶</a>
+</h1>
+<p class="short_description">A wrapper for strings for buffered reading.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_MimeBodyString.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_MimeFile" class="element ajax clickable class">
+<h1>Zend_Gdata_MimeFile<a href="../classes/Zend_Gdata_MimeFile.html">¶</a>
+</h1>
+<p class="short_description">A wrapper for strings for buffered reading.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_MimeFile.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Zend_Gdata_Query" class="element ajax clickable class">
+<h1>Zend_Gdata_Query<a href="../classes/Zend_Gdata_Query.html">¶</a>
+</h1>
+<p class="short_description">Provides a mechanism to build a query URL for Gdata services.</p>
+<div class="details collapse"></div>
+<a href="../classes/Zend_Gdata_Query.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:50-06:00.<br></footer></div>
+</div>
+</body>
+</html>

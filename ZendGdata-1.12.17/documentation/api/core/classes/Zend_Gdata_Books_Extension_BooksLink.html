@@ -1,0 +1,1002 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation » \Zend_Gdata_Books_Extension_BooksLink</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="../packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="../packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="../packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="../packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="../packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="../packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="../packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor for Zend_Gdata_Books_Extension_BooksLink which
+Extends the base Link class with Books extensions"><span class="description">Constructor for Zend_Gdata_Books_Extension_BooksLink which
+Extends the base Link class with Books extensions</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___get" title="__get() :: Magic getter to allow access like $entry-&gt;foo to call $entry-&gt;getFoo()
+Alternatively, if no getFoo() is defined, but a $_foo protected variable
+is defined, this is returned."><span class="description">Magic getter to allow access like $entry-&gt;foo to call $entry-&gt;getFoo()
+Alternatively, if no getFoo() is defined, but a $_foo protected variable
+is defined, this is returned.</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___isset" title="__isset() :: Magic __isset method"><span class="description">Magic __isset method</span><pre>__isset()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title="__set() :: Magic setter to allow acces like $entry-&gt;foo='bar' to call
+$entry-&gt;setFoo('bar') automatically."><span class="description">Magic setter to allow acces like $entry-&gt;foo='bar' to call
+$entry-&gt;setFoo('bar') automatically.</span><pre>__set()</pre></a></li>
+<li class="method public inherited"><a href="#method___toString" title="__toString() :: Magic toString method allows using this directly via echo
+Works best in PHP &gt;= 4.2.0"><span class="description">Magic toString method allows using this directly via echo
+Works best in PHP &gt;= 4.2.0</span><pre>__toString()</pre></a></li>
+<li class="method public inherited"><a href="#method___unset" title="__unset() :: Magic __unset method"><span class="description">Magic __unset method</span><pre>__unset()</pre></a></li>
+<li class="method public inherited"><a href="#method_encode" title="encode() :: Alias for saveXML()"><span class="description">Alias for saveXML()</span><pre>encode()</pre></a></li>
+<li class="method public inherited"><a href="#method_flushNamespaceLookupCache" title="flushNamespaceLookupCache() :: Flush namespace lookup cache."><span class="description">Flush namespace lookup cache.</span><pre>flushNamespaceLookupCache()</pre></a></li>
+<li class="method public inherited"><a href="#method_getDOM" title="getDOM() :: Retrieves a DOMElement which corresponds to this element and all
+child properties.  This is used to build an entry back into a DOM
+and eventually XML text for sending to the server upon updates, or
+for application storage/persistence."><span class="description">Retrieves a DOMElement which corresponds to this element and all
+child properties.  This is used to build an entry back into a DOM
+and eventually XML text for sending to the server upon updates, or
+for application storage/persistence.</span><pre>getDOM()</pre></a></li>
+<li class="method public inherited"><a href="#method_getExtensionAttributes" title="getExtensionAttributes() :: Returns an array of all extension attributes not transformed into data
+model properties during parsing of the XML.  Each element of the array
+is a hashed array of the format:
+    array('namespaceUri' =&gt; string, 'name' =&gt; string, 'value' =&gt; string);"><span class="description">Returns an array of all extension attributes not transformed into data
+model properties during parsing of the XML.  Each element of the array
+is a hashed array of the format:
+    array('namespaceUri' =&gt; string, 'name' =&gt; string, 'value' =&gt; string);</span><pre>getExtensionAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_getExtensionElements" title="getExtensionElements() :: Returns an array of all elements not matched to data model classes
+during the parsing of the XML"><span class="description">Returns an array of all elements not matched to data model classes
+during the parsing of the XML</span><pre>getExtensionElements()</pre></a></li>
+<li class="method public inherited"><a href="#method_getHref" title="getHref() :: "><span class="description">getHref()
+        </span><pre>getHref()</pre></a></li>
+<li class="method public inherited"><a href="#method_getHrefLang" title="getHrefLang() :: "><span class="description">getHrefLang()
+        </span><pre>getHrefLang()</pre></a></li>
+<li class="method public inherited"><a href="#method_getLength" title="getLength() :: "><span class="description">getLength()
+        </span><pre>getLength()</pre></a></li>
+<li class="method public inherited"><a href="#method_getRel" title="getRel() :: "><span class="description">getRel()
+        </span><pre>getRel()</pre></a></li>
+<li class="method public inherited"><a href="#method_getText" title="getText() :: Returns the child text node of this element
+This represents any raw text contained within the XML element"><span class="description">Returns the child text node of this element
+This represents any raw text contained within the XML element</span><pre>getText()</pre></a></li>
+<li class="method public inherited"><a href="#method_getTitle" title="getTitle() :: "><span class="description">getTitle()
+        </span><pre>getTitle()</pre></a></li>
+<li class="method public inherited"><a href="#method_getType" title="getType() :: "><span class="description">getType()
+        </span><pre>getType()</pre></a></li>
+<li class="method public inherited"><a href="#method_getXML" title="getXML() :: Alias for saveXML() returns XML content for this element and all
+children"><span class="description">Alias for saveXML() returns XML content for this element and all
+children</span><pre>getXML()</pre></a></li>
+<li class="method public inherited"><a href="#method_lookupNamespace" title="lookupNamespace() :: Get the full version of a namespace prefix"><span class="description">Get the full version of a namespace prefix</span><pre>lookupNamespace()</pre></a></li>
+<li class="method public inherited"><a href="#method_registerAllNamespaces" title="registerAllNamespaces() :: Add an array of namespaces to the registered list."><span class="description">Add an array of namespaces to the registered list.</span><pre>registerAllNamespaces()</pre></a></li>
+<li class="method public inherited"><a href="#method_registerNamespace" title="registerNamespace() :: Add a namespace and prefix to the registered list"><span class="description">Add a namespace and prefix to the registered list</span><pre>registerNamespace()</pre></a></li>
+<li class="method public inherited"><a href="#method_saveXML" title="saveXML() :: Converts this element and all children into XML text using getDOM()"><span class="description">Converts this element and all children into XML text using getDOM()</span><pre>saveXML()</pre></a></li>
+<li class="method public inherited"><a href="#method_setExtensionAttributes" title="setExtensionAttributes() :: Sets an array of all extension attributes not transformed into data
+model properties during parsing of the XML.  Each element of the array
+is a hashed array of the format:
+    array('namespaceUri' =&gt; string, 'name' =&gt; string, 'value' =&gt; string);
+This can be used to add arbitrary attributes to any data model element"><span class="description">Sets an array of all extension attributes not transformed into data
+model properties during parsing of the XML.  Each element of the array
+is a hashed array of the format:
+    array('namespaceUri' =&gt; string, 'name' =&gt; string, 'value' =&gt; string);
+This can be used to add arbitrary attributes to any data model element</span><pre>setExtensionAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_setExtensionElements" title="setExtensionElements() :: Sets an array of all elements not matched to data model classes
+during the parsing of the XML.  This method can be used to add arbitrary
+child XML elements to any data model class."><span class="description">Sets an array of all elements not matched to data model classes
+during the parsing of the XML.  This method can be used to add arbitrary
+child XML elements to any data model class.</span><pre>setExtensionElements()</pre></a></li>
+<li class="method public inherited"><a href="#method_setHref" title="setHref() :: "><span class="description">setHref()
+        </span><pre>setHref()</pre></a></li>
+<li class="method public inherited"><a href="#method_setHrefLang" title="setHrefLang() :: "><span class="description">setHrefLang()
+        </span><pre>setHrefLang()</pre></a></li>
+<li class="method public inherited"><a href="#method_setLength" title="setLength() :: "><span class="description">setLength()
+        </span><pre>setLength()</pre></a></li>
+<li class="method public inherited"><a href="#method_setRel" title="setRel() :: "><span class="description">setRel()
+        </span><pre>setRel()</pre></a></li>
+<li class="method public inherited"><a href="#method_setText" title="setText() :: Sets the child text node of this element
+This represents any raw text contained within the XML element"><span class="description">Sets the child text node of this element
+This represents any raw text contained within the XML element</span><pre>setText()</pre></a></li>
+<li class="method public inherited"><a href="#method_setTitle" title="setTitle() :: "><span class="description">setTitle()
+        </span><pre>setTitle()</pre></a></li>
+<li class="method public inherited"><a href="#method_setType" title="setType() :: "><span class="description">setType()
+        </span><pre>setType()</pre></a></li>
+<li class="method public inherited"><a href="#method_transferFromDOM" title="transferFromDOM() :: Transfers each child and attribute into member variables."><span class="description">Transfers each child and attribute into member variables.</span><pre>transferFromDOM()</pre></a></li>
+<li class="method public inherited"><a href="#method_transferFromXML" title="transferFromXML() :: Parses the provided XML text and generates data model classes for
+each know element by turning the XML text into a DOM tree and calling
+transferFromDOM($element).  The first data model element with the same
+name as $this-&gt;_rootElement is used and the child elements are
+recursively parsed."><span class="description">Parses the provided XML text and generates data model classes for
+each know element by turning the XML text into a DOM tree and calling
+transferFromDOM($element).  The first data model element with the same
+name as $this-&gt;_rootElement is used and the child elements are
+recursively parsed.</span><pre>transferFromXML()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_takeAttributeFromDOM" title="takeAttributeFromDOM() :: Given a DOMNode representing an attribute, tries to map the data into
+instance members.  If no mapping is defined, the name and value are
+stored in an array."><span class="description">Given a DOMNode representing an attribute, tries to map the data into
+instance members.  If no mapping is defined, the name and value are
+stored in an array.</span><pre>takeAttributeFromDOM()</pre></a></li>
+<li class="method protected inherited"><a href="#method_takeChildFromDOM" title="takeChildFromDOM() :: Given a child DOMNode, tries to determine how to map the data into
+object instance members.  If no mapping is defined, Extension_Element
+objects are created and stored in an array."><span class="description">Given a child DOMNode, tries to determine how to map the data into
+object instance members.  If no mapping is defined, Extension_Element
+objects are created and stored in an array.</span><pre>takeChildFromDOM()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__extensionAttributes" title="$_extensionAttributes() :: "><span class="description">Leftover attributes which were not handled</span><pre>$_extensionAttributes</pre></a></li>
+<li class="property protected "><a href="#property__extensionElements" title="$_extensionElements() :: "><span class="description">Leftover elements which were not handled</span><pre>$_extensionElements</pre></a></li>
+<li class="property protected "><a href="#property__href" title="$_href() :: "><span class="description"></span><pre>$_href</pre></a></li>
+<li class="property protected "><a href="#property__hrefLang" title="$_hrefLang() :: "><span class="description"></span><pre>$_hrefLang</pre></a></li>
+<li class="property protected "><a href="#property__length" title="$_length() :: "><span class="description"></span><pre>$_length</pre></a></li>
+<li class="property protected "><a href="#property__namespaceLookupCache" title="$_namespaceLookupCache() :: "><span class="description">Memoized results from calls to lookupNamespace() to avoid
+expensive calls to getGreatestBoundedValue(). The key is in the
+form 'prefix-majorVersion-minorVersion', and the value is the
+output from getGreatestBoundedValue().</span><pre>$_namespaceLookupCache</pre></a></li>
+<li class="property protected "><a href="#property__namespaces" title="$_namespaces() :: List of namespaces, as a three-dimensional array. The first dimension
+represents the namespace prefix, the second dimension represents the
+minimum major protocol version, and the third dimension is the minimum
+minor protocol version. Null keys are NOT allowed."><span class="description"></span><pre>$_namespaces</pre></a></li>
+<li class="property protected "><a href="#property__rel" title="$_rel() :: "><span class="description"></span><pre>$_rel</pre></a></li>
+<li class="property protected "><a href="#property__rootElement" title="$_rootElement() :: "><span class="description">The XML element name, including prefix if desired</span><pre>$_rootElement</pre></a></li>
+<li class="property protected "><a href="#property__rootNamespace" title="$_rootNamespace() :: "><span class="description">The XML namespace prefix</span><pre>$_rootNamespace</pre></a></li>
+<li class="property protected "><a href="#property__rootNamespaceURI" title="$_rootNamespaceURI() :: "><span class="description">The XML namespace URI - takes precedence over lookup up the
+corresponding URI for $_rootNamespace</span><pre>$_rootNamespaceURI</pre></a></li>
+<li class="property protected "><a href="#property__text" title="$_text() :: "><span class="description">XML child text node content</span><pre>$_text</pre></a></li>
+<li class="property protected "><a href="#property__title" title="$_title() :: "><span class="description"></span><pre>$_title</pre></a></li>
+<li class="property protected "><a href="#property__type" title="$_type() :: "><span class="description"></span><pre>$_type</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Zend_Gdata_Books_Extension_BooksLink"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Zend_Gdata_Books_Extension_BooksLink.html">Zend_Gdata_Books_Extension_BooksLink</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Extends the base Link class with Books extensions</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Zend</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Zend_Gdata.Books.html">Zend_Gdata</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Books</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata_App_Extension_Link</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor for Zend_Gdata_Books_Extension_BooksLink which
+Extends the base Link class with Books extensions</h2>
+<pre>__construct(string|null $href<code> = null</code>, string|null $rel<code> = null</code>, string|null $type<code> = null</code>, string|null $hrefLang<code> = null</code>, string|null $title<code> = null</code>, string|null $length<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Zend_Gdata_App_Extension_Link::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$href</h4>
+<code>string</code><code>null</code><p>Linked resource URI</p></div>
+<div class="subelement argument">
+<h4>$rel</h4>
+<code>string</code><code>null</code><p>Forward relationship</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><code>null</code><p>Resource MIME type</p></div>
+<div class="subelement argument">
+<h4>$hrefLang</h4>
+<code>string</code><code>null</code><p>Resource language</p></div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><code>null</code><p>Human-readable resource title</p></div>
+<div class="subelement argument">
+<h4>$length</h4>
+<code>string</code><code>null</code><p>Resource length in octets</p></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>__construct()
+        </h2>
+<pre>__construct() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get inherited" data-toggle="collapse" data-target=".method___get .collapse" title="public">
+<h2>Magic getter to allow access like $entry-&gt;foo to call $entry-&gt;getFoo()
+Alternatively, if no getFoo() is defined, but a $_foo protected variable
+is defined, this is returned.</h2>
+<pre>__get(string $name) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>TODO Remove ability to bypass getFoo() methods??</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The variable name sought</p></div>
+</div></div>
+</div>
+<a id="method___isset"></a><div class="element clickable method public method___isset inherited" data-toggle="collapse" data-target=".method___isset .collapse" title="public">
+<h2>Magic __isset method</h2>
+<pre>__isset(string $name) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set inherited" data-toggle="collapse" data-target=".method___set .collapse" title="public">
+<h2>Magic setter to allow acces like $entry-&gt;foo='bar' to call
+$entry-&gt;setFoo('bar') automatically.</h2>
+<pre>__set(string $name, $val) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Alternatively, if no setFoo() is defined, but a $_foo protected variable
+is defined, this is returned.</p>
+<p>TODO Remove ability to bypass getFoo() methods??</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$val</h4></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString inherited" data-toggle="collapse" data-target=".method___toString .collapse" title="public">
+<h2>Magic toString method allows using this directly via echo
+Works best in PHP &gt;= 4.2.0</h2>
+<pre>__toString() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The text representation of this object</div>
+</div></div>
+</div>
+<a id="method___unset"></a><div class="element clickable method public method___unset inherited" data-toggle="collapse" data-target=".method___unset .collapse" title="public">
+<h2>Magic __unset method</h2>
+<pre>__unset(string $name) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_encode"></a><div class="element clickable method public method_encode inherited" data-toggle="collapse" data-target=".method_encode .collapse" title="public">
+<h2>Alias for saveXML()</h2>
+<pre>encode() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Can be overridden by children to provide more complex representations
+of entries.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Encoded string content</div>
+</div></div>
+</div>
+<a id="method_flushNamespaceLookupCache"></a><div class="element clickable method public method_flushNamespaceLookupCache inherited" data-toggle="collapse" data-target=".method_flushNamespaceLookupCache .collapse" title="public">
+<h2>Flush namespace lookup cache.</h2>
+<pre>flushNamespaceLookupCache() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Empties the namespace lookup cache. Call this function if you have
+added data to the namespace lookup table that contradicts values that
+may have been cached during a previous call to lookupNamespace().</p></div></div></div>
+</div>
+<a id="method_getDOM"></a><div class="element clickable method public method_getDOM inherited" data-toggle="collapse" data-target=".method_getDOM .collapse" title="public">
+<h2>Retrieves a DOMElement which corresponds to this element and all
+child properties.  This is used to build an entry back into a DOM
+and eventually XML text for sending to the server upon updates, or
+for application storage/persistence.</h2>
+<pre>getDOM(\DOMDocument $doc<code> = null</code>, $majorVersion<code> = 1</code>, $minorVersion<code> = null</code>) : \DOMElement</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$doc</h4>
+<code>\DOMDocument</code><p>The DOMDocument used to construct DOMElements</p></div>
+<div class="subelement argument"><h4>$majorVersion</h4></div>
+<div class="subelement argument"><h4>$minorVersion</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\DOMElement</code>The DOMElement representing this element and all
+child properties.</div>
+</div></div>
+</div>
+<a id="method_getExtensionAttributes"></a><div class="element clickable method public method_getExtensionAttributes inherited" data-toggle="collapse" data-target=".method_getExtensionAttributes .collapse" title="public">
+<h2>Returns an array of all extension attributes not transformed into data
+model properties during parsing of the XML.  Each element of the array
+is a hashed array of the format:
+    array('namespaceUri' =&gt; string, 'name' =&gt; string, 'value' =&gt; string);</h2>
+<pre>getExtensionAttributes() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>All extension attributes</div>
+</div></div>
+</div>
+<a id="method_getExtensionElements"></a><div class="element clickable method public method_getExtensionElements inherited" data-toggle="collapse" data-target=".method_getExtensionElements .collapse" title="public">
+<h2>Returns an array of all elements not matched to data model classes
+during the parsing of the XML</h2>
+<pre>getExtensionElements() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>All elements not matched to data model classes during parsing</div>
+</div></div>
+</div>
+<a id="method_getHref"></a><div class="element clickable method public method_getHref inherited" data-toggle="collapse" data-target=".method_getHref .collapse" title="public">
+<h2>getHref()
+        </h2>
+<pre>getHref() : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getHrefLang"></a><div class="element clickable method public method_getHrefLang inherited" data-toggle="collapse" data-target=".method_getHrefLang .collapse" title="public">
+<h2>getHrefLang()
+        </h2>
+<pre>getHrefLang() : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getLength"></a><div class="element clickable method public method_getLength inherited" data-toggle="collapse" data-target=".method_getLength .collapse" title="public">
+<h2>getLength()
+        </h2>
+<pre>getLength() : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getRel"></a><div class="element clickable method public method_getRel inherited" data-toggle="collapse" data-target=".method_getRel .collapse" title="public">
+<h2>getRel()
+        </h2>
+<pre>getRel() : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getText"></a><div class="element clickable method public method_getText inherited" data-toggle="collapse" data-target=".method_getText .collapse" title="public">
+<h2>Returns the child text node of this element
+This represents any raw text contained within the XML element</h2>
+<pre>getText($trim<code> = true</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$trim</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Child text node</div>
+</div></div>
+</div>
+<a id="method_getTitle"></a><div class="element clickable method public method_getTitle inherited" data-toggle="collapse" data-target=".method_getTitle .collapse" title="public">
+<h2>getTitle()
+        </h2>
+<pre>getTitle() : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getType"></a><div class="element clickable method public method_getType inherited" data-toggle="collapse" data-target=".method_getType .collapse" title="public">
+<h2>getType()
+        </h2>
+<pre>getType() : string | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_getXML"></a><div class="element clickable method public method_getXML inherited" data-toggle="collapse" data-target=".method_getXML .collapse" title="public">
+<h2>Alias for saveXML() returns XML content for this element and all
+children</h2>
+<pre>getXML() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>XML content</div>
+</div></div>
+</div>
+<a id="method_lookupNamespace"></a><div class="element clickable method public method_lookupNamespace inherited" data-toggle="collapse" data-target=".method_lookupNamespace .collapse" title="public">
+<h2>Get the full version of a namespace prefix</h2>
+<pre>lookupNamespace(string $prefix, integer $majorVersion<code> = 1</code>, integer $minorVersion<code> = null</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Looks up a prefix (atom:, etc.) in the list of registered
+namespaces and returns the full namespace URI if
+available. Returns the prefix, unmodified, if it's not
+registered.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$prefix</h4>
+<code>string</code><p>The namespace prefix to lookup.</p></div>
+<div class="subelement argument">
+<h4>$majorVersion</h4>
+<code>integer</code><p>The major protocol version in effect.
+Defaults to '1'.</p></div>
+<div class="subelement argument">
+<h4>$minorVersion</h4>
+<code>integer</code><p>The minor protocol version in effect.
+Defaults to null (use latest).</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_registerAllNamespaces"></a><div class="element clickable method public method_registerAllNamespaces inherited" data-toggle="collapse" data-target=".method_registerAllNamespaces .collapse" title="public">
+<h2>Add an array of namespaces to the registered list.</h2>
+<pre>registerAllNamespaces(array $namespaceArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Takes an array in the format of:
+namespace prefix, namespace URI, major protocol version,
+minor protocol version and adds them with calls to -&gt;registerNamespace()</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$namespaceArray</h4>
+<code>array</code><p>An array of namespaces.</p></div>
+</div></div>
+</div>
+<a id="method_registerNamespace"></a><div class="element clickable method public method_registerNamespace inherited" data-toggle="collapse" data-target=".method_registerNamespace .collapse" title="public">
+<h2>Add a namespace and prefix to the registered list</h2>
+<pre>registerNamespace(string $prefix, string $namespaceUri, integer $majorVersion<code> = 1</code>, integer $minorVersion<code> = 0</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Takes a prefix and a full namespace URI and adds them to the
+list of registered namespaces for use by
+$this-&gt;lookupNamespace().</p>
+<p>WARNING: Currently, registering a namespace will NOT invalidate any
+memoized data stored in $_namespaceLookupCache. Under normal
+use, this behavior is acceptable. If you are adding
+contradictory data to the namespace lookup table, you must
+call flushNamespaceLookupCache().</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$prefix</h4>
+<code>string</code><p>The namespace prefix</p></div>
+<div class="subelement argument">
+<h4>$namespaceUri</h4>
+<code>string</code><p>The full namespace URI</p></div>
+<div class="subelement argument">
+<h4>$majorVersion</h4>
+<code>integer</code><p>The major protocol version in effect.
+Defaults to '1'.</p></div>
+<div class="subelement argument">
+<h4>$minorVersion</h4>
+<code>integer</code><p>The minor protocol version in effect.
+Defaults to null (use latest).</p></div>
+</div></div>
+</div>
+<a id="method_saveXML"></a><div class="element clickable method public method_saveXML inherited" data-toggle="collapse" data-target=".method_saveXML .collapse" title="public">
+<h2>Converts this element and all children into XML text using getDOM()</h2>
+<pre>saveXML() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>XML content</div>
+</div></div>
+</div>
+<a id="method_setExtensionAttributes"></a><div class="element clickable method public method_setExtensionAttributes inherited" data-toggle="collapse" data-target=".method_setExtensionAttributes .collapse" title="public">
+<h2>Sets an array of all extension attributes not transformed into data
+model properties during parsing of the XML.  Each element of the array
+is a hashed array of the format:
+    array('namespaceUri' =&gt; string, 'name' =&gt; string, 'value' =&gt; string);
+This can be used to add arbitrary attributes to any data model element</h2>
+<pre>setExtensionAttributes(array $value) : \Zend_Gdata_App_Base</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code><p>All extension attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Base</code>Returns an object of the same type as 'this' to provide a fluent interface.</div>
+</div></div>
+</div>
+<a id="method_setExtensionElements"></a><div class="element clickable method public method_setExtensionElements inherited" data-toggle="collapse" data-target=".method_setExtensionElements .collapse" title="public">
+<h2>Sets an array of all elements not matched to data model classes
+during the parsing of the XML.  This method can be used to add arbitrary
+child XML elements to any data model class.</h2>
+<pre>setExtensionElements(array $value) : \Zend_Gdata_App_Base</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code><p>All extension elements</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Base</code>Returns an object of the same type as 'this' to provide a fluent interface.</div>
+</div></div>
+</div>
+<a id="method_setHref"></a><div class="element clickable method public method_setHref inherited" data-toggle="collapse" data-target=".method_setHref .collapse" title="public">
+<h2>setHref()
+        </h2>
+<pre>setHref(string|null $value) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setHrefLang"></a><div class="element clickable method public method_setHrefLang inherited" data-toggle="collapse" data-target=".method_setHrefLang .collapse" title="public">
+<h2>setHrefLang()
+        </h2>
+<pre>setHrefLang(string|null $value) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setLength"></a><div class="element clickable method public method_setLength inherited" data-toggle="collapse" data-target=".method_setLength .collapse" title="public">
+<h2>setLength()
+        </h2>
+<pre>setLength(string|null $value) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setRel"></a><div class="element clickable method public method_setRel inherited" data-toggle="collapse" data-target=".method_setRel .collapse" title="public">
+<h2>setRel()
+        </h2>
+<pre>setRel(string|null $value) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setText"></a><div class="element clickable method public method_setText inherited" data-toggle="collapse" data-target=".method_setText .collapse" title="public">
+<h2>Sets the child text node of this element
+This represents any raw text contained within the XML element</h2>
+<pre>setText(string $value) : \Zend_Gdata_App_Base</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>Child text node</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Base</code>Returns an object of the same type as 'this' to provide a fluent interface.</div>
+</div></div>
+</div>
+<a id="method_setTitle"></a><div class="element clickable method public method_setTitle inherited" data-toggle="collapse" data-target=".method_setTitle .collapse" title="public">
+<h2>setTitle()
+        </h2>
+<pre>setTitle(string|null $value) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_setType"></a><div class="element clickable method public method_setType inherited" data-toggle="collapse" data-target=".method_setType .collapse" title="public">
+<h2>setType()
+        </h2>
+<pre>setType(string|null $value) : \Zend_Gdata_App_Entry</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Gdata_App_Entry</code>Provides a fluent interface</div>
+</div></div>
+</div>
+<a id="method_transferFromDOM"></a><div class="element clickable method public method_transferFromDOM inherited" data-toggle="collapse" data-target=".method_transferFromDOM .collapse" title="public">
+<h2>Transfers each child and attribute into member variables.</h2>
+<pre>transferFromDOM(\DOMNode $node) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This is called when XML is received over the wire and the data
+model needs to be built to represent this XML.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$node</h4>
+<code>\DOMNode</code><p>The DOMNode that represents this object's data</p></div>
+</div></div>
+</div>
+<a id="method_transferFromXML"></a><div class="element clickable method public method_transferFromXML inherited" data-toggle="collapse" data-target=".method_transferFromXML .collapse" title="public">
+<h2>Parses the provided XML text and generates data model classes for
+each know element by turning the XML text into a DOM tree and calling
+transferFromDOM($element).  The first data model element with the same
+name as $this-&gt;_rootElement is used and the child elements are
+recursively parsed.</h2>
+<pre>transferFromXML(string $xml) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$xml</h4>
+<code>string</code><p>The XML text to parse</p></div>
+</div></div>
+</div>
+<a id="method_takeAttributeFromDOM"></a><div class="element clickable method protected method_takeAttributeFromDOM inherited" data-toggle="collapse" data-target=".method_takeAttributeFromDOM .collapse" title="protected">
+<h2>Given a DOMNode representing an attribute, tries to map the data into
+instance members.  If no mapping is defined, the name and value are
+stored in an array.</h2>
+<pre>takeAttributeFromDOM(\DOMNode $attribute) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attribute</h4>
+<code>\DOMNode</code><p>The DOMNode attribute needed to be handled</p></div>
+</div></div>
+</div>
+<a id="method_takeChildFromDOM"></a><div class="element clickable method protected method_takeChildFromDOM inherited" data-toggle="collapse" data-target=".method_takeChildFromDOM .collapse" title="protected">
+<h2>Given a child DOMNode, tries to determine how to map the data into
+object instance members.  If no mapping is defined, Extension_Element
+objects are created and stored in an array.</h2>
+<pre>takeChildFromDOM(\DOMNode $child) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$child</h4>
+<code>\DOMNode</code><p>The DOMNode needed to be handled</p></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__extensionAttributes"> </a><div class="element clickable property protected property__extensionAttributes" data-toggle="collapse" data-target=".property__extensionAttributes .collapse" title="protected">
+<h2>Leftover attributes which were not handled</h2>
+<pre>$_extensionAttributes : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__extensionElements"> </a><div class="element clickable property protected property__extensionElements" data-toggle="collapse" data-target=".property__extensionElements .collapse" title="protected">
+<h2>Leftover elements which were not handled</h2>
+<pre>$_extensionElements : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__href"> </a><div class="element clickable property protected property__href" data-toggle="collapse" data-target=".property__href .collapse" title="protected">
+<h2>$_href</h2>
+<pre>$_href </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__hrefLang"> </a><div class="element clickable property protected property__hrefLang" data-toggle="collapse" data-target=".property__hrefLang .collapse" title="protected">
+<h2>$_hrefLang</h2>
+<pre>$_hrefLang </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__length"> </a><div class="element clickable property protected property__length" data-toggle="collapse" data-target=".property__length .collapse" title="protected">
+<h2>$_length</h2>
+<pre>$_length </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__namespaceLookupCache"> </a><div class="element clickable property protected property__namespaceLookupCache" data-toggle="collapse" data-target=".property__namespaceLookupCache .collapse" title="protected">
+<h2>Memoized results from calls to lookupNamespace() to avoid
+expensive calls to getGreatestBoundedValue(). The key is in the
+form 'prefix-majorVersion-minorVersion', and the value is the
+output from getGreatestBoundedValue().</h2>
+<pre>$_namespaceLookupCache : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__namespaces"> </a><div class="element clickable property protected property__namespaces" data-toggle="collapse" data-target=".property__namespaces .collapse" title="protected">
+<h2>List of namespaces, as a three-dimensional array. The first dimension
+represents the namespace prefix, the second dimension represents the
+minimum major protocol version, and the third dimension is the minimum
+minor protocol version. Null keys are NOT allowed.</h2>
+<pre>$_namespaces : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('atom' => array(1 => array(0 => 'http://www.w3.org/2005/Atom')), 'app' => array(1 => array(0 => 'http://purl.org/atom/app#'), 2 => array(0 => 'http://www.w3.org/2007/app')))</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>When looking up a namespace for a given prefix, the greatest version
+number (both major and minor) which is less than the effective version
+should be used.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App_Base::lookupNamespace()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App_Base::registerNamespace()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CZend_Gdata_App_Base::registerAllNamespaces()"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__rel"> </a><div class="element clickable property protected property__rel" data-toggle="collapse" data-target=".property__rel .collapse" title="protected">
+<h2>$_rel</h2>
+<pre>$_rel </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__rootElement"> </a><div class="element clickable property protected property__rootElement" data-toggle="collapse" data-target=".property__rootElement .collapse" title="protected">
+<h2>The XML element name, including prefix if desired</h2>
+<pre>$_rootElement : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__rootNamespace"> </a><div class="element clickable property protected property__rootNamespace" data-toggle="collapse" data-target=".property__rootNamespace .collapse" title="protected">
+<h2>The XML namespace prefix</h2>
+<pre>$_rootNamespace : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'atom'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__rootNamespaceURI"> </a><div class="element clickable property protected property__rootNamespaceURI" data-toggle="collapse" data-target=".property__rootNamespaceURI .collapse" title="protected">
+<h2>The XML namespace URI - takes precedence over lookup up the
+corresponding URI for $_rootNamespace</h2>
+<pre>$_rootNamespaceURI : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__text"> </a><div class="element clickable property protected property__text" data-toggle="collapse" data-target=".property__text .collapse" title="protected">
+<h2>XML child text node content</h2>
+<pre>$_text : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__title"> </a><div class="element clickable property protected property__title" data-toggle="collapse" data-target=".property__title .collapse" title="protected">
+<h2>$_title</h2>
+<pre>$_title </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__type"> </a><div class="element clickable property protected property__type" data-toggle="collapse" data-target=".property__type .collapse" title="protected">
+<h2>$_type</h2>
+<pre>$_type </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:41:58-06:00.<br></footer></div>
+</div>
+</body>
+</html>

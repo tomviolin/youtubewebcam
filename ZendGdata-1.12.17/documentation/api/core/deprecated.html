@@ -1,0 +1,2212 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Zend Gdata API Documentation</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="css/template.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Zend Gdata API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+<li><a href="packages/Zend_Gdata.html"><i class="icon-folder-open"></i> Zend_Gdata</a></li>
+<li><a href="packages/Zend_Http.html"><i class="icon-folder-open"></i> Zend_Http</a></li>
+<li><a href="packages/Zend_Loader.html"><i class="icon-folder-open"></i> Zend_Loader</a></li>
+<li><a href="packages/Zend_Registry.html"><i class="icon-folder-open"></i> Zend_Registry</a></li>
+<li><a href="packages/Zend_Uri.html"><i class="icon-folder-open"></i> Zend_Uri</a></li>
+<li><a href="packages/Zend_Validate.html"><i class="icon-folder-open"></i> Zend_Validate</a></li>
+<li><a href="packages/Zend_Version.html"><i class="icon-folder-open"></i> Zend_Version</a></li>
+</ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1688</span></a></li>
+<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">188</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4"><ul class="side-nav nav nav-list">
+<li class="nav-header">Navigation</li>
+<li><a href="#Http/Client.php"><i class="icon-file"></i>Http/Client.php</a></li>
+<li><a href="#Loader.php"><i class="icon-file"></i>Loader.php</a></li>
+<li><a href="#Validate/Ip.php"><i class="icon-file"></i>Validate/Ip.php</a></li>
+<li><a href="#Validate/Hostname.php"><i class="icon-file"></i>Validate/Hostname.php</a></li>
+<li><a href="#Validate/Abstract.php"><i class="icon-file"></i>Validate/Abstract.php</a></li>
+<li><a href="#Gdata/Calendar/ListEntry.php"><i class="icon-file"></i>Gdata/Calendar/ListEntry.php</a></li>
+<li><a href="#Gdata/Calendar/EventFeed.php"><i class="icon-file"></i>Gdata/Calendar/EventFeed.php</a></li>
+<li><a href="#Gdata/Calendar/ListFeed.php"><i class="icon-file"></i>Gdata/Calendar/ListFeed.php</a></li>
+<li><a href="#Gdata/Calendar/EventEntry.php"><i class="icon-file"></i>Gdata/Calendar/EventEntry.php</a></li>
+<li><a href="#Gdata/HttpClient.php"><i class="icon-file"></i>Gdata/HttpClient.php</a></li>
+<li><a href="#Gdata/Books/CollectionEntry.php"><i class="icon-file"></i>Gdata/Books/CollectionEntry.php</a></li>
+<li><a href="#Gdata/Books/CollectionFeed.php"><i class="icon-file"></i>Gdata/Books/CollectionFeed.php</a></li>
+<li><a href="#Gdata/Books/VolumeEntry.php"><i class="icon-file"></i>Gdata/Books/VolumeEntry.php</a></li>
+<li><a href="#Gdata/Books/VolumeFeed.php"><i class="icon-file"></i>Gdata/Books/VolumeFeed.php</a></li>
+<li><a href="#Gdata/Gbase/ItemFeed.php"><i class="icon-file"></i>Gdata/Gbase/ItemFeed.php</a></li>
+<li><a href="#Gdata/Gbase/SnippetEntry.php"><i class="icon-file"></i>Gdata/Gbase/SnippetEntry.php</a></li>
+<li><a href="#Gdata/Gbase/Feed.php"><i class="icon-file"></i>Gdata/Gbase/Feed.php</a></li>
+<li><a href="#Gdata/Gbase/ItemEntry.php"><i class="icon-file"></i>Gdata/Gbase/ItemEntry.php</a></li>
+<li><a href="#Gdata/Gbase/SnippetFeed.php"><i class="icon-file"></i>Gdata/Gbase/SnippetFeed.php</a></li>
+<li><a href="#Gdata/Gbase/Entry.php"><i class="icon-file"></i>Gdata/Gbase/Entry.php</a></li>
+<li><a href="#Gdata/Health/ProfileListFeed.php"><i class="icon-file"></i>Gdata/Health/ProfileListFeed.php</a></li>
+<li><a href="#Gdata/Health/ProfileEntry.php"><i class="icon-file"></i>Gdata/Health/ProfileEntry.php</a></li>
+<li><a href="#Gdata/Health/ProfileFeed.php"><i class="icon-file"></i>Gdata/Health/ProfileFeed.php</a></li>
+<li><a href="#Gdata/Health/ProfileListEntry.php"><i class="icon-file"></i>Gdata/Health/ProfileListEntry.php</a></li>
+<li><a href="#Gdata/YouTube/SubscriptionFeed.php"><i class="icon-file"></i>Gdata/YouTube/SubscriptionFeed.php</a></li>
+<li><a href="#Gdata/YouTube/MediaEntry.php"><i class="icon-file"></i>Gdata/YouTube/MediaEntry.php</a></li>
+<li><a href="#Gdata/YouTube/ActivityEntry.php"><i class="icon-file"></i>Gdata/YouTube/ActivityEntry.php</a></li>
+<li><a href="#Gdata/YouTube/ContactEntry.php"><i class="icon-file"></i>Gdata/YouTube/ContactEntry.php</a></li>
+<li><a href="#Gdata/YouTube/UserProfileEntry.php"><i class="icon-file"></i>Gdata/YouTube/UserProfileEntry.php</a></li>
+<li><a href="#Gdata/YouTube/CommentEntry.php"><i class="icon-file"></i>Gdata/YouTube/CommentEntry.php</a></li>
+<li><a href="#Gdata/YouTube/InboxFeed.php"><i class="icon-file"></i>Gdata/YouTube/InboxFeed.php</a></li>
+<li><a href="#Gdata/YouTube/ContactFeed.php"><i class="icon-file"></i>Gdata/YouTube/ContactFeed.php</a></li>
+<li><a href="#Gdata/YouTube/ActivityFeed.php"><i class="icon-file"></i>Gdata/YouTube/ActivityFeed.php</a></li>
+<li><a href="#Gdata/YouTube/PlaylistVideoFeed.php"><i class="icon-file"></i>Gdata/YouTube/PlaylistVideoFeed.php</a></li>
+<li><a href="#Gdata/YouTube/VideoFeed.php"><i class="icon-file"></i>Gdata/YouTube/VideoFeed.php</a></li>
+<li><a href="#Gdata/YouTube/PlaylistListEntry.php"><i class="icon-file"></i>Gdata/YouTube/PlaylistListEntry.php</a></li>
+<li><a href="#Gdata/YouTube/InboxEntry.php"><i class="icon-file"></i>Gdata/YouTube/InboxEntry.php</a></li>
+<li><a href="#Gdata/YouTube/VideoEntry.php"><i class="icon-file"></i>Gdata/YouTube/VideoEntry.php</a></li>
+<li><a href="#Gdata/YouTube/CommentFeed.php"><i class="icon-file"></i>Gdata/YouTube/CommentFeed.php</a></li>
+<li><a href="#Gdata/YouTube/SubscriptionEntry.php"><i class="icon-file"></i>Gdata/YouTube/SubscriptionEntry.php</a></li>
+<li><a href="#Gdata/YouTube/PlaylistListFeed.php"><i class="icon-file"></i>Gdata/YouTube/PlaylistListFeed.php</a></li>
+<li><a href="#Gdata/YouTube/PlaylistVideoEntry.php"><i class="icon-file"></i>Gdata/YouTube/PlaylistVideoEntry.php</a></li>
+<li><a href="#Gdata/Feed.php"><i class="icon-file"></i>Gdata/Feed.php</a></li>
+<li><a href="#Gdata/Spreadsheets/ListEntry.php"><i class="icon-file"></i>Gdata/Spreadsheets/ListEntry.php</a></li>
+<li><a href="#Gdata/Spreadsheets/SpreadsheetFeed.php"><i class="icon-file"></i>Gdata/Spreadsheets/SpreadsheetFeed.php</a></li>
+<li><a href="#Gdata/Spreadsheets/CellFeed.php"><i class="icon-file"></i>Gdata/Spreadsheets/CellFeed.php</a></li>
+<li><a href="#Gdata/Spreadsheets/SpreadsheetEntry.php"><i class="icon-file"></i>Gdata/Spreadsheets/SpreadsheetEntry.php</a></li>
+<li><a href="#Gdata/Spreadsheets/ListFeed.php"><i class="icon-file"></i>Gdata/Spreadsheets/ListFeed.php</a></li>
+<li><a href="#Gdata/Spreadsheets/WorksheetEntry.php"><i class="icon-file"></i>Gdata/Spreadsheets/WorksheetEntry.php</a></li>
+<li><a href="#Gdata/Spreadsheets/CellEntry.php"><i class="icon-file"></i>Gdata/Spreadsheets/CellEntry.php</a></li>
+<li><a href="#Gdata/Spreadsheets/WorksheetFeed.php"><i class="icon-file"></i>Gdata/Spreadsheets/WorksheetFeed.php</a></li>
+<li><a href="#Gdata/Kind/EventEntry.php"><i class="icon-file"></i>Gdata/Kind/EventEntry.php</a></li>
+<li><a href="#Gdata/Docs/DocumentListEntry.php"><i class="icon-file"></i>Gdata/Docs/DocumentListEntry.php</a></li>
+<li><a href="#Gdata/Docs/DocumentListFeed.php"><i class="icon-file"></i>Gdata/Docs/DocumentListFeed.php</a></li>
+<li><a href="#Gdata/Geo/Feed.php"><i class="icon-file"></i>Gdata/Geo/Feed.php</a></li>
+<li><a href="#Gdata/Geo/Entry.php"><i class="icon-file"></i>Gdata/Geo/Entry.php</a></li>
+<li><a href="#Gdata/Analytics/DataFeed.php"><i class="icon-file"></i>Gdata/Analytics/DataFeed.php</a></li>
+<li><a href="#Gdata/Analytics/AccountFeed.php"><i class="icon-file"></i>Gdata/Analytics/AccountFeed.php</a></li>
+<li><a href="#Gdata/Analytics/AccountEntry.php"><i class="icon-file"></i>Gdata/Analytics/AccountEntry.php</a></li>
+<li><a href="#Gdata/Analytics/DataEntry.php"><i class="icon-file"></i>Gdata/Analytics/DataEntry.php</a></li>
+<li><a href="#Gdata/App/Extension/Source.php"><i class="icon-file"></i>Gdata/App/Extension/Source.php</a></li>
+<li><a href="#Gdata/App/MediaEntry.php"><i class="icon-file"></i>Gdata/App/MediaEntry.php</a></li>
+<li><a href="#Gdata/App/FeedEntryParent.php"><i class="icon-file"></i>Gdata/App/FeedEntryParent.php</a></li>
+<li><a href="#Gdata/App/Feed.php"><i class="icon-file"></i>Gdata/App/Feed.php</a></li>
+<li><a href="#Gdata/App/FeedSourceParent.php"><i class="icon-file"></i>Gdata/App/FeedSourceParent.php</a></li>
+<li><a href="#Gdata/App/Entry.php"><i class="icon-file"></i>Gdata/App/Entry.php</a></li>
+<li><a href="#Gdata/Media/Feed.php"><i class="icon-file"></i>Gdata/Media/Feed.php</a></li>
+<li><a href="#Gdata/Media/Entry.php"><i class="icon-file"></i>Gdata/Media/Entry.php</a></li>
+<li><a href="#Gdata/Entry.php"><i class="icon-file"></i>Gdata/Entry.php</a></li>
+<li><a href="#Gdata/Gapps/UserEntry.php"><i class="icon-file"></i>Gdata/Gapps/UserEntry.php</a></li>
+<li><a href="#Gdata/Gapps/EmailListEntry.php"><i class="icon-file"></i>Gdata/Gapps/EmailListEntry.php</a></li>
+<li><a href="#Gdata/Gapps/EmailListFeed.php"><i class="icon-file"></i>Gdata/Gapps/EmailListFeed.php</a></li>
+<li><a href="#Gdata/Gapps/NicknameFeed.php"><i class="icon-file"></i>Gdata/Gapps/NicknameFeed.php</a></li>
+<li><a href="#Gdata/Gapps/NicknameEntry.php"><i class="icon-file"></i>Gdata/Gapps/NicknameEntry.php</a></li>
+<li><a href="#Gdata/Gapps/EmailListRecipientEntry.php"><i class="icon-file"></i>Gdata/Gapps/EmailListRecipientEntry.php</a></li>
+<li><a href="#Gdata/Gapps/OwnerEntry.php"><i class="icon-file"></i>Gdata/Gapps/OwnerEntry.php</a></li>
+<li><a href="#Gdata/Gapps/EmailListRecipientFeed.php"><i class="icon-file"></i>Gdata/Gapps/EmailListRecipientFeed.php</a></li>
+<li><a href="#Gdata/Gapps/GroupEntry.php"><i class="icon-file"></i>Gdata/Gapps/GroupEntry.php</a></li>
+<li><a href="#Gdata/Gapps/OwnerFeed.php"><i class="icon-file"></i>Gdata/Gapps/OwnerFeed.php</a></li>
+<li><a href="#Gdata/Gapps/GroupFeed.php"><i class="icon-file"></i>Gdata/Gapps/GroupFeed.php</a></li>
+<li><a href="#Gdata/Gapps/UserFeed.php"><i class="icon-file"></i>Gdata/Gapps/UserFeed.php</a></li>
+<li><a href="#Gdata/Gapps/MemberFeed.php"><i class="icon-file"></i>Gdata/Gapps/MemberFeed.php</a></li>
+<li><a href="#Gdata/Gapps/MemberEntry.php"><i class="icon-file"></i>Gdata/Gapps/MemberEntry.php</a></li>
+<li><a href="#Gdata/Exif/Feed.php"><i class="icon-file"></i>Gdata/Exif/Feed.php</a></li>
+<li><a href="#Gdata/Exif/Entry.php"><i class="icon-file"></i>Gdata/Exif/Entry.php</a></li>
+<li><a href="#Gdata/Photos/UserEntry.php"><i class="icon-file"></i>Gdata/Photos/UserEntry.php</a></li>
+<li><a href="#Gdata/Photos/TagEntry.php"><i class="icon-file"></i>Gdata/Photos/TagEntry.php</a></li>
+<li><a href="#Gdata/Photos/AlbumEntry.php"><i class="icon-file"></i>Gdata/Photos/AlbumEntry.php</a></li>
+<li><a href="#Gdata/Photos/CommentEntry.php"><i class="icon-file"></i>Gdata/Photos/CommentEntry.php</a></li>
+<li><a href="#Gdata/Photos/PhotoEntry.php"><i class="icon-file"></i>Gdata/Photos/PhotoEntry.php</a></li>
+<li><a href="#Gdata/Photos/AlbumFeed.php"><i class="icon-file"></i>Gdata/Photos/AlbumFeed.php</a></li>
+<li><a href="#Gdata/Photos/PhotoFeed.php"><i class="icon-file"></i>Gdata/Photos/PhotoFeed.php</a></li>
+<li><a href="#Gdata/Photos/UserFeed.php"><i class="icon-file"></i>Gdata/Photos/UserFeed.php</a></li>
+</ul></div>
+<div class="span8">
+<ul class="breadcrumb">
+<li>
+<a href=""><i class="icon-stop"></i></a><span class="divider">\</span>
+</li>
+<li>Deprecated elements</li>
+</ul>
+<div id="marker-accordion">
+<a name="Http/Client.php" id="Http/Client.php"></a><h3>
+<i class="icon-file"></i>Http/Client.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>1385</td>
+<td>since 1.9</td>
+</tr>
+</table></div>
+<a name="Loader.php" id="Loader.php"></a><h3>
+<i class="icon-file"></i>Loader.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>231</td>
+<td>Since 1.8.0</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>252</td>
+<td>Since 1.8.0</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>309</td>
+<td>Since 1.5.0; use loadFile() instead</td>
+</tr>
+</table></div>
+<a name="Validate/Ip.php" id="Validate/Ip.php"></a><h3>
+<i class="icon-file"></i>Validate/Ip.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>316</td>
+<td>Since 1.5.0</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>76</td>
+<td>Since 1.5.0</td>
+</tr>
+</table></div>
+<a name="Validate/Hostname.php" id="Validate/Hostname.php"></a><h3>
+<i class="icon-file"></i>Validate/Hostname.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>316</td>
+<td>Since 1.5.0</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>76</td>
+<td>Since 1.5.0</td>
+</tr>
+</table></div>
+<a name="Validate/Abstract.php" id="Validate/Abstract.php"></a><h3>
+<i class="icon-file"></i>Validate/Abstract.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>316</td>
+<td>Since 1.5.0</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>76</td>
+<td>Since 1.5.0</td>
+</tr>
+</table></div>
+<a name="Gdata/Calendar/ListEntry.php" id="Gdata/Calendar/ListEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Calendar/ListEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Calendar/EventFeed.php" id="Gdata/Calendar/EventFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Calendar/EventFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Calendar/ListFeed.php" id="Gdata/Calendar/ListFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Calendar/ListFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Calendar/EventEntry.php" id="Gdata/Calendar/EventEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Calendar/EventEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/HttpClient.php" id="Gdata/HttpClient.php"></a><h3>
+<i class="icon-file"></i>Gdata/HttpClient.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>1385</td>
+<td>since 1.9</td>
+</tr>
+</table></div>
+<a name="Gdata/Books/CollectionEntry.php" id="Gdata/Books/CollectionEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Books/CollectionEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Books/CollectionFeed.php" id="Gdata/Books/CollectionFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Books/CollectionFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Books/VolumeEntry.php" id="Gdata/Books/VolumeEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Books/VolumeEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Books/VolumeFeed.php" id="Gdata/Books/VolumeFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Books/VolumeFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gbase/ItemFeed.php" id="Gdata/Gbase/ItemFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gbase/ItemFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gbase/SnippetEntry.php" id="Gdata/Gbase/SnippetEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gbase/SnippetEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gbase/Feed.php" id="Gdata/Gbase/Feed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gbase/Feed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gbase/ItemEntry.php" id="Gdata/Gbase/ItemEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gbase/ItemEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gbase/SnippetFeed.php" id="Gdata/Gbase/SnippetFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gbase/SnippetFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gbase/Entry.php" id="Gdata/Gbase/Entry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gbase/Entry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Health/ProfileListFeed.php" id="Gdata/Health/ProfileListFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Health/ProfileListFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Health/ProfileEntry.php" id="Gdata/Health/ProfileEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Health/ProfileEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Health/ProfileFeed.php" id="Gdata/Health/ProfileFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Health/ProfileFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Health/ProfileListEntry.php" id="Gdata/Health/ProfileListEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Health/ProfileListEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/SubscriptionFeed.php" id="Gdata/YouTube/SubscriptionFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/SubscriptionFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/MediaEntry.php" id="Gdata/YouTube/MediaEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/MediaEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/ActivityEntry.php" id="Gdata/YouTube/ActivityEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/ActivityEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/ContactEntry.php" id="Gdata/YouTube/ContactEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/ContactEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/UserProfileEntry.php" id="Gdata/YouTube/UserProfileEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/UserProfileEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/CommentEntry.php" id="Gdata/YouTube/CommentEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/CommentEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/InboxFeed.php" id="Gdata/YouTube/InboxFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/InboxFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/ContactFeed.php" id="Gdata/YouTube/ContactFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/ContactFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/ActivityFeed.php" id="Gdata/YouTube/ActivityFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/ActivityFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/PlaylistVideoFeed.php" id="Gdata/YouTube/PlaylistVideoFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/PlaylistVideoFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/VideoFeed.php" id="Gdata/YouTube/VideoFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/VideoFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/PlaylistListEntry.php" id="Gdata/YouTube/PlaylistListEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/PlaylistListEntry.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>183</td>
+<td>Deprecated as of version 2 of the YouTube API.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>81</td>
+<td>Deprecated as of version 2 of the YouTube API.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/InboxEntry.php" id="Gdata/YouTube/InboxEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/InboxEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/VideoEntry.php" id="Gdata/YouTube/VideoEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/VideoEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/CommentFeed.php" id="Gdata/YouTube/CommentFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/CommentFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/SubscriptionEntry.php" id="Gdata/YouTube/SubscriptionEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/SubscriptionEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/PlaylistListFeed.php" id="Gdata/YouTube/PlaylistListFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/PlaylistListFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/YouTube/PlaylistVideoEntry.php" id="Gdata/YouTube/PlaylistVideoEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/YouTube/PlaylistVideoEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Feed.php" id="Gdata/Feed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Feed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/ListEntry.php" id="Gdata/Spreadsheets/ListEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/ListEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/SpreadsheetFeed.php" id="Gdata/Spreadsheets/SpreadsheetFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/SpreadsheetFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/CellFeed.php" id="Gdata/Spreadsheets/CellFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/CellFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/SpreadsheetEntry.php" id="Gdata/Spreadsheets/SpreadsheetEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/SpreadsheetEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/ListFeed.php" id="Gdata/Spreadsheets/ListFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/ListFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/WorksheetEntry.php" id="Gdata/Spreadsheets/WorksheetEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/WorksheetEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/CellEntry.php" id="Gdata/Spreadsheets/CellEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/CellEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Spreadsheets/WorksheetFeed.php" id="Gdata/Spreadsheets/WorksheetFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Spreadsheets/WorksheetFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Kind/EventEntry.php" id="Gdata/Kind/EventEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Kind/EventEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Docs/DocumentListEntry.php" id="Gdata/Docs/DocumentListEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Docs/DocumentListEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Docs/DocumentListFeed.php" id="Gdata/Docs/DocumentListFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Docs/DocumentListFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Geo/Feed.php" id="Gdata/Geo/Feed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Geo/Feed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Geo/Entry.php" id="Gdata/Geo/Entry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Geo/Entry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Analytics/DataFeed.php" id="Gdata/Analytics/DataFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Analytics/DataFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Analytics/AccountFeed.php" id="Gdata/Analytics/AccountFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Analytics/AccountFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Analytics/AccountEntry.php" id="Gdata/Analytics/AccountEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Analytics/AccountEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Analytics/DataEntry.php" id="Gdata/Analytics/DataEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Analytics/DataEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/App/Extension/Source.php" id="Gdata/App/Extension/Source.php"></a><h3>
+<i class="icon-file"></i>Gdata/App/Extension/Source.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/App/MediaEntry.php" id="Gdata/App/MediaEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/App/MediaEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/App/FeedEntryParent.php" id="Gdata/App/FeedEntryParent.php"></a><h3>
+<i class="icon-file"></i>Gdata/App/FeedEntryParent.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/App/Feed.php" id="Gdata/App/Feed.php"></a><h3>
+<i class="icon-file"></i>Gdata/App/Feed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/App/FeedSourceParent.php" id="Gdata/App/FeedSourceParent.php"></a><h3>
+<i class="icon-file"></i>Gdata/App/FeedSourceParent.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>95</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/App/Entry.php" id="Gdata/App/Entry.php"></a><h3>
+<i class="icon-file"></i>Gdata/App/Entry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Media/Feed.php" id="Gdata/Media/Feed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Media/Feed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Media/Entry.php" id="Gdata/Media/Entry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Media/Entry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Entry.php" id="Gdata/Entry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Entry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/UserEntry.php" id="Gdata/Gapps/UserEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/UserEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/EmailListEntry.php" id="Gdata/Gapps/EmailListEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/EmailListEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/EmailListFeed.php" id="Gdata/Gapps/EmailListFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/EmailListFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/NicknameFeed.php" id="Gdata/Gapps/NicknameFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/NicknameFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/NicknameEntry.php" id="Gdata/Gapps/NicknameEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/NicknameEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/EmailListRecipientEntry.php" id="Gdata/Gapps/EmailListRecipientEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/EmailListRecipientEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/OwnerEntry.php" id="Gdata/Gapps/OwnerEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/OwnerEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/EmailListRecipientFeed.php" id="Gdata/Gapps/EmailListRecipientFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/EmailListRecipientFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/GroupEntry.php" id="Gdata/Gapps/GroupEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/GroupEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/OwnerFeed.php" id="Gdata/Gapps/OwnerFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/OwnerFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/GroupFeed.php" id="Gdata/Gapps/GroupFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/GroupFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/UserFeed.php" id="Gdata/Gapps/UserFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/UserFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/MemberFeed.php" id="Gdata/Gapps/MemberFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/MemberFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Gapps/MemberEntry.php" id="Gdata/Gapps/MemberEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Gapps/MemberEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Exif/Feed.php" id="Gdata/Exif/Feed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Exif/Feed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Exif/Entry.php" id="Gdata/Exif/Entry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Exif/Entry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/UserEntry.php" id="Gdata/Photos/UserEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/UserEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/TagEntry.php" id="Gdata/Photos/TagEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/TagEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/AlbumEntry.php" id="Gdata/Photos/AlbumEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/AlbumEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/CommentEntry.php" id="Gdata/Photos/CommentEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/CommentEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/PhotoEntry.php" id="Gdata/Photos/PhotoEntry.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/PhotoEntry.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/AlbumFeed.php" id="Gdata/Photos/AlbumFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/AlbumFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/PhotoFeed.php" id="Gdata/Photos/PhotoFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/PhotoFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+<a name="Gdata/Photos/UserFeed.php" id="Gdata/Photos/UserFeed.php"></a><h3>
+<i class="icon-file"></i>Gdata/Photos/UserFeed.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>153</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            setService() instead.</td>
+</tr>
+<tr>
+<td>deprecated</td>
+<td>170</td>
+<td>Deprecated as of Zend Framework 1.7. Use
+            getService() instead.</td>
+</tr>
+</table></div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2015-11-23T12:42:29-06:00.<br></footer></div>
+</div>
+</body>
+</html>
