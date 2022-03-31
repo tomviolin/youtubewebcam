@@ -1,1 +1,1 @@
-/home/tomh/iphonepics/tl/
+/opt/webcam/tl/

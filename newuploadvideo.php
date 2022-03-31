@@ -1,7 +1,7 @@
 <?php
 
 $USER=getenv('USER');
-chdir("/media/raid0/home/tomh/projects/youtubewebcam");
+chdir("/home/tomh/microservices/youtubewebcam");
 $vidPath = $argv[1];
 
 echo "Processing '$vidPath'...\n";
@@ -55,15 +55,17 @@ $videoTags=array('UWM','SFS','Freshwater','Sciences','webcam','Milwaukee','harbo
 $key = file_get_contents('the_key.txt');
  
 //set_include_path($_SERVER['DOCUMENT_ROOT'] . '/path-to-your-director/');
-set_include_path(get_include_path() . PATH_SEPARATOR . '/home/tomh-b/projects/youtubewebcam/google-api-php-client/src' . PATH_SEPARATOR . '/home/tomh/projects/youtubewebcam/google-api-php-client/src');
+set_include_path(get_include_path() . PATH_SEPARATOR . '/home/tomh/microservices/youtubewebcam/google-api-php-client/src');
 require_once 'Google/autoload.php';
 require_once 'Google/Client.php';
 require_once 'Google/Service/YouTube.php';
 
 
-$client_id = "86690683607-uh7g2jr3ee1ktidvrc7chir0ftec5ebq.apps.googleusercontent.com";
-$client_secret = "Tfjepi13sHDYlwc8e9pialaZ";
+//$client_id = "86690683607-uh7g2jr3ee1ktidvrc7chir0ftec5ebq.apps.googleusercontent.com";
 
+
+$client_id = "501385715411-09nvqnq2d95pqta0ngnnq419gbq0hoom.apps.googleusercontent.com";
+$client_secret = "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";
 
 
 
@@ -159,8 +161,8 @@ try{
 	    file_put_contents($vidPath."-metadata-self","http://www.youtube.com/watch?v=$videoID&feature=youtube_gdata_player&vq=hd720&autoplay=1&showsearch=0&rel=0&showinfo=0");
 	    file_put_contents($vidPath."-metadata-thumb",$videoThumbnailURL);
 	    // remove local copy
-	    rename ($newname, "/media/raid0/home/tomh/iphonepics/tl/trash/".basename($vidPath));
-	    echo "renamed".$newname." to /media/raid0/home/tomh/iphonepics/tl/trash/".basename($vidPath)."\n";
+	    rename ($newname, "/opt/webcam/tl/trash/".basename($vidPath));
+	    echo "renamed".$newname." to /opt/webcam/tl/trash/".basename($vidPath)."\n";
 
 	    file_put_contents("./data/lastvidid.txt", $videoID);
 	    //unlink($vidPath);
