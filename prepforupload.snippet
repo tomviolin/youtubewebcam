@@ -1,0 +1,73 @@
+
+
+// =====================================
+//   PREP MOVIE FILE TO SEND TO YOUTUBE
+// =====================================
+
+echo "Processing '$vidPath'...\n";
+
+// if the video specified on the command line does not exist, just bail.
+if (! file_exists($vidPath)) die("Video $vidPath not found.\n");
+
+// if 
+if (substr($vidPath,strlen($vidPath)-4,4) != ".mp4") {
+	echo "file must have .mp4 extension.\n";
+	exit(1);
+}
+// renaming game
+
+// base is video filename without the .mp4 extension.
+$base = substr($vidPath,0,strlen($vidPath)-4);
+
+// $newname is the video filename with "-uploading" appended to the
+// base name before the extension, e.g. test-uploading.mp4
+$newname = $base . "-uploading.mp4";
+
+// the video file is renamed. This is (in most environments) an
+// atomic operation.
+try {
+rename ($vidPath,$newname);
+} catch (Exception $e) {
+    // another thread has jumped in and is doing its stuff, and
+    // we don't want to end up in invalid memory!
+    exit(0);
+}
+
+echo "renamed to $newname.\n";
+if (! file_exists($newname)) {
+    echo "processing $vidPath: we're in the middle of invalid memory!\n";
+    exit(0);
+}
+if (file_exists($vidPath."-metadata-self")) {
+	rename($newname, $vidPath."-dup");
+	die ("Video $vidPath already uploaded.\n");
+}
+sleep(3);
+$slug = basename($vidPath);
+//$filesource->setSlug($slug);
+
+$vyear = substr($slug,0,4);
+$vmonth= substr($slug,4,2);
+$vday  = substr($slug,6,2);
+if (strlen($slug) < 10) {
+	$vhour = "";
+} else {
+	$vhour = substr($slug,9,2);
+}
+
+if ( "x$vhour" == "x" || "x$vhour" == "xmp" ) {
+	$videoTitle = "HD Webcam Timelapse $vmonth-$vday-$vyear - full day";
+	$videoDescription = "Timelapse Video from HD Webcam of Milwaukee Inner Harbor taken on $vmonth-$vday-$vyear [full day].\n\nhttp://www.freshwater.uwm.edu/";
+} else {
+	$videoTitle="HD Webcam Timelapse $vmonth-$vday-$vyear $vhour:00-$vhour:59";
+	$videoDescription="Timelapse Video from HD Webcam of Milwaukee Inner Harbor taken on $vmonth-$vday-$vyear from $vhour:00 to $vhour:59.\n\nhttp://www.freshwater.uwm.edu/";
+}
+// The category must be a valid YouTube category!
+$videoCategory='27';
+//$videoRecorded("$vyear-$vmonth-$vday");
+
+// Set keywords. Please note that this must be a comma-separated string
+// and that individual keywords cannot contain whitespace
+$videoTags=array('UWM','SFS','Freshwater','Sciences','webcam','Milwaukee','harbor','ships','birds','waterfowl','boats','boatnerd');
+
+

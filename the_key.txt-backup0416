@@ -1,0 +1,7 @@
+{
+  "access_token": "ya29.A0ARrdaM_53Lwj-ghIRsknjZu_L79917CkKvt6XaPsFiPsDRfUIhmlzfoPx0XdrDBXfR5xoJttcwwb1LnINDp5Hs0jpE_LoRtolofS6Rc11a4AZQNB34AUWsuk9Snx8qw61OTU05H6UYTOuxFa7FLOlEWWuOON", 
+  "scope": "https://www.googleapis.com/auth/youtubepartner https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtubepartner-channel-audit https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.channel-memberships.creator https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube.force-ssl", 
+  "token_type": "Bearer", 
+  "expires_in": 3599, 
+  "refresh_token": "1//04F4nSgUirQOvCgYIARAAGAQSNwF-L9Irp2sq9OBGSuOQwO4-RwpOKKJXkBiLtR3QnUs9QS_EOeSMWzB2Nm_HNw4w-k4uqc9YAcE"
+}

@@ -21,8 +21,8 @@ cd /home/tomh/microservices/youtubewebcam
 
 
 shopt -s nullglob
-for f in /opt/webcam/outbox/*.mp4; do
-	php newuploadvideo.php "$f"
+for f in `ls -1r /opt/webcam/outbox/*.mp4`; do
+	echo php newuploadvideo.php "$f"
 done
 
 
